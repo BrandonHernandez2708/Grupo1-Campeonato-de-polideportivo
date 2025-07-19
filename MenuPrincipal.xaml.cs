@@ -1,4 +1,5 @@
 ﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -8,19 +9,19 @@ namespace Prototipo
 {
     public partial class MenuPrincipal : Window
     {
-        private bool adminMenuAbierto = false;
-        private bool usuariosMenuAbierto = false;
+        private bool badminMenuAbierto = false;
+        private bool busuariosMenuAbierto = false;
 
         public MenuPrincipal()
         {
 
             InitializeComponent();
-            
+
         }
 
         private void btn_despliegueUsr(object sender, RoutedEventArgs e)
         {
-            int to = usuariosMenuAbierto ? 0 : 1;
+            int to = busuariosMenuAbierto ? 0 : 1;
 
             var animacion = new DoubleAnimation
             {
@@ -31,7 +32,7 @@ namespace Prototipo
             };
 
             MenuUsuariosScale.BeginAnimation(ScaleTransform.ScaleYProperty, animacion);
-            usuariosMenuAbierto = !usuariosMenuAbierto;
+            busuariosMenuAbierto = !busuariosMenuAbierto;
 
             AjustarPosicionAdmin();
             AjustarPosicionCerrarSesion();
@@ -39,7 +40,7 @@ namespace Prototipo
 
         private void btn_despliegueAdmin(object sender, RoutedEventArgs e)
         {
-            int to = adminMenuAbierto ? 0 : 1;
+            int to = badminMenuAbierto ? 0 : 1;
 
             var animacion = new DoubleAnimation
             {
@@ -50,61 +51,55 @@ namespace Prototipo
             };
 
             MenuAdminScale.BeginAnimation(ScaleTransform.ScaleYProperty, animacion);
-            adminMenuAbierto = !adminMenuAbierto;
+            badminMenuAbierto = !badminMenuAbierto;
 
             AjustarPosicionCerrarSesion();
         }
 
         private void AjustarPosicionAdmin()
         {
-            // Altura visible del menú Usuario (botón + menú desplegado)
-            double alturaMenuUsuario = boton_despliegueUsuario.Height;
+           
+            double dbalturaMenuUsuario = btndespliegueUsuario.Height;
 
-            if (usuariosMenuAbierto)
+            if (busuariosMenuAbierto)
             {
-                // Sumar altura real del menú Usuario desplegado
-                alturaMenuUsuario += MenuUsuarioPanel.ActualHeight;
+              
+                dbalturaMenuUsuario += staMenuUsuarioPanel.ActualHeight;
             }
 
-            // Ajustar margen superior del botón Administración
-            // Aquí ponemos 66 + alturaMenuUsuario para que quede justo debajo del menú Usuario
-            boton_despliegueAdmin.Margin = new Thickness(0, 66 + alturaMenuUsuario, 0, 0);
+            
+            btndespliegueAdmin.Margin = new Thickness(0, 66 + dbalturaMenuUsuario, 0, 0);
 
-            // Ajustar margen superior del menú Administración (Border)
-            double margenSuperiorMenuAdmin = boton_despliegueAdmin.Margin.Top + boton_despliegueAdmin.Height;
-            borderAdminMenu.Margin = new Thickness(10, margenSuperiorMenuAdmin, 10, 10);
+            
+            double dbmargenSuperiorMenuAdmin = btndespliegueAdmin.Margin.Top + btndespliegueAdmin.Height;
+            borderAdminMenu.Margin = new Thickness(10, dbmargenSuperiorMenuAdmin, 10, 10);
 
         }
 
         private void AjustarPosicionCerrarSesion()
         {
-            if (adminMenuAbierto && usuariosMenuAbierto)
+            if (badminMenuAbierto && busuariosMenuAbierto)
             {
-                // Base desde donde se suman alturas, por ejemplo el Label superior (66 px)
-                double posicionBase = 66;
+                
+                double dbposicionBase = 66;
 
-                // Altura botón usuario + menú usuario desplegado
-                double alturaUsuario = boton_despliegueUsuario.Height + MenuUsuarioPanel.ActualHeight;
+                
+                double dbalturaUsuario = btndespliegueUsuario.Height + staMenuUsuarioPanel.ActualHeight;
 
-                // Altura botón admin + menú admin desplegado
-                double alturaAdmin = boton_despliegueAdmin.Height + MenuAdminPanel.ActualHeight;
+                
+                double dbalturaAdmin = btndespliegueAdmin.Height + staMenuAdminPanel.ActualHeight;
 
-                // Posición Y nueva, justo debajo de ambos menús desplegados
-                double nuevaPosY = posicionBase + alturaUsuario + alturaAdmin;
+                
+                double dbnuevaPosY = dbposicionBase + dbalturaUsuario + dbalturaAdmin;
 
-                btn_cerrarSesion.Margin = new Thickness(10, nuevaPosY, 0, 0);
+                btn_cerrarSesion.Margin = new Thickness(10, dbnuevaPosY, 0, 0);
             }
             else
             {
-                // Volver a posición original si no están ambos desplegados
+                
                 btn_cerrarSesion.Margin = new Thickness(10, 556, 0, 0);
             }
         }
-
-
-
-
-
 
 
 

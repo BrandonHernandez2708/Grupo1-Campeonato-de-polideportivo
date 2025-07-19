@@ -8,12 +8,12 @@
         Title="MenuPrincipal" Height="630" Width="1100">
     <Grid Background="#FFA7A5A6">
 
-        <!-- Menú lateral completo -->
+        
         <Grid Width="200" HorizontalAlignment="Left" Background="#FF171517">
-            <!-- Fondo del menú -->
+           
             <Rectangle Stroke="#FF282627" Fill="#FF171517" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
-            <!-- Título del menú -->
+            
             <Label Content="Polideportivo"
                    HorizontalAlignment="Stretch"
                    VerticalAlignment="Top"
@@ -25,7 +25,7 @@
                    HorizontalContentAlignment="Center"/>
 
             <StackPanel x:Name="panelUsuario" HorizontalAlignment="Center" Width="200" Margin="0,66,0,0">
-                <Button x:Name="boton_despliegueUsuario"
+                <Button x:Name="btndespliegueUsuario"
                         Content="☰ Usuario"
                         Click="btn_despliegueUsr"
                         Width="200"
@@ -41,7 +41,7 @@
                         <ScaleTransform x:Name="MenuUsuariosScale" ScaleY="0"/>
                     </Border.RenderTransform>
 
-                    <StackPanel x:Name="MenuUsuarioPanel">
+                    <StackPanel x:Name="staMenuUsuarioPanel">
                         <Button x:Name="Btn_calendario" Content="Calendario" Width="200" Height="44" Background="#FF282627" Foreground="White"/>
                         <Button x:Name="Btn_tablaPosicion" Content="Tabla de Posiciones" Width="200" Height="44" Background="#FF282627" Foreground="White"/>
                         <Button x:Name="Btn_estadistica" Content="Estadisticas" Width="200" Height="44" Background="#FF282627" Foreground="White"/>
@@ -51,7 +51,7 @@
                 </Border>
             </StackPanel>
 
-            <Button x:Name="boton_despliegueAdmin"
+            <Button x:Name="btndespliegueAdmin"
                     Content="☰ Administración"
                     Click="btn_despliegueAdmin"
                     Width="200"
@@ -68,11 +68,11 @@
                     <ScaleTransform x:Name="MenuAdminScale" ScaleY="0"/>
                 </Border.RenderTransform>
 
-                <StackPanel x:Name="MenuAdminPanel">
+                <StackPanel x:Name="staMenuAdminPanel">
                     <Button x:Name="BtnCampeonatos" Content="Campeonatos" Width="200" Height="44" Background="#FF282627" Foreground="White"/>
-                    <Button x:Name="BtnEquipos" Content="Equipos" Width="200" Height="44" Background="#FF282627" Foreground="White"/>
+                    <Button x:Name="BtnEquipos" Content="Equipos" Width="200" Height="44" Background="#FF282627" Foreground="White" />
                     <Button x:Name="BtnJugadores" Content="Jugadores/entrenadores" Width="200" Height="44" Background="#FF282627" Foreground="White"/>
-                    <Button x:Name="BtnJornadas" Content="Jornadas/Partidos" Width="200" Height="44" Background="#FF282627" Foreground="White"/>
+                    <Button x:Name="BtnJornadas" Content="Jornadas/Partidos" Width="200" Height="44" Background="#FF282627" Foreground="White" />
                     <Button x:Name="BtnReglas" Content="Reglas de Juego" Width="200" Height="44" Background="#FF282627" Foreground="White"/>
                     <Button x:Name="BtnEmpleados" Content="Empleados" Width="200" Height="44" Background="#FF282627" Foreground="White"/>
                     <Button x:Name="BtnEstadisticas" Content="Estadísticas/Reportes" Width="200" Height="44" Background="#FF282627" Foreground="White"/>

@@ -1,79 +1,169 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\lopez\\onedrive\\escritorio\\code\\c#\\prototipo\\menuprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\user\\documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\menuprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|solutionrelative:menuprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\lopez\\onedrive\\escritorio\\code\\c#\\prototipo\\menuprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\user\\documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\menuprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|solutionrelative:menuprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\lopez\\onedrive\\escritorio\\code\\c#\\prototipo\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\user\\documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|solutionrelative:window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\user\\documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|solutionrelative:window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\lopez\\onedrive\\escritorio\\code\\c#\\prototipo\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|solutionrelative:window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\user\\documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\user\\documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\user\\documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\admin_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|solutionrelative:admin_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\user\\documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Window1.xaml",
-              "DocumentMoniker": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\Window1.xaml",
-              "RelativeDocumentMoniker": "Window1.xaml",
-              "ToolTip": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\Window1.xaml",
-              "RelativeToolTip": "Window1.xaml",
+              "DocumentIndex": 1,
+              "Title": "MenuPrincipal.xaml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\MenuPrincipal.xaml",
+              "RelativeDocumentMoniker": "MenuPrincipal.xaml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\MenuPrincipal.xaml",
+              "RelativeToolTip": "MenuPrincipal.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-19T17:52:20.937Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Window1.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\Window1.xaml.cs",
-              "RelativeDocumentMoniker": "Window1.xaml.cs",
-              "ToolTip": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\Window1.xaml.cs",
-              "RelativeToolTip": "Window1.xaml.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowDAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T17:51:09.008Z"
+              "WhenOpened": "2025-07-19T23:13:29.125Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MenuPrincipal.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\MenuPrincipal.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\MenuPrincipal.xaml.cs",
               "RelativeDocumentMoniker": "MenuPrincipal.xaml.cs",
-              "ToolTip": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\MenuPrincipal.xaml.cs",
-              "RelativeToolTip": "MenuPrincipal.xaml.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowDYAAAAqAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\MenuPrincipal.xaml.cs*",
+              "RelativeToolTip": "MenuPrincipal.xaml.cs*",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAwD0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T16:52:10.843Z",
+              "WhenOpened": "2025-07-19T23:44:11.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MenuPrincipal.xaml",
-              "DocumentMoniker": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\MenuPrincipal.xaml",
-              "RelativeDocumentMoniker": "MenuPrincipal.xaml",
-              "ToolTip": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\MenuPrincipal.xaml",
-              "RelativeToolTip": "MenuPrincipal.xaml",
+              "DocumentIndex": 2,
+              "Title": "Window1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\Window1.xaml.cs",
+              "RelativeDocumentMoniker": "Window1.xaml.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\Window1.xaml.cs",
+              "RelativeToolTip": "Window1.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T23:46:52.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "admin_cliente.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\admin_cliente.cs",
+              "RelativeDocumentMoniker": "admin_cliente.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\admin_cliente.cs",
+              "RelativeToolTip": "admin_cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T23:45:54.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\App.xaml",
+              "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-19T17:53:52.92Z"
+              "WhenOpened": "2025-07-19T23:43:19.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Window1.xaml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\Window1.xaml",
+              "RelativeDocumentMoniker": "Window1.xaml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\Window1.xaml",
+              "RelativeToolTip": "Window1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-19T23:31:54.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T23:29:46.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo semestre\\analisis\\polideportivo\\codigo\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-19T23:29:44.274Z",
+              "EditorCaption": ""
             }
           ]
         }
