@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\lopez\\onedrive\\escritorio\\code\\c#\\prototipo\\menuprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|solutionrelative:menuprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\lopez\\onedrive\\escritorio\\code\\c#\\prototipo\\menuprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|solutionrelative:menuprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\lopez\\onedrive\\escritorio\\code\\c#\\prototipo\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|solutionrelative:window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|c:\\users\\lopez\\onedrive\\escritorio\\code\\c#\\prototipo\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1921E3C-1251-4496-B219-7555AE67BA36}|Prototipo.csproj|solutionrelative:window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Window1.xaml",
+              "DocumentMoniker": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\Window1.xaml",
+              "RelativeDocumentMoniker": "Window1.xaml",
+              "ToolTip": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\Window1.xaml",
+              "RelativeToolTip": "Window1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-19T17:52:20.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Window1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\Window1.xaml.cs",
+              "RelativeDocumentMoniker": "Window1.xaml.cs",
+              "ToolTip": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\Window1.xaml.cs",
+              "RelativeToolTip": "Window1.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T17:51:09.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuPrincipal.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\MenuPrincipal.xaml.cs",
+              "RelativeDocumentMoniker": "MenuPrincipal.xaml.cs",
+              "ToolTip": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\MenuPrincipal.xaml.cs",
+              "RelativeToolTip": "MenuPrincipal.xaml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAwDYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T16:52:10.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuPrincipal.xaml",
+              "DocumentMoniker": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\MenuPrincipal.xaml",
+              "RelativeDocumentMoniker": "MenuPrincipal.xaml",
+              "ToolTip": "C:\\Users\\lopez\\OneDrive\\Escritorio\\Code\\C#\\Prototipo\\MenuPrincipal.xaml",
+              "RelativeToolTip": "MenuPrincipal.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-19T17:53:52.92Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
