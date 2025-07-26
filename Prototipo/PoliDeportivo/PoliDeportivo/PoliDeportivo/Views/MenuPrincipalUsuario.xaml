@@ -1,0 +1,52 @@
+﻿<Window x:Class="PoliDeportivo.MenuPrincipalUsuario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PoliDeportivo"
+        mc:Ignorable="d"
+        Title="MenuPrincipalUsuario" Height="450" Width="800">
+    <Grid Background="#FFA7A5A6">
+        <!-- grid lateral -->
+        <Grid Width="200" HorizontalAlignment="Left" Background="#FF171517">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="99*"/>
+                <ColumnDefinition Width="101*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                       Foreground="White"
+                       Background="#FF131113"
+                       VerticalAlignment="Top"
+                       Height="66"
+                       FontFamily="Arial Rounded MT Bold"
+                       FontSize="24" Grid.ColumnSpan="2">
+                       <Run Text="  "/>
+                       <Run Text="Polideportivo"/>
+            </TextBlock>
+
+            <StackPanel Background="#FF171517" Margin="0,66,0,0" Grid.ColumnSpan="2">
+                <Button x:Name="Btn_calendario" Content="Calendario" Width="200" Height="44" Background="#FF171517" Foreground="White" BorderBrush="#FF171517"/>
+                <Button x:Name="Btn_tablaPosicion" Content="Tabla de Posiciones" Width="200" Height="44" Background="#FF171517" Foreground="White" BorderBrush="#FF171517"/>
+                <Button x:Name="Btn_estadistica" Content="Estadisticas" Width="200" Height="44" Background="#FF171517" Foreground="White" BorderBrush="#FF171517"/>
+                <Button x:Name="Btn_campeonatos" Content="Campeonatos" Width="200" Height="44" Background="#FF171517" Foreground="White" BorderBrush="#FF171517"/>
+                <Button x:Name="BtnC" Content="Reglas de juego" Width="200" Height="44" Background="#FF171517" Foreground="White" BorderBrush="#FF171517"/>
+
+            </StackPanel>
+
+            <Button x:Name="boton_cerrarSesion"
+                    Content="Cerra Sesión"
+                    Margin="10,381,9,31"
+                    Height="22" 
+                    Width="80" 
+                    Foreground="White" 
+                    Background="#FF151715" 
+                    BorderBrush="#FF151715" 
+                    Click="btn_cerrarSesion"/>
+
+
+        </Grid>
+
+
+
+    </Grid>
+</Window>
