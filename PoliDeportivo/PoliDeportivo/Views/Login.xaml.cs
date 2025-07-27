@@ -1,4 +1,4 @@
-﻿/// codigo principal login
+﻿/// codigo principal logins
 using System;
 using System.Collections.Generic;
 using System.Linq;
