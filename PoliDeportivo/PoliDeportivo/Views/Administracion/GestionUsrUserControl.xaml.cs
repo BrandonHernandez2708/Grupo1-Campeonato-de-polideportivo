@@ -1,108 +1,138 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using PoliDeportivo;
+using PoliDeportivo.DataAccess;
+using PoliDeportivo.Model;
+using System;
+using System.Data;
 using System.Windows;
 using System.Windows.Controls;
 
 namespace PoliDeportivo.Views.Administracion
 {
-    /// <summary>
-    /// Lógica de interacción para GestionUsrUserControl.xaml
-    /// </summary>
     public partial class GestionUsrUserControl : UserControl
     {
-        public class Usuario
-        {
-            public int IdUsuario { get; set; }
-            public string Empleado { get; set; }
-            public string Correo { get; set; }
-            public string Contrasena { get; set; }
-            public DateTime FechaCreacion { get; set; }
-        }
-
-        private ObservableCollection<Usuario> listaUsuarios = new ObservableCollection<Usuario>();
-        private Usuario usuarioSeleccionado = null;
+        private int estadoGuardado = 0; // 1 = nuevo, 2 = actualizar
 
         public GestionUsrUserControl()
         {
             InitializeComponent();
-            dgUsuarios.ItemsSource = listaUsuarios;
+            CargarDeportes();
+        }
+
+        private void CargarDeportes()
+        {
+            try
+            {
+                D_Deportes datos = new D_Deportes();
+                DataTable dt = datos.Listado_Dep();
+                DTGV_deporte.ItemsSource = dt.DefaultView;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar deportes: " + ex.Message);
+            }
+        }
+
+        private void btn_newdep(object sender, RoutedEventArgs e)
+        {
+            estadoGuardado = 1; // Nuevo registro
+            LimpiarCampos();
         }
 
         private void btn_guardar(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtIdUsuario.Text) ||
-                string.IsNullOrWhiteSpace(txtEmpleado.Text) ||
-                string.IsNullOrWhiteSpace(txtCorreo.Text) ||
-                string.IsNullOrWhiteSpace(txtPassword.Password))
+            try
             {
-                MessageBox.Show("Todos los campos son obligatorios.");
-                return;
+                Atrb_deportes deporte = new Atrb_deportes()
+                {
+                    depID_pk = int.Parse(txtb_depId_pk.Text),
+                    depnombre = txtb_depnombre.Text,
+                    depcantidad_jugadores_equipo = int.Parse(txtb_CantTotPlay.Text),
+                    depcantidad_jugadores_campo = int.Parse(txtb_cant_play_camp.Text),
+                    depcantidad_de_tiemposdep = int.Parse(txtb_cant_tot_tiempos.Text),
+                    depduracion_de_cada_tiempo = int.Parse(txtb_dur_tiempos.Text),
+                    depduracion_total_del_partido = int.Parse(dur_total_partido.Text),
+                };
+
+                D_Deportes datos = new D_Deportes();
+                string respuesta = datos.Guardar_Dep(estadoGuardado, deporte);
+
+                if (respuesta == "OK")
+                {
+                    MessageBox.Show("Registro guardado correctamente");
+                    CargarDeportes();
+                    LimpiarCampos();
+                    estadoGuardado = 0;
+                }
+                else
+                {
+                    MessageBox.Show("Error: " + respuesta);
+                }
             }
-
-            Usuario nuevo = new Usuario
+            catch (Exception ex)
             {
-                IdUsuario = int.Parse(txtIdUsuario.Text),
-                Empleado = txtEmpleado.Text,
-                Correo = txtCorreo.Text,
-                Contrasena = txtPassword.Password,
-                FechaCreacion = dpFecha.SelectedDate ?? DateTime.Now
-            };
-
-            listaUsuarios.Add(nuevo);
-            LimpiarCampos();
+                MessageBox.Show("Error al guardar: " + ex.Message);
+            }
         }
 
         private void btn_actualizar(object sender, RoutedEventArgs e)
         {
-            if (usuarioSeleccionado != null)
-            {
-                usuarioSeleccionado.IdUsuario = int.Parse(txtIdUsuario.Text);
-                usuarioSeleccionado.Empleado = txtEmpleado.Text;
-                usuarioSeleccionado.Correo = txtCorreo.Text;
-                usuarioSeleccionado.Contrasena = txtPassword.Password;
-                usuarioSeleccionado.FechaCreacion = dpFecha.SelectedDate ?? DateTime.Now;
-
-                dgUsuarios.Items.Refresh();
-                LimpiarCampos();
-            }
+            estadoGuardado = 2; // Actualizar registro
         }
 
         private void btn_eliminar(object sender, RoutedEventArgs e)
         {
-            if (usuarioSeleccionado != null)
+            try
             {
-                listaUsuarios.Remove(usuarioSeleccionado);
-                LimpiarCampos();
+                if (int.TryParse(txtb_depId_pk.Text, out int id))
+                {
+                    D_Deportes datos = new D_Deportes();
+                    string respuesta = datos.Eliminar_Dep(id);
+
+                    if (respuesta == "OK")
+                    {
+                        MessageBox.Show("Registro eliminado correctamente");
+                        CargarDeportes();
+                        LimpiarCampos();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error: " + respuesta);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un registro válido para eliminar.");
+                }
             }
-        }
-
-        private void btn_limpiar(object sender, RoutedEventArgs e)
-        {
-            LimpiarCampos();
-        }
-
-        private void dgUsuarios_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            usuarioSeleccionado = dgUsuarios.SelectedItem as Usuario;
-            if (usuarioSeleccionado != null)
+            catch (Exception ex)
             {
-                txtIdUsuario.Text = usuarioSeleccionado.IdUsuario.ToString();
-                txtEmpleado.Text = usuarioSeleccionado.Empleado;
-                txtCorreo.Text = usuarioSeleccionado.Correo;
-                txtPassword.Password = usuarioSeleccionado.Contrasena;
-                dpFecha.SelectedDate = usuarioSeleccionado.FechaCreacion;
+                MessageBox.Show("Error al eliminar: " + ex.Message);
             }
         }
 
         private void LimpiarCampos()
         {
-            txtIdUsuario.Text = "";
-            txtEmpleado.Text = "";
-            txtCorreo.Text = "";
-            txtPassword.Password = "";
-            dpFecha.SelectedDate = null;
-            usuarioSeleccionado = null;
-            dgUsuarios.UnselectAll();
+            txtb_depId_pk.Clear();
+            txtb_depnombre.Clear();
+            txtb_CantTotPlay.Clear();
+            txtb_cant_play_camp.Clear();
+            txtb_cant_tot_tiempos.Clear();
+            txtb_dur_tiempos.Clear();
+            dur_total_partido.Clear();
+        }
+
+        private void DTGV_deporte_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (DTGV_deporte.SelectedItem is DataRowView row)
+            {
+                txtb_depId_pk.Text = row["depID_pk"].ToString();
+                txtb_depnombre.Text = row["DEPNOMBRE"].ToString();
+                txtb_CantTotPlay.Text = row["DEPCANTIDAD_JUGADORES_EQUIPO"].ToString();
+                txtb_cant_play_camp.Text = row["DEPCANTIDAD_JUGADORES_EN_EL_CAMPO"].ToString();
+                txtb_cant_tot_tiempos.Text = row["DEPCANTIDAD_DE_TIEMPOSDEP"].ToString();
+                txtb_dur_tiempos.Text = row["DEPDURACION_DE_CADA_TIEMPO"].ToString();
+                dur_total_partido.Text = row["DEPDURACION_TOTAL_DEL_PARTIDO"].ToString();
+            }
         }
     }
 }
