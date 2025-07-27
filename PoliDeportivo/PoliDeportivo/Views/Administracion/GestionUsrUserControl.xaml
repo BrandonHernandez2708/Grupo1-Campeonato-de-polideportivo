@@ -3,42 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:PoliDeportivo.Views.Administracion"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
-    <Grid Background="#FFA7A5A6" Margin="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+    <Grid Background="#FFA7A5A6" Margin="10">
+        <StackPanel Margin="10" VerticalAlignment="Top" HorizontalAlignment="Stretch">
 
-        <StackPanel Orientation="Vertical" Grid.Row="0" Margin="0,0,0,10">
-            <TextBox x:Name="txtIdUsuario" Text="ID Usuario" Margin="0,5"/>
-            <TextBox x:Name="txtEmpleado" Text="Empleado" Margin="0,5"/>
-            <TextBox x:Name="txtCorreo" Text="Correo" Margin="0,5"/>
-            <PasswordBox x:Name="txtPassword" Margin="0,5"/>
-            <DatePicker x:Name="dpFecha" Margin="0,5"/>
+            <!-- Campos de texto para datos de deporte -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left">
+                <TextBox x:Name="txtb_depId_pk" Width="100" Margin="5" Text="ID"/>
+                <TextBox x:Name="txtb_depnombre" Width="150" Margin="5" Text="Nombre"/>
+                <TextBox x:Name="txtb_CantTotPlay" Width="100" Margin="5" Text="Jugadores totales"/>
+                <TextBox x:Name="txtb_cant_play_camp" Width="100" Margin="5" Text="Jugadores campo"/>
+                <TextBox x:Name="txtb_cant_tot_tiempos" Width="100" Margin="5" Text="Tiempos"/>
+                <TextBox x:Name="txtb_dur_tiempos" Width="100" Margin="5" Text="Duración tiempo"/>
+                <TextBox x:Name="dur_total_partido" Width="120" Margin="5" Text="Duración total"/>
+            </StackPanel>
+
+            <!-- Botones -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left">
+                <Button x:Name="boton_newdep" Content="Nuevo" Click="btn_newdep" Margin="5"/>
+                <Button x:Name="boton_guardar" Content="Guardar" Click="btn_guardar" Margin="5"/>
+                <Button x:Name="boton_actualizar" Content="Actualizar" Click="btn_actualizar" Margin="5"/>
+                <Button x:Name="boton_eliminar" Content="Eliminar" Click="btn_eliminar" Margin="5"/>
+            </StackPanel>
+
+            <!-- DataGrid para mostrar los deportes -->
+            <DataGrid x:Name="DTGV_deporte" AutoGenerateColumns="True" Height="250" 
+                      SelectionChanged="DTGV_deporte_SelectionChanged"
+                      HorizontalAlignment="Stretch"/>
         </StackPanel>
-        
-        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,10" HorizontalAlignment="Left">
-            <Button Content="Guardar" Click="btn_guardar" Margin="5"/>
-            <Button Content="Actualizar" Click="btn_actualizar" Margin="5"/>
-            <Button Content="Eliminar" Click="btn_eliminar" Margin="5"/>
-            <Button Content="Limpiar" Click="btn_limpiar" Margin="5"/>
-        </StackPanel>
-
-        <DataGrid x:Name="dgUsuarios" Grid.Row="2" AutoGenerateColumns="False" Margin="0,10,0,0"
-                  SelectionMode="Single" SelectionChanged="dgUsuarios_SelectionChanged" IsReadOnly="True">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID Usuario" Binding="{Binding IdUsuario}" Width="*"/>
-                <DataGridTextColumn Header="Empleado" Binding="{Binding Empleado}" Width="*"/>
-                <DataGridTextColumn Header="Correo" Binding="{Binding Correo}" Width="*"/>
-                <DataGridTextColumn Header="Contraseña" Binding="{Binding Password}" Width="*"/>
-                <DataGridTextColumn Header="Fecha" Binding="{Binding Fecha}" Width="*"/>
-            </DataGrid.Columns>
-        </DataGrid>
-
     </Grid>
 </UserControl>
