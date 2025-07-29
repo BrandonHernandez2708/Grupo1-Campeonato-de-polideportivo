@@ -37,33 +37,33 @@ namespace PoliDeportivo
 
         }
 
-        private void IntentarIniciarSesion()
+        private void fIntentarIniciarSesion()
         {
-            if (string.IsNullOrWhiteSpace(txtUsuario.Text))
+            if (string.IsNullOrWhiteSpace(txt_usuario.Text))
             {
                 MessageBox.Show("Ingresa tu nombre de usuario por favor.", "Campo sin llenar", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(txtPassword.Password))
+            if (string.IsNullOrWhiteSpace(txt_password.Password))
             {
                 MessageBox.Show("Ingresa tu contraseña", "Campo sin llenar", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            if (txtUsuario.Text.Length > 20)
+            if (txt_usuario.Text.Length > 20)
             {
                 MessageBox.Show("Tu nombre de usuario no puede pasar de los 20 caracteres.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            if (txtPassword.Password.Length > 20)
+            if (txt_password.Password.Length > 20)
             {
                 MessageBox.Show("Tu contraseña no puede pasar de los 20 caracteres.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            if (!Regex.IsMatch(txtUsuario.Text, @"^[a-zA-Z0-9]+$"))
+            if (!Regex.IsMatch(txt_usuario.Text, @"^[a-zA-Z0-9]+$"))
             {
                 MessageBox.Show("Tu nombre de usuario no puede contener caracteres especiales.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
@@ -71,7 +71,7 @@ namespace PoliDeportivo
 
             try
             {
-                if (txtUsuario.Text == "grupo1" && txtPassword.Password == "analisis")
+                if (txt_usuario.Text == "grupo1" && txt_password.Password == "analisis")
                 {
                     MenuPrincipalAdmin menuPrincipal = new MenuPrincipalAdmin();
                     menuPrincipal.Show();
@@ -90,7 +90,7 @@ namespace PoliDeportivo
 
         private void btn_IniciarSesion(object sender, RoutedEventArgs e)
         {
-            IntentarIniciarSesion();
+            fIntentarIniciarSesion();
         }
 
         private void btn_regresar(object sender, RoutedEventArgs e)
@@ -105,9 +105,10 @@ namespace PoliDeportivo
         {
           if (e.Key == Key.Enter)
             {
-                IntentarIniciarSesion();
+                fIntentarIniciarSesion();
         }
     }
 }
 }
 
+    

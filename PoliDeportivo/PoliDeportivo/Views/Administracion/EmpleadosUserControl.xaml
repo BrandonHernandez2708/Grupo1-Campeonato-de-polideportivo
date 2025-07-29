@@ -26,24 +26,24 @@
         <!-- Formulario -->
         <StackPanel Grid.Row="1" Background="#FF7B797A" Margin="10" MaxWidth="600">
             <TextBlock Text="Idempleado" FontSize="20" Margin="0,10,0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-            <TextBox x:Name="txtidempleado" Height="30" Margin="0,0,0,10"/>
+            <TextBox x:Name="txt_idempleado" Height="30" Margin="0,0,0,10"/>
 
             <TextBlock Text="Nombre" FontSize="20" Margin="0,10,0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-            <TextBox x:Name="txtNombre" Height="30" Margin="0,0,0,10"/>
+            <TextBox x:Name="txt_Nombre" Height="30" Margin="0,0,0,10"/>
 
             <TextBlock Text="Apellido" FontSize="20" Margin="0,10,0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-            <TextBox x:Name="txtApellido" Height="30" Margin="0,0,0,10"/>
+            <TextBox x:Name="txt_Apellido" Height="30" Margin="0,0,0,10"/>
 
             <TextBlock Text="Dirección" FontSize="20" Margin="0,10,0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-            <TextBox x:Name="txtDireccion" Height="30" Margin="0,0,0,10"/>
+            <TextBox x:Name="txt_Direccion" Height="30" Margin="0,0,0,10"/>
         </StackPanel>
 
         <!-- Botones CRUD -->
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10" >
-            <Button x:Name="btnGuardar" Content="Guardar" Width="100" Margin="5" Click="btn_guardar"/>
-            <Button x:Name="btnActualizar" Content="Actualizar" Width="100" Margin="5" Click="btn_actualizar"/>
-            <Button x:Name="btnEliminar" Content="Eliminar" Width="100" Margin="5" Click="btn_eliminar"/>
-            <Button x:Name="btnLimpiar" Content="Limpiar" Width="100" Margin="5" Click="btn_limpiar"/>
+            <Button x:Name="btn_Guardar" Content="Guardar" Width="100" Margin="5" Click="btn_guardar"/>
+            <Button x:Name="btn_Actualizar" Content="Actualizar" Width="100" Margin="5" Click="btn_actualizar"/>
+            <Button x:Name="btn_Eliminar" Content="Eliminar" Width="100" Margin="5" Click="btn_eliminar"/>
+            <Button x:Name="btn_Limpiar" Content="Limpiar" Width="100" Margin="5" Click="btn_limpiar"/>
         </StackPanel>
 
         <!-- DataGrid -->

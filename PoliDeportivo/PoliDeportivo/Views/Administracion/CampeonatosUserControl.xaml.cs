@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,6 +27,12 @@ namespace PoliDeportivo.Views.Administracion
         public CampeonatosUserControl()
         {
             InitializeComponent();
+        }
+
+        // Agrega este método al code-behind de CampeonatosUserControl
+        private void txt_tnombre_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            // Aquí puedes agregar la lógica que desees ejecutar cuando cambie el texto
         }
     }
 }
