@@ -11,13 +11,13 @@
 
             <!-- Campos de texto para datos de deporte -->
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left">
-                <TextBox x:Name="txtb_depId_pk" Width="100" Margin="5" Text="ID"/>
-                <TextBox x:Name="txtb_depnombre" Width="150" Margin="5" Text="Nombre"/>
-                <TextBox x:Name="txtb_CantTotPlay" Width="100" Margin="5" Text="Jugadores totales"/>
-                <TextBox x:Name="txtb_cant_play_camp" Width="100" Margin="5" Text="Jugadores campo"/>
-                <TextBox x:Name="txtb_cant_tot_tiempos" Width="100" Margin="5" Text="Tiempos"/>
-                <TextBox x:Name="txtb_dur_tiempos" Width="100" Margin="5" Text="Duración tiempo"/>
-                <TextBox x:Name="dur_total_partido" Width="120" Margin="5" Text="Duración total"/>
+                <TextBox x:Name="txt_depId_pk" Width="100" Margin="5" Text="ID"/>
+                <TextBox x:Name="txt_depnombre" Width="150" Margin="5" Text="Nombre"/>
+                <TextBox x:Name="txt_CantTotPlay" Width="100" Margin="5" Text="Jugadores totales"/>
+                <TextBox x:Name="txt_cant_play_camp" Width="100" Margin="5" Text="Jugadores campo"/>
+                <TextBox x:Name="txt_cant_tot_tiempos" Width="100" Margin="5" Text="Tiempos"/>
+                <TextBox x:Name="txt_dur_tiempos" Width="100" Margin="5" Text="Duración tiempo"/>
+                <TextBox x:Name="txt_dur_total_partido" Width="120" Margin="5" Text="Duración total"/>
             </StackPanel>
 
             <!-- Botones -->

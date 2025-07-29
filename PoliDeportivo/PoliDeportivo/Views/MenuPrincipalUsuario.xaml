@@ -29,7 +29,7 @@
                 <Button x:Name="Btn_tablaPosicion" Content="Tabla de Posiciones" Width="200" Height="44" Background="#FF171517" Foreground="White" BorderBrush="#FF171517"/>
                 <Button x:Name="Btn_estadistica" Content="Estadisticas" Width="200" Height="44" Background="#FF171517" Foreground="White" BorderBrush="#FF171517"/>
                 <Button x:Name="Btn_campeonatos" Content="Campeonatos" Width="200" Height="44" Background="#FF171517" Foreground="White" BorderBrush="#FF171517"/>
-                <Button x:Name="BtnC" Content="Reglas de juego" Width="200" Height="44" Background="#FF171517" Foreground="White" BorderBrush="#FF171517"/>
+                <Button x:Name="Btn_Reglasjuego" Content="Reglas de juego" Width="200" Height="44" Background="#FF171517" Foreground="White" BorderBrush="#FF171517" Click="Btn_Reglasjuego_Click"/>
 
             </StackPanel>
 

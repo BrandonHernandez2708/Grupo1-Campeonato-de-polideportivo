@@ -24,14 +24,16 @@ namespace PoliDeportivo.Views.Administracion
     public partial class EquiposUserControl : UserControl
     {
 
-      
+
         public EquiposUserControl()
         {
             InitializeComponent();
         }
 
-
-
+        private void txtNombreEquipo_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            // Aquí puedes agregar la lógica que desees ejecutar cuando cambie el texto
+        }
 
     }
 }

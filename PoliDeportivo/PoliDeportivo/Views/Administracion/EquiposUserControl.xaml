@@ -31,10 +31,10 @@
 
                 <StackPanel Background="#FF7B797A" Grid.Column="0" Margin="10">
                     <TextBlock Text="Nombre del equipo" FontSize="20" Margin="0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-                    <TextBox x:Name="txtNombreEquipo" Height="30" Margin="2" Background="#FFF1F1F1" BorderBrush="#FF171517"/>
+                    <TextBox x:Name="txt_NombreEquipo" Height="30" Margin="2" Background="#FFF1F1F1" BorderBrush="#FF171517" TextChanged="txtNombreEquipo_TextChanged"/>
 
                     <TextBlock Text="Deporte" FontSize="20" Margin="10,15,0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-                    <ComboBox x:Name="cmbDeporte" Margin="2" Background="#FFF1F1F1">
+                    <ComboBox x:Name="cmb_Deporte" Margin="2" Background="#FFF1F1F1">
                         <ComboBoxItem Content="Fútbol"/>
                         <ComboBoxItem Content="Baloncesto"/>
                         <ComboBoxItem Content="Béisbol"/>
@@ -42,7 +42,7 @@
                     </ComboBox>
 
                     <TextBlock Text="Nombre del entrenador" FontSize="20" Margin="10,15,0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-                    <TextBox x:Name="txtEntrenador" Height="30" Margin="2" Background="#FFF1F1F1" BorderBrush="#FF171517"/>
+                    <TextBox x:Name="txt_Entrenador" Height="30" Margin="2" Background="#FFF1F1F1" BorderBrush="#FF171517"/>
 
                     <TextBlock Text="Color principal" FontSize="20" Margin="10,15,0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
                     <ComboBox x:Name="cmbColor" Margin="2" Background="#FFF1F1F1">
@@ -57,7 +57,7 @@
                 <StackPanel Background="#FF7B797A" Grid.Column="1" Margin="10">
                     <TextBlock Text="Logo del equipo" FontSize="20" Margin="0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
                     <Border BorderThickness="1" BorderBrush="#FF171517" Height="120" Margin="2" Background="White">
-                        <Image x:Name="imgLogo" Stretch="Uniform" />
+                        <Image x:Name="img_Logo" Stretch="Uniform" />
                     </Border>
                     <Button Content="Subir Imagen" Margin="2" Width="150" Background="#FF282627" Foreground="White" FontWeight="Bold">
                         <Button.Resources>

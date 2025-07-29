@@ -23,13 +23,13 @@ namespace PoliDeportivo.Views.Administracion
     {
         public class Empleado
         {
-            public string Nombre { get; set; }
-            public string Apellido { get; set; }
-            public string Direccion { get; set; }
+            public required string Nombre { get; set; }
+            public required string Apellido { get; set; }
+            public required string Direccion { get; set; }
         }
 
         public ObservableCollection<Empleado> ListaEmpleados = new ObservableCollection<Empleado>();
-        private Empleado empleadoSeleccionado = null;
+        private Empleado? empleadoSeleccionado = null;
 
         public EmpleadosUserControl()
         {
@@ -41,28 +41,26 @@ namespace PoliDeportivo.Views.Administracion
         {
             var nuevo = new Empleado
             {
-                Nombre = txtNombre.Text,
-                Apellido = txtApellido.Text,
-                Direccion = txtDireccion.Text
+                Nombre = txt_Nombre.Text,
+                Apellido = txt_Apellido.Text,
+                Direccion = txt_Direccion.Text
             };
 
             ListaEmpleados.Add(nuevo);
             LimpiarCampos();
-
         }
 
         private void btn_actualizar(object sender, RoutedEventArgs e)
         {
             if (empleadoSeleccionado != null)
             {
-                empleadoSeleccionado.Nombre = txtNombre.Text;
-                empleadoSeleccionado.Apellido = txtApellido.Text;
-                empleadoSeleccionado.Direccion = txtDireccion.Text;
+                empleadoSeleccionado.Nombre = txt_Nombre.Text;
+                empleadoSeleccionado.Apellido = txt_Apellido.Text;
+                empleadoSeleccionado.Direccion = txt_Direccion.Text;
 
                 dgEmpleados.Items.Refresh();
                 LimpiarCampos();
             }
-
         }
 
         private void btn_eliminar(object sender, RoutedEventArgs e)
@@ -72,15 +70,12 @@ namespace PoliDeportivo.Views.Administracion
                 ListaEmpleados.Remove(empleadoSeleccionado);
                 LimpiarCampos();
             }
-
         }
 
         private void btn_limpiar(object sender, RoutedEventArgs e)
         {
             LimpiarCampos();
-
         }
-
 
         private void dgEmpleados_SelectionChanged(object sender, RoutedEventArgs e)
         {
@@ -88,19 +83,17 @@ namespace PoliDeportivo.Views.Administracion
 
             if (empleadoSeleccionado != null)
             {
-                txtNombre.Text = empleadoSeleccionado.Nombre;
-                txtApellido.Text = empleadoSeleccionado.Apellido;
-                txtDireccion.Text = empleadoSeleccionado.Direccion;
+                txt_Nombre.Text = empleadoSeleccionado.Nombre;
+                txt_Apellido.Text = empleadoSeleccionado.Apellido;
+                txt_Direccion.Text = empleadoSeleccionado.Direccion;
             }
-
-
         }
 
         private void LimpiarCampos()
         {
-            txtNombre.Text = "";
-            txtApellido.Text = "";
-            txtDireccion.Text = "";
+            txt_Nombre.Text = "";
+            txt_Apellido.Text = "";
+            txt_Direccion.Text = "";
             empleadoSeleccionado = null;
             dgEmpleados.SelectedItem = null;
         }
