@@ -86,9 +86,9 @@ namespace PoliDeportivo.Views.Administracion
                 if (int.TryParse(txt_depId_pk.Text, out int id))
                 {
                     D_Deportes datos = new D_Deportes();
-                    string respuesta = datos.Eliminar_Dep(id);
+                    string srespuesta = datos.Eliminar_Dep(id);
 
-                    if (respuesta == "OK")
+                    if (srespuesta == "OK")
                     {
                         MessageBox.Show("Registro eliminado correctamente");
                         CargarDeportes();
@@ -96,7 +96,7 @@ namespace PoliDeportivo.Views.Administracion
                     }
                     else
                     {
-                        MessageBox.Show("Error: " + respuesta);
+                        MessageBox.Show("Error: " + srespuesta);
                     }
                 }
                 else

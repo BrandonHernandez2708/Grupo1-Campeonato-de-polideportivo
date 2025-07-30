@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "48SLn9r6PK4=",
+  "dgSpecHash": "43TOsnv/ado=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\source\\repos\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\PoliDeportivo.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Source\\Repos\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\PoliDeportivo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",
