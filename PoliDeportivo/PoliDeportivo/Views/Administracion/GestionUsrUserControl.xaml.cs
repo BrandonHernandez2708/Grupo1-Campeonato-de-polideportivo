@@ -16,6 +16,23 @@ namespace PoliDeportivo.Views.Administracion
         {
             InitializeComponent();
             CargarDeportes();
+            ConfigurarBotonesEstadoInicial();
+        }
+
+        private void ConfigurarBotonesEstadoInicial()
+        {
+            boton_newdep.IsEnabled = true;
+            boton_guardar.IsEnabled = false;
+            boton_actualizar.IsEnabled = false;
+            boton_eliminar.IsEnabled = false;
+        }
+
+        private void ConfigurarBotonesDespuesDeSeleccion()
+        {
+            boton_newdep.IsEnabled = false;
+            boton_guardar.IsEnabled = true;
+            boton_actualizar.IsEnabled = true;
+            boton_eliminar.IsEnabled = true;
         }
 
         private void CargarDeportes()
@@ -36,6 +53,7 @@ namespace PoliDeportivo.Views.Administracion
         {
             estadoGuardado = 1; // Nuevo registro
             LimpiarCampos();
+            ConfigurarBotonesDespuesDeSeleccion();
         }
 
         private void btn_guardar(object sender, RoutedEventArgs e)
@@ -44,13 +62,13 @@ namespace PoliDeportivo.Views.Administracion
             {
                 Atrb_deportes deporte = new Atrb_deportes()
                 {
-                        depID_pk = int.Parse(txt_depId_pk.Text),
-                    depnombre = txt_depnombre.Text,
-                    depcantidad_jugadores_equipo = int.Parse(txt_CantTotPlay.Text),
-                    depcantidad_jugadores_campo = int.Parse(txt_cant_play_camp.Text),
-                    depcantidad_de_tiemposdep = int.Parse(txt_cant_tot_tiempos.Text),
-                    depduracion_de_cada_tiempo = int.Parse(txt_dur_tiempos.Text),
-                    depduracion_total_del_partido = int.Parse(txt_dur_total_partido.Text),
+                        depID_pk = int.Parse(txtb_depId_pk.Text),
+                    depnombre = txtb_depnombre.Text,
+                    depcantidad_jugadores_equipo = int.Parse(txtb_CantTotPlay.Text),
+                    depcantidad_jugadores_campo = int.Parse(txtb_cant_play_camp.Text),
+                    depcantidad_de_tiemposdep = int.Parse(txtb_cant_tot_tiempos.Text),
+                    depduracion_de_cada_tiempo = int.Parse(txtb_dur_tiempos.Text),
+                    depduracion_total_del_partido = int.Parse(txtb_dur_total_partido.Text),
                 };
 
                 D_Deportes datos = new D_Deportes();
@@ -72,6 +90,7 @@ namespace PoliDeportivo.Views.Administracion
             {
                 MessageBox.Show("Error al guardar: " + ex.Message);
             }
+            ConfigurarBotonesEstadoInicial();
         }
 
         private void btn_actualizar(object sender, RoutedEventArgs e)
@@ -83,7 +102,7 @@ namespace PoliDeportivo.Views.Administracion
         {
             try
             {
-                if (int.TryParse(txt_depId_pk.Text, out int id))
+                if (int.TryParse(txtb_depId_pk.Text, out int id))
                 {
                     D_Deportes datos = new D_Deportes();
                     string srespuesta = datos.Eliminar_Dep(id);
@@ -108,31 +127,35 @@ namespace PoliDeportivo.Views.Administracion
             {
                 MessageBox.Show("Error al eliminar: " + ex.Message);
             }
+            ConfigurarBotonesEstadoInicial();
         }
 
         private void LimpiarCampos()
         {
-            txt_depId_pk.Clear();
-            txt_depnombre.Clear();
-            txt_CantTotPlay.Clear();
-            txt_cant_play_camp.Clear();
-            txt_cant_tot_tiempos.Clear();
-            txt_dur_tiempos.Clear();
-            txt_dur_total_partido.Clear();
+            txtb_depId_pk.Clear();
+            txtb_depnombre.Clear();
+            txtb_CantTotPlay.Clear();
+            txtb_cant_play_camp.Clear();
+            txtb_cant_tot_tiempos.Clear();
+            txtb_dur_tiempos.Clear();
+            txtb_dur_total_partido.Clear();
         }
 
         private void DTGV_deporte_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DTGV_deporte.SelectedItem is DataRowView row)
             {
-                txt_depId_pk.Text = row["depID_pk"].ToString();
-                txt_depnombre.Text = row["DEPNOMBRE"].ToString();
-                txt_CantTotPlay.Text = row["DEPCANTIDAD_JUGADORES_EQUIPO"].ToString();
-                txt_cant_play_camp.Text = row["DEPCANTIDAD_JUGADORES_EN_EL_CAMPO"].ToString();
-                txt_cant_tot_tiempos.Text = row["DEPCANTIDAD_DE_TIEMPOSDEP"].ToString();
-                txt_dur_tiempos.Text = row["DEPDURACION_DE_CADA_TIEMPO"].ToString();
-                txt_dur_total_partido.Text = row["DEPDURACION_TOTAL_DEL_PARTIDO"].ToString();
+
+                txtb_depId_pk.Text = row["Código Deporte"].ToString();
+                txtb_depnombre.Text = row["Nombre Deporte"].ToString();
+                txtb_CantTotPlay.Text = row["Tamaño de Equipos"].ToString();
+                txtb_cant_play_camp.Text = row["Jugadores en el campo"].ToString();
+                txtb_cant_tot_tiempos.Text = row["Cantidad de tiempos"].ToString();
+                txtb_dur_tiempos.Text = row["Duración de Tiempos"].ToString();
+                txtb_dur_total_partido.Text = row["Duración del partido"].ToString();
+
             }
+            ConfigurarBotonesDespuesDeSeleccion();
         }
     }
 }

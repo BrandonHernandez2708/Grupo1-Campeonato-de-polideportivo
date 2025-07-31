@@ -12,7 +12,7 @@ namespace PoliDeportivo.DataAccess
             DataTable tabla = new DataTable();
             try
             {
-                using (MySqlConnection conn = conexionmysql.geInstancia().CrearConexion())
+                using (MySqlConnection conn = conexionmysql.getInstancia().CrearConexion())
                 {
                     string sql = @"
                         SELECT 
@@ -45,7 +45,7 @@ namespace PoliDeportivo.DataAccess
             string respuesta = "";
             try
             {
-                using (MySqlConnection conn = conexionmysql.geInstancia().CrearConexion())
+                using (MySqlConnection conn = conexionmysql.getInstancia().CrearConexion())
                 {
                     conn.Open();
                     using (MySqlTransaction trans = conn.BeginTransaction())
@@ -166,7 +166,7 @@ namespace PoliDeportivo.DataAccess
             string respuesta = "";
             try
             {
-                using (MySqlConnection conn = conexionmysql.geInstancia().CrearConexion())
+                using (MySqlConnection conn = conexionmysql.getInstancia().CrearConexion())
                 {
                     conn.Open();
                     using (MySqlTransaction trans = conn.BeginTransaction())

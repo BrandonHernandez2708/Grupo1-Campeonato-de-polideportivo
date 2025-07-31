@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="PoliDeportivo.Views.Administracion.PuestosUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PoliDeportivo.Views.Administracion"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FFA7A5A6" Margin="10">
+        <StackPanel Margin="10" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+
+
+            <!-- Título principal -->
+            <TextBlock Text="Gestión de Puestos"
+           FontFamily="Arial Rounded MT Bold"
+           FontSize="40"
+           FontWeight="Bold"
+           Foreground="Black"
+           HorizontalAlignment="Center"
+           Margin="0,10"/>
+
+
+
+
+            <!-- Campos de texto para datos de deporte -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left" Background="#FF7B797A">
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="ID Puesto" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_puesto_Id_pk"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="Nombre" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_puesto_nombre"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="Descripcion" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_puesto_descripcion"/>
+                </StackPanel>
+
+            </StackPanel>
+
+            <!-- Botones -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left">
+                <Button x:Name="boton_new_puesto" Content="Nuevo" Click="btn_new_puesto" Margin="5"/>
+                <Button x:Name="boton_guardar_puesto" Content="Guardar" Click="btn_guardar_puesto" Margin="5"/>
+                <Button x:Name="boton_actualizar_puesto" Content="Actualizar" Click="btn_actualizar_puesto" Margin="5"/>
+                <Button x:Name="boton_eliminar_puesto" Content="Eliminar" Click="btn_eliminar_puesto" Margin="5"/>
+            </StackPanel>
+
+            <!-- DataGrid para mostrar los deportes -->
+            <DataGrid x:Name="DGV_Puesto" AutoGenerateColumns="True" Height="250" 
+                      SelectionChanged="DGV_Puesto_SelectionChanged"
+                      HorizontalAlignment="Stretch"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
