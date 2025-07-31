@@ -14,6 +14,9 @@
     <Compile Update="Views\Administracion\GestionUsrUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Administracion\PuestosUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\MenuPrincipalAdmin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -23,5 +26,13 @@
     <Compile Update="Views\Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\Administracion\EmpleadosUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Administracion\PuestosUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>

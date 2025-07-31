@@ -49,8 +49,9 @@
                     <Button x:Name="BtnJornadas" Content="Jornadas/Partidos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                     <Button x:Name="BtnReglas" Content="Reglas de Juego" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                     <Button x:Name="BtnEmpleados" Content="Empleados" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_empleados"/>
+                    <Button x:Name="BtnPuesto" Content="Puestos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_puesto"/>
                     <Button x:Name="BtnEstadisticas" Content="Estadísticas/Reportes" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
-                    <Button x:Name="BtngestionUsr" Content="Gestion de usuarios" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_gestionUsr"/>
+                    <Button x:Name="BtngestionUsr" Content="Gestion de Deportes" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_gestionUsr"/>
                 </StackPanel>
 
                 <!-- BOTÓN CERRAR SESIÓN -->

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\App.xaml
-8328546674
+92040453669
 
-16-816687883
+191210867373
 205-1717018841
-Views\Administracion\CampeonatosUserControl.xaml;Views\Administracion\EmpleadosUserControl.xaml;Views\Administracion\EquiposUserControl.xaml;Views\Administracion\GestionUsrUserControl.xaml;Views\Login.xaml;Views\MainWindow.xaml;Views\MenuPrincipalAdmin.xaml;Views\MenuPrincipalUsuario.xaml;
+Views\Administracion\CampeonatosUserControl.xaml;Views\Administracion\EmpleadosUserControl.xaml;Views\Administracion\EquiposUserControl.xaml;Views\Administracion\GestionUsrUserControl.xaml;Views\Administracion\PuestosUserControl.xaml;Views\Login.xaml;Views\MainWindow.xaml;Views\MenuPrincipalAdmin.xaml;Views\MenuPrincipalUsuario.xaml;
 
-False
+True
 

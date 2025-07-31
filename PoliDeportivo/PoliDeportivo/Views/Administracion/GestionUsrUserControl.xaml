@@ -9,15 +9,57 @@
     <Grid Background="#FFA7A5A6" Margin="10">
         <StackPanel Margin="10" VerticalAlignment="Top" HorizontalAlignment="Stretch">
 
-            <!-- Campos de texto para datos de deporte -->
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left">
-                <TextBox x:Name="txtb_depId_pk" Width="100" Margin="5" Text="ID"/>
-                <TextBox x:Name="txtb_depnombre" Width="150" Margin="5" Text="Nombre"/>
-                <TextBox x:Name="txtb_CantTotPlay" Width="100" Margin="5" Text="Jugadores totales"/>
-                <TextBox x:Name="txtb_cant_play_camp" Width="100" Margin="5" Text="Jugadores campo"/>
-                <TextBox x:Name="txtb_cant_tot_tiempos" Width="100" Margin="5" Text="Tiempos"/>
-                <TextBox x:Name="txtb_dur_tiempos" Width="100" Margin="5" Text="Duración tiempo"/>
-                <TextBox x:Name="dur_total_partido" Width="120" Margin="5" Text="Duración total"/>
+
+            <!-- Título principal -->
+            <TextBlock Text="Gestión de Deportes"
+           FontFamily="Arial Rounded MT Bold"
+           FontSize="40"
+           FontWeight="Bold"
+           Foreground="Black"
+           HorizontalAlignment="Center"
+           Margin="0,10"/>
+
+
+
+
+                    <!-- Campos de texto para datos de deporte -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left" Background="#FF7B797A">
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="ID" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_depId_pk"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="150">
+                    <TextBlock Text="Nombre" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_depnombre"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="Jugadores totales" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_CantTotPlay"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="Jugadores campo" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_cant_play_camp"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="Tiempos" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_cant_tot_tiempos"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="Duración tiempo" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_dur_tiempos"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="120">
+                    <TextBlock Text="Duración total" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="dur_total_partido"/>
+                </StackPanel>
+
             </StackPanel>
 
             <!-- Botones -->

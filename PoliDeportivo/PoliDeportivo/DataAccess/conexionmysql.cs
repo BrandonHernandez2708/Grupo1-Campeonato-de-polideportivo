@@ -41,7 +41,7 @@ namespace PoliDeportivo
             return conexion;
         }
 
-        public static conexionmysql geInstancia()
+        public static conexionmysql getInstancia()
         {
             if (Conexion == null)
             {

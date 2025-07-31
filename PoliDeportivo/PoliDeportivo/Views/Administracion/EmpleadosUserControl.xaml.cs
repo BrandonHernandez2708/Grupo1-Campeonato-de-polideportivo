@@ -1,6 +1,8 @@
-﻿using System;
+﻿using PoliDeportivo.DataAccess;
+using PoliDeportivo.Model;
+using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,93 +18,143 @@ using System.Windows.Shapes;
 
 namespace PoliDeportivo.Views.Administracion
 {
-    /// <summary>
-    /// Lógica de interacción para EmpleadosUserControl.xaml
-    /// </summary>
+
     public partial class EmpleadosUserControl : UserControl
     {
-        public class Empleado
-        {
-            public string Nombre { get; set; }
-            public string Apellido { get; set; }
-            public string Direccion { get; set; }
-        }
-
-        public ObservableCollection<Empleado> ListaEmpleados = new ObservableCollection<Empleado>();
-        private Empleado empleadoSeleccionado = null;
+        private int estadoGuardado = 0; // 1 = nuevo, 2 = actualizar
 
         public EmpleadosUserControl()
         {
             InitializeComponent();
-            dgEmpleados.ItemsSource = ListaEmpleados;
+            CargarEmpleados();
+            ConfigurarBotonesEstadoInicial();
         }
 
-        private void btn_guardar(object sender, RoutedEventArgs e)
+        private void ConfigurarBotonesEstadoInicial()
         {
-            var nuevo = new Empleado
-            {
-                Nombre = txtNombre.Text,
-                Apellido = txtApellido.Text,
-                Direccion = txtDireccion.Text
-            };
-
-            ListaEmpleados.Add(nuevo);
-            LimpiarCampos();
-
+            boton_new_emp.IsEnabled = true;
+            boton_guardar_emp.IsEnabled = false;
+            boton_actualizar_emp.IsEnabled = false;
+            boton_eliminar_emp.IsEnabled = false;
         }
 
-        private void btn_actualizar(object sender, RoutedEventArgs e)
+        private void ConfigurarBotonesDespuesDeSeleccion()
         {
-            if (empleadoSeleccionado != null)
-            {
-                empleadoSeleccionado.Nombre = txtNombre.Text;
-                empleadoSeleccionado.Apellido = txtApellido.Text;
-                empleadoSeleccionado.Direccion = txtDireccion.Text;
-
-                dgEmpleados.Items.Refresh();
-                LimpiarCampos();
-            }
-
-        }
-
-        private void btn_eliminar(object sender, RoutedEventArgs e)
-        {
-            if (empleadoSeleccionado != null)
-            {
-                ListaEmpleados.Remove(empleadoSeleccionado);
-                LimpiarCampos();
-            }
-
-        }
-
-        private void btn_limpiar(object sender, RoutedEventArgs e)
-        {
-            LimpiarCampos();
-
-        }
-
-
-        private void dgEmpleados_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-            empleadoSeleccionado = dgEmpleados.SelectedItem as Empleado;
-
-            if (empleadoSeleccionado != null)
-            {
-                txtNombre.Text = empleadoSeleccionado.Nombre;
-                txtApellido.Text = empleadoSeleccionado.Apellido;
-                txtDireccion.Text = empleadoSeleccionado.Direccion;
-            }
-
-
+            boton_new_emp.IsEnabled = false;
+            boton_guardar_emp.IsEnabled = true;
+            boton_actualizar_emp.IsEnabled = true;
+            boton_eliminar_emp.IsEnabled = true;
         }
 
         private void LimpiarCampos()
         {
-            txtNombre.Text = "";
-            txtApellido.Text = "";
-            txtDireccion.Text = "";
-            empleadoSeleccionado = null;
-            dgEmpleados.SelectedItem = null;
+            txtb_emp_Id_pk.Clear();
+            txtb_emp_nombre.Clear();
+            txtb_emp_apellido.Clear();
+
+        }
+
+        private void CargarEmpleados()
+        {
+            try
+            {
+                D_Empleados datos = new D_Empleados();
+                DataTable dt = datos.Listado_Emp();
+                DGV_Empleado.ItemsSource = dt.DefaultView;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar deportes: " + ex.Message);
+            }
+        }
+
+        private void btn_new_emp(object sender, RoutedEventArgs e)
+        {
+            estadoGuardado = 1; // Nuevo registro
+            LimpiarCampos();
+            ConfigurarBotonesDespuesDeSeleccion();
+
+        }
+
+        private void btn_guardar_emp(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Atrb_Empleados Empleado = new Atrb_Empleados()
+                {
+                    pk_empleado_id = int.Parse(txtb_emp_Id_pk.Text),
+                    emp_nombre = txtb_emp_nombre.Text,
+                    emp_apellido = txtb_emp_apellido.Text
+                };
+
+                D_Empleados datos = new D_Empleados();
+                string respuesta = datos.Guardar_Emp(estadoGuardado, Empleado);
+
+                if (respuesta == "OK")
+                {
+                    MessageBox.Show("Registro guardado correctamente");
+                    CargarEmpleados();
+                    LimpiarCampos();
+                    estadoGuardado = 0;
+                }
+                else
+                {
+                    MessageBox.Show("Error: " + respuesta);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al guardar: " + ex.Message);
+            }
+            ConfigurarBotonesEstadoInicial();
+        }
+
+        private void btn_actualizar_emp(object sender, RoutedEventArgs e)
+        {
+            estadoGuardado = 2; // Actualizar registro
+        }
+
+        private void btn_eliminar_emp(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (int.TryParse(txtb_emp_Id_pk.Text, out int id))
+                {
+                    D_Empleados datos = new D_Empleados();
+                    string respuesta = datos.Eliminar_Emp(id);
+
+                    if (respuesta == "OK")
+                    {
+                        MessageBox.Show("Registro eliminado correctamente");
+                        CargarEmpleados();
+                        LimpiarCampos();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error: " + respuesta);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un registro válido para eliminar.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al eliminar: " + ex.Message);
+            }
+            ConfigurarBotonesEstadoInicial();
+        }
+
+        private void DGV_Empleado_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (DGV_Empleado.SelectedItem is DataRowView row)
+            {
+                txtb_emp_Id_pk.Text = row["Código Empleado"].ToString();
+                txtb_emp_nombre.Text = row["Nombre"].ToString();
+                txtb_emp_apellido.Text = row["Apellido"].ToString();
+            }
+            ConfigurarBotonesDespuesDeSeleccion();
         }
     }
 }
