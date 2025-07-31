@@ -29,7 +29,7 @@
                     <Button x:Name="Btn_tablaPosicion" Content="Tabla de Posiciones" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                     <Button x:Name="Btn_estadistica" Content="Estadisticas" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                     <Button x:Name="Btn_campeonatos" Content="Campeonatos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
-                    <Button x:Name="BtnC" Content="Reglas de juego" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
+                    <Button x:Name="Btn_Reglasjuego" Content="Reglas de juego" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                 </StackPanel>
 
                 <!-- BOTÓN ADMINISTRACIÓN -->
@@ -43,15 +43,16 @@
 
                 <!-- MENÚ DESPLEGABLE ADMIN -->
                 <StackPanel x:Name="MenuAdmin" Visibility="Collapsed" Margin="0,0,0,0">
+
                     <Button x:Name="BtnCampeonatos" Content="Campeonatos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_campeonatos"/>
                     <Button x:Name="BtnEquipos" Content="Equipos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_equipos"/>
-                    <Button x:Name="BtnJugadores" Content="Jugadores/entrenadores" Width="200" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
+                    <Button x:Name="BtnEntrenadores" Content="Entrenadores" Width="200" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_entrenador"/>
                     <Button x:Name="BtnJornadas" Content="Jornadas/Partidos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                     <Button x:Name="BtnReglas" Content="Reglas de Juego" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                     <Button x:Name="BtnEmpleados" Content="Empleados" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_empleados"/>
                     <Button x:Name="BtnPuesto" Content="Puestos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_puesto"/>
                     <Button x:Name="BtnEstadisticas" Content="Estadísticas/Reportes" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
-                    <Button x:Name="BtngestionUsr" Content="Gestion de Deportes" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_gestionUsr"/>
+                        <Button x:Name="BtngestionUsr" Content="Gestion de Deportes" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_gestionUsr"/>
                 </StackPanel>
 
                 <!-- BOTÓN CERRAR SESIÓN -->

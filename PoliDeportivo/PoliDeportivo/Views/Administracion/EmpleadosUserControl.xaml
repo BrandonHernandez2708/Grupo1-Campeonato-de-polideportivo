@@ -9,7 +9,6 @@
     <Grid Background="#FFA7A5A6" Margin="10">
         <StackPanel Margin="10" VerticalAlignment="Top" HorizontalAlignment="Stretch">
 
-
             <!-- Título principal -->
             <TextBlock Text="Gestión de Empleados"
            FontFamily="Arial Rounded MT Bold"

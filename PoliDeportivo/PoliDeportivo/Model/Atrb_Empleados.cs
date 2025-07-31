@@ -12,9 +12,7 @@ namespace PoliDeportivo.Model
         public string emp_nombre { get; set; }
         public string emp_apellido { get; set; }
 
-        public int pk_puesto_id { get; set; }
-        public string pue_nombre { get; set; }
-        public string pue_descripcion { get; set; }
+
 
         public DateTime con_fecha { get; set; }
         public byte con_tipo_operacion { get; set; }

@@ -32,5 +32,10 @@ namespace PoliDeportivo
 
 
         }
+
+        private void Btn_Reglasjuego_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -1,0 +1,55 @@
+# Archivos de Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de compilación
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+
+# Archivos de VS Code
+.vscode/
+
+# Archivos de depuración
+*.db
+*.db-shm
+*.db-wal
+
+# Archivos de diseño WPF
+*.g.cs
+*.g.i.cs
+*.baml
+
+# Archivos temporales
+*.tmp
+*.temp
+*~ 
+~*
+
+# Paquetes NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Archivos de publicación
+.publish/
+
+# Archivos generados por build
+Generated_Code/
+
+# Configuración de usuario personal
+*.csproj.user
+
+# Índices de contenido generados
+**/.vs/**/*FileContentIndex/
+
+# Cache de herramientas
+*.cache/

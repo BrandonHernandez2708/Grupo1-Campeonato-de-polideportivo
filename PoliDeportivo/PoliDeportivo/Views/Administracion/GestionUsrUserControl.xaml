@@ -10,6 +10,7 @@
         <StackPanel Margin="10" VerticalAlignment="Top" HorizontalAlignment="Stretch">
 
 
+
             <!-- Título principal -->
             <TextBlock Text="Gestión de Deportes"
            FontFamily="Arial Rounded MT Bold"
@@ -55,12 +56,11 @@
                     <TextBox x:Name="txtb_dur_tiempos"/>
                 </StackPanel>
 
-                <StackPanel Margin="5" Width="120">
-                    <TextBlock Text="Duración total" FontWeight="Bold" Foreground="Orange"/>
-                    <TextBox x:Name="dur_total_partido"/>
+                    <StackPanel Margin="5" Width="120">
+                        <TextBlock Text="Duración total" FontWeight="Bold" Foreground="Orange"/>
+                        <TextBox x:Name="txtb_dur_total_partido"/>
+                    </StackPanel>
                 </StackPanel>
-
-            </StackPanel>
 
             <!-- Botones -->
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left">

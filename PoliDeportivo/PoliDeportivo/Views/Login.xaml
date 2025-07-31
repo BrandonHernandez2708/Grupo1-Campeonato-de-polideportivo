@@ -29,7 +29,7 @@
                 Margin="592,115,89,267">
 			<TextBox Background="#FFF1F1F1"
                      BorderBrush="#FFF1F1F1"
-                     x:Name="txtUsuario"
+                     x:Name="txt_usuario"
                      FontSize="18"
                      TextChanged="txt_loginNombre"
                      MaxLength="20"
@@ -45,7 +45,7 @@
                 Margin="592,198,89,184">
 			<PasswordBox Background="#FFF1F1F1"
                          BorderBrush="#FFF1F1F1"
-                         x:Name="txtPassword"
+                         x:Name="txt_password"
                          FontSize="18"
                          PasswordChanged="txt_loginPassword"
                          MaxLength="20"

@@ -31,9 +31,9 @@
 
             <StackPanel Background="#FF7B797A" Grid.Column="0" Margin="10">
                 <TextBlock Foreground="Orange" Text="Nombre del campeonato" FontSize="20" Margin="0,0,0,5" FontFamily="Arial Rounded MT Bold"/>
-                <TextBox Name="txtNombre" Height="30" Margin="2" Background="#FFF1F1F1" BorderBrush="#FF171517"/>
+                <TextBox Name="txt_tnombre" Height="30" Margin="2" Background="#FFF1F1F1" BorderBrush="#FF171517" TextChanged="txt_tnombre_TextChanged"/>
                 <TextBlock Text="Fecha de inicio" FontSize="20" Margin="3,15,3,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold" />
-                <DatePicker x:Name="dpInicio" Margin="2" Background="#FFF1F1F1">
+                <DatePicker x:Name="dp_finicio" Margin="2" Background="#FFF1F1F1">
                     <DatePicker.BorderBrush>
                         <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
                             <GradientStop Color="#FFA3AEB9"/>
@@ -45,18 +45,18 @@
                 </DatePicker>
 
                 <TextBlock Text="Fecha de fin" FontSize="20" Margin="3,15,3,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-                <DatePicker x:Name="dpFin" Margin="2" Background="#FFF1F1F1"/>
+                <DatePicker x:Name="dp_ffin" Margin="2" Background="#FFF1F1F1"/>
 
                 <TextBlock Text="Lugar" Foreground="Orange" FontSize="20" Margin="3,15,3,5" FontFamily="Arial Rounded MT Bold"/>
-                <TextBox Name="txtLugar" Height="30" Margin="2" Background="#FFF1F1F1" BorderBrush="#FF171517"/>
+                <TextBox Name="txt_tlugar" Height="30" Margin="2" Background="#FFF1F1F1" BorderBrush="#FF171517"/>
 
                 <TextBlock Text="Observaciones" FontSize="20" Margin="0,15,0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-                <TextBox Name="txtObservaciones" Margin="10,10,10,0" Height="72" TextWrapping="Wrap" AcceptsReturn="True" Background="#FFF1F1F1" BorderBrush="#FF171517"/>
+                <TextBox Name="txt_tobservaciones" Margin="10,10,10,0" Height="72" TextWrapping="Wrap" AcceptsReturn="True" Background="#FFF1F1F1" BorderBrush="#FF171517"/>
             </StackPanel>
 
             <StackPanel Background="#FF7B797A" Grid.Column="1" Margin="10" >
                 <TextBlock Foreground="Orange" Text="Deporte" FontSize="16" FontFamily="Arial Rounded MT Bold" Margin="0,0,0,5"/>
-                <ComboBox x:Name="cmbDeporte" Margin="2">
+                <ComboBox x:Name="cmb_tdeporte" Margin="2">
                     <ComboBoxItem Content="Fútbol"/>
                     <ComboBoxItem Content="Baloncesto"/>
                     <ComboBoxItem Content="Béisbol"/>
@@ -65,13 +65,13 @@
                 </ComboBox>
 
                 <TextBlock Foreground="Orange" Text="Modalidad" FontSize="16" FontFamily="Arial Rounded MT Bold" Margin="0,15,0,5"/>
-                <ComboBox x:Name="cmbModalidad" Margin="2">
+                <ComboBox x:Name="cmb_tmodalidad" Margin="2">
                     <ComboBoxItem Content="Eliminación directa"/>
                     <ComboBoxItem Content="Todos contra todos"/>
                 </ComboBox>
 
                 <TextBlock Foreground="Orange" Text="Estado" FontSize="16" FontFamily="Arial Rounded MT Bold" Margin="0,15,0,5"/>
-                <ComboBox x:Name="cmbEstado" Margin="2">
+                <ComboBox x:Name="cmb_testado" Margin="2">
                     <ComboBoxItem Content="Activo"/>
                     <ComboBoxItem Content="Finalizado"/>
                     <ComboBoxItem Content="Suspendido"/>
@@ -81,21 +81,21 @@
 
         <!-- Botones -->
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
-            <Button Content="Guardar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
+            <Button Name="btn_guardar" Content="Guardar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="4"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Content="Actualizar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
+            <Button Name="btn_actualizar" Content="Actualizar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="4"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Content="Eliminar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
+            <Button Name="btn_eliminar" Content="Eliminar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="4"/>
@@ -103,7 +103,7 @@
                 </Button.Resources>
             </Button>
 
-            <Button Content="Limpiar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
+            <Button Name="btn_limpiar" Content="Limpiar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="4"/>

@@ -75,5 +75,10 @@ namespace PoliDeportivo
         {
             contenedor.Content = new PuestosUserControl();
         }
+
+        private void btn_entrenador(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new EntrenadoresUserControl();
+        }
     }
 }

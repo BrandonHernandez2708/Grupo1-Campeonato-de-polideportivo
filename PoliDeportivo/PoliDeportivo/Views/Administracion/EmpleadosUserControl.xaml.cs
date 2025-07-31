@@ -22,7 +22,6 @@ namespace PoliDeportivo.Views.Administracion
     public partial class EmpleadosUserControl : UserControl
     {
         private int estadoGuardado = 0; // 1 = nuevo, 2 = actualizar
-
         public EmpleadosUserControl()
         {
             InitializeComponent();
@@ -64,7 +63,7 @@ namespace PoliDeportivo.Views.Administracion
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar deportes: " + ex.Message);
+                MessageBox.Show("Error al cargar empleados: " + ex.Message);
             }
         }
 

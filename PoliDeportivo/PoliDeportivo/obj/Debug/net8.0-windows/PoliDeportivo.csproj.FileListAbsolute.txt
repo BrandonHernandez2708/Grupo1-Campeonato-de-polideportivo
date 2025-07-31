@@ -34,19 +34,20 @@ C:\Users\lopez\OneDrive\Escritorio\UMG\Ing Sistemas\8vo. Ciclo\Analisis de Siste
 C:\Users\lopez\OneDrive\Escritorio\UMG\Ing Sistemas\8vo. Ciclo\Analisis de Sistemas ll\Proyecto\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\GestionUsrUserControl.baml
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\PoliDeportivo.csproj.AssemblyReference.cache
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\GestionUsrUserControl.baml
-C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\MenuPrincipalAdmin.baml
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\CampeonatosUserControl.g.cs
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\EmpleadosUserControl.g.cs
+C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\EntrenadoresUserControl.g.cs
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\EquiposUserControl.g.cs
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\GestionUsrUserControl.g.cs
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\PuestosUserControl.g.cs
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Login.g.cs
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\MainWindow.g.cs
-C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\MenuPrincipalAdmin.g.cs
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\MenuPrincipalUsuario.g.cs
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\PoliDeportivo_MarkupCompile.cache
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\PoliDeportivo_MarkupCompile.lref
+C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\MenuPrincipalAdmin.baml
+C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\MenuPrincipalAdmin.g.cs
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\bin\Debug\net8.0-windows\PoliDeportivo.exe
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\bin\Debug\net8.0-windows\PoliDeportivo.deps.json
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\bin\Debug\net8.0-windows\PoliDeportivo.runtimeconfig.json
@@ -66,6 +67,7 @@ C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\bi
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\CampeonatosUserControl.baml
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\EmpleadosUserControl.baml
+C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\EntrenadoresUserControl.baml
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\EquiposUserControl.baml
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\PuestosUserControl.baml
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Login.baml
