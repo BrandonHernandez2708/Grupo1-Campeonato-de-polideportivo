@@ -70,11 +70,11 @@ namespace PoliDeportivo.Views.Administracion
 
                 Atrb_entrenadores entrenador = new Atrb_entrenadores()
                 {
-                    entID_pk = id,
-                    entNOMBRE = txt_Entredador_nombre.Text.Trim(),
-                    entAPELLIDO = txt_Entredador_apellido.Text.Trim(),
-                    tel_entrenador = txt_Entredador_telefono.Text.Trim(),
-                    cor_entrenador = txt_Entredador_correo.Text.Trim(),
+                    pk_entrenador_id = id,
+                    ent_nombre = txt_Entredador_nombre.Text.Trim(),
+                    ent_apellido = txt_Entredador_apellido.Text.Trim(),
+                    tel_numero = txt_Entredador_telefono.Text.Trim(),
+                    correo = txt_Entredador_correo.Text.Trim(),
                 };
 
                 D_Entrenadores datos = new D_Entrenadores();

@@ -8,10 +8,10 @@ namespace PoliDeportivo.Model
 {
     public class Atrb_entrenadores
     {
-        public int entID_pk { get; set; }
-        public string entNOMBRE { get; set; }
-        public string entAPELLIDO { get; set; }
-        public string tel_entrenador { get; set; }
-        public string cor_entrenador { get; set; }
+        public int pk_entrenador_id { get; set; }
+        public string ent_nombre { get; set; }
+        public string ent_apellido { get; set; }
+        public string tel_numero { get; set; }
+        public string correo { get; set; }
     }
 }
