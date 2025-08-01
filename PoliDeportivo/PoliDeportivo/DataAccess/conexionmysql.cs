@@ -14,11 +14,11 @@ namespace PoliDeportivo
 
         private conexionmysql()
         {
-            this.BD = "polideportivo";   // Cambia al nombre de tu BD
-            this.servidor = "localhost"; // O IP del servidor MySQL
+            this.BD = "bdPolideportivo";   // Cambia al nombre de tu BD
+            this.servidor = "172.20.10.5"; // IP del servidor MySQL
             this.puerto = "3306";
-            this.usuario = "root";      // Tu usuario MySQL
-            this.clave = "yoysoloyo";          // Tu contraseña MySQL
+            this.usuario = "Grupo1";       // Tu usuario MySQL
+            this.clave = "Grupo1";         // Tu contraseña MySQL
         }
 
         public MySqlConnection CrearConexion()
@@ -31,7 +31,8 @@ namespace PoliDeportivo
                                             ";User Id=" + this.usuario +
                                             ";Password=" + this.clave +
                                             ";Database=" + this.BD +
-                                            ";SslMode=none;";
+                                            ";SslMode=None;" +
+                                            "AllowPublicKeyRetrieval=True;";
             }
             catch (Exception ex)
             {
