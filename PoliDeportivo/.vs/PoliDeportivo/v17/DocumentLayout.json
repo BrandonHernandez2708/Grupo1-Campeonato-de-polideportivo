@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Moris\\source\\repos\\ncarloSosa\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\moris\\source\\repos\\ncarlososa\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\dataaccess\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\dataaccess\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\moris\\source\\repos\\ncarlososa\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\views\\administracion\\canchausercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\views\\administracion\\canchausercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\moris\\source\\repos\\ncarlososa\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\views\\administracion\\canchausercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\views\\administracion\\canchausercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\moris\\source\\repos\\ncarlososa\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\views\\administracion\\gestionusrusercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\views\\administracion\\gestionusrusercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\moris\\source\\repos\\ncarlososa\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\dataaccess\\d_cancha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\dataaccess\\d_cancha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 72,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,15 +50,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "conexionmysql.cs",
-              "DocumentMoniker": "C:\\Users\\Moris\\source\\repos\\ncarloSosa\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\conexionmysql.cs",
-              "RelativeDocumentMoniker": "PoliDeportivo\\DataAccess\\conexionmysql.cs",
-              "ToolTip": "C:\\Users\\Moris\\source\\repos\\ncarloSosa\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\conexionmysql.cs*",
-              "RelativeToolTip": "PoliDeportivo\\DataAccess\\conexionmysql.cs*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCwAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "D_cancha.cs",
+              "DocumentMoniker": "C:\\Users\\Moris\\source\\repos\\ncarloSosa\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_cancha.cs",
+              "RelativeDocumentMoniker": "PoliDeportivo\\DataAccess\\D_cancha.cs",
+              "ToolTip": "C:\\Users\\Moris\\source\\repos\\ncarloSosa\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_cancha.cs",
+              "RelativeToolTip": "PoliDeportivo\\DataAccess\\D_cancha.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T01:47:21.453Z",
+              "WhenOpened": "2025-08-01T03:06:51.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GestionUsrUserControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Moris\\source\\repos\\ncarloSosa\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\GestionUsrUserControl.xaml.cs",
+              "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\GestionUsrUserControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Moris\\source\\repos\\ncarloSosa\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\GestionUsrUserControl.xaml.cs",
+              "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\GestionUsrUserControl.xaml.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAADwv50AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T02:49:48.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CanchaUserControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Moris\\source\\repos\\ncarloSosa\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml.cs",
+              "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Moris\\source\\repos\\ncarloSosa\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml.cs",
+              "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwEAAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T02:48:32.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CanchaUserControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Moris\\source\\repos\\ncarloSosa\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml",
+              "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml",
+              "ToolTip": "C:\\Users\\Moris\\source\\repos\\ncarloSosa\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml",
+              "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-01T02:11:33.574Z",
               "EditorCaption": ""
             }
           ]

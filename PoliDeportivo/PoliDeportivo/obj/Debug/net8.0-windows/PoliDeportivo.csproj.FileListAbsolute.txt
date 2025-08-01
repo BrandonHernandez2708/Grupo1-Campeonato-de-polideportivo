@@ -191,3 +191,5 @@ C:\Users\Moris\source\repos\ncarloSosa\Grupo1-Campeonato-de-polideportivo\PoliDe
 C:\Users\Moris\source\repos\ncarloSosa\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\PoliDeportivo.pdb
 C:\Users\Moris\source\repos\ncarloSosa\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\PoliDeportivo.genruntimeconfig.cache
 C:\Users\Moris\source\repos\ncarloSosa\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\ref\PoliDeportivo.dll
+C:\Users\Moris\source\repos\ncarloSosa\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\CanchaUserControl.g.cs
+C:\Users\Moris\source\repos\ncarloSosa\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\CanchaUserControl.baml

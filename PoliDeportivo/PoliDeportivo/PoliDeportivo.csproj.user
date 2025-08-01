@@ -5,6 +5,9 @@
     <Compile Update="Views\Administracion\CampeonatosUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Administracion\CanchaUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Administracion\EmpleadosUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

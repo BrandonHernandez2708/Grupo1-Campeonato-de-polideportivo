@@ -80,5 +80,9 @@ namespace PoliDeportivo
         {
             contenedor.Content = new EntrenadoresUserControl();
         }
+        private void btn_cancha(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new CanchaUserControl();
+        }
     }
 }
