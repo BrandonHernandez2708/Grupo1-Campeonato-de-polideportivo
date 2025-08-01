@@ -6,112 +6,112 @@
              xmlns:local="clr-namespace:PoliDeportivo.Views.Administracion"
              mc:Ignorable="d" 
              d:DesignHeight="650" d:DesignWidth="1100">
-    <Grid Background="#FFA7A5A6" Margin="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+    <Grid Background="#FFA7A5A6">
+        
+        <StackPanel Margin="10"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Stretch">
 
-        <!-- Título -->
-        <TextBlock Text="Gestión de Campeonatos"
-                   FontFamily="Arial Rounded MT Bold"
-                   FontSize="40"
-                   FontWeight="Bold"
-                   Foreground="Black"
-                   HorizontalAlignment="Center"
-                   Margin="0,10"/>
+            <TextBlock Text="Gestión de Campeonatos"
+                       FontFamily="Arial Rounded MT Bold"
+                       FontSize="40"
+                       FontWeight="Bold"
+                       Foreground="Black"
+                       HorizontalAlignment="Center"
+                       Margin="0,10"/>
 
-        <!-- Formulario principal -->
-        <Grid Grid.Row="1" Margin="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
+            <StackPanel Background="#FF7B797A" Orientation="Horizontal"
+                        Margin="0,0,0,10"
+                        HorizontalAlignment="Left">
 
-            <StackPanel Background="#FF7B797A" Grid.Column="0" Margin="10">
-                <TextBlock Foreground="Orange" Text="Nombre del campeonato" FontSize="20" Margin="0,0,0,5" FontFamily="Arial Rounded MT Bold"/>
-                <TextBox Name="txt_tnombre" Height="30" Margin="2" Background="#FFF1F1F1" BorderBrush="#FF171517" TextChanged="txt_tnombre_TextChanged"/>
-                <TextBlock Text="Fecha de inicio" FontSize="20" Margin="3,15,3,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold" />
-                <DatePicker x:Name="dp_finicio" Margin="2" Background="#FFF1F1F1">
-                    <DatePicker.BorderBrush>
-                        <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
-                            <GradientStop Color="#FFA3AEB9"/>
-                            <GradientStop Color="#FF8399A9" Offset="0.375"/>
-                            <GradientStop Color="#FF718597" Offset="0.375"/>
-                            <GradientStop Color="#FFF1F1F1" Offset="1"/>
-                        </LinearGradientBrush>
-                    </DatePicker.BorderBrush>
-                </DatePicker>
+                <StackPanel Margin="5">
+                    <TextBlock Text="ID" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                    <TextBox x:Name="txt_Campeonato_Id_pk" Width="100"/>
+                </StackPanel>
 
-                <TextBlock Text="Fecha de fin" FontSize="20" Margin="3,15,3,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-                <DatePicker x:Name="dp_ffin" Margin="2" Background="#FFF1F1F1"/>
+                <StackPanel Margin="5">
+                    <TextBlock Text="Nombre" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                    <TextBox x:Name="txt_Campeonato_nombre" Width="150"/>
+                </StackPanel>
 
-                <TextBlock Text="Lugar" Foreground="Orange" FontSize="20" Margin="3,15,3,5" FontFamily="Arial Rounded MT Bold"/>
-                <TextBox Name="txt_tlugar" Height="30" Margin="2" Background="#FFF1F1F1" BorderBrush="#FF171517"/>
+                <StackPanel Margin="5">
+                    <TextBlock Text="Modalidad" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                    <TextBox x:Name="txt_Campeonato_modalidad" Width="130"/>
+                </StackPanel>
 
-                <TextBlock Text="Observaciones" FontSize="20" Margin="0,15,0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-                <TextBox Name="txt_tobservaciones" Margin="10,10,10,0" Height="72" TextWrapping="Wrap" AcceptsReturn="True" Background="#FFF1F1F1" BorderBrush="#FF171517"/>
+                <StackPanel Margin="5">
+                    <TextBlock Text="Cantidad equipos" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                    <TextBox x:Name="txt_Campeonato_cantidad_equipos" Width="130"/>
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="Fecha Inicio" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                    <TextBox x:Name="txt_Campeonato_fecha_inicio" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="Fecha Finalizacion" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                    <TextBox x:Name="txt_Campeonato_fecha_final" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="Cantidad partidos" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                    <TextBox x:Name="txt_Campeonatojor_cant_partidos" Width="150"/>
+                </StackPanel>
+
             </StackPanel>
 
-            <StackPanel Background="#FF7B797A" Grid.Column="1" Margin="10" >
-                <TextBlock Foreground="Orange" Text="Deporte" FontSize="16" FontFamily="Arial Rounded MT Bold" Margin="0,0,0,5"/>
-                <ComboBox x:Name="cmb_tdeporte" Margin="2">
-                    <ComboBoxItem Content="Fútbol"/>
-                    <ComboBoxItem Content="Baloncesto"/>
-                    <ComboBoxItem Content="Béisbol"/>
-                    <ComboBoxItem Content="Voleibol"/>
-                    <ComboBoxItem Content="Tenis"/>
-                </ComboBox>
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,0,0,10"
+                        HorizontalAlignment="Left">
+                <Button x:Name="boton_newcamp" 
+                        FontSize="15"
+                        Background="Orange"
+                        Foreground="#FF282627"
+                        FontFamily="Arial Rounded MT Bold"
+                        Content="Nuevo"
+                        Click="btn_newcamp"
+                        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
 
-                <TextBlock Foreground="Orange" Text="Modalidad" FontSize="16" FontFamily="Arial Rounded MT Bold" Margin="0,15,0,5"/>
-                <ComboBox x:Name="cmb_tmodalidad" Margin="2">
-                    <ComboBoxItem Content="Eliminación directa"/>
-                    <ComboBoxItem Content="Todos contra todos"/>
-                </ComboBox>
-
-                <TextBlock Foreground="Orange" Text="Estado" FontSize="16" FontFamily="Arial Rounded MT Bold" Margin="0,15,0,5"/>
-                <ComboBox x:Name="cmb_testado" Margin="2">
-                    <ComboBoxItem Content="Activo"/>
-                    <ComboBoxItem Content="Finalizado"/>
-                    <ComboBoxItem Content="Suspendido"/>
-                </ComboBox>
+                <Button x:Name="boton_camp_guardar"
+                        FontSize="15"
+                        Background="#FF282627"
+                        Foreground="White"
+                        FontFamily="Arial Rounded MT Bold"
+                        Content="Guardar"
+                        Click="btn_camp_guardar"
+                        Margin="5"/>
+                <Button x:Name="boton_camp_actualizar" 
+                        FontSize="15"
+                        Background="#FF282627"
+                        Foreground="White"
+                        FontFamily="Arial Rounded MT Bold"
+                        Content="Actualizar"
+                        Click="btn_camp_actualizar"
+                        Margin="5"/>
+                <Button x:Name="boton_camp_eliminar"
+                        FontSize="15"
+                        Background="#FF282627"
+                        Foreground="White"
+                        FontFamily="Arial Rounded MT Bold"
+                        Content="Eliminar"
+                        Click="btn_camp_eliminar"
+                        Margin="5"/>
             </StackPanel>
-        </Grid>
 
-        <!-- Botones -->
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
-            <Button Name="btn_guardar" Content="Guardar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="4"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Name="btn_actualizar" Content="Actualizar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="4"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Name="btn_eliminar" Content="Eliminar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="4"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-
-            <Button Name="btn_limpiar" Content="Limpiar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="4"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
+            <DataGrid Background="#FFF1F1F1"  x:Name="DTGV_campeonato"
+                      AutoGenerateColumns="True"
+                      Height="407"
+                      SelectionChanged="DTGV_campeonato_SelectionChanged"/>
 
         </StackPanel>
 
     </Grid>
 </UserControl>
+
