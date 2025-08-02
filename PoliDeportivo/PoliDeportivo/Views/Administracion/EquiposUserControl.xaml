@@ -5,122 +5,113 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PoliDeportivo.Views.Administracion"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Grid Background="#FFA7A5A6" Margin="20">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
+             d:DesignHeight="650" d:DesignWidth="1100">
+    <Grid Background="#FFA7A5A6" Margin="10">
+        <StackPanel Margin="10" VerticalAlignment="Top" HorizontalAlignment="Stretch">
 
+
+            <!-- Título principal -->
             <TextBlock Text="Gestión de Equipos"
-                   FontFamily="Arial Rounded MT Bold"
-                   FontSize="40"
-                   FontWeight="Bold"
-                   Foreground="Black"
-                   HorizontalAlignment="Center"
-                   Margin="0,10"/>
+                       FontFamily="Arial Rounded MT Bold"
+                       FontSize="40"
+                       FontWeight="Bold"
+                       Foreground="Black"
+                       HorizontalAlignment="Center"
+                       Margin="0,10"/>
 
-            <Grid Grid.Row="1" Margin="10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
 
-                <StackPanel Background="#FF7B797A" Grid.Column="0" Margin="10">
-                    <TextBlock Text="Nombre del equipo" FontSize="20" Margin="0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-                    <TextBox x:Name="txt_NombreEquipo" Height="30" Margin="2" Background="#FFF1F1F1" BorderBrush="#FF171517" TextChanged="txtNombreEquipo_TextChanged"/>
 
-                    <TextBlock Text="Deporte" FontSize="20" Margin="10,15,0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-                    <ComboBox x:Name="cmb_Deporte" Margin="2" Background="#FFF1F1F1">
-                        <ComboBoxItem Content="Fútbol"/>
-                        <ComboBoxItem Content="Baloncesto"/>
-                        <ComboBoxItem Content="Béisbol"/>
-                        <ComboBoxItem Content="Voleibol"/>
-                    </ComboBox>
 
-                    <TextBlock Text="Nombre del entrenador" FontSize="20" Margin="10,15,0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-                    <TextBox x:Name="txt_Entrenador" Height="30" Margin="2" Background="#FFF1F1F1" BorderBrush="#FF171517"/>
+            <!-- Campos de texto para datos de deporte -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left" Background="#FF7B797A">
 
-                    <TextBlock Text="Color principal" FontSize="20" Margin="10,15,0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-                    <ComboBox x:Name="cmbColor" Margin="2" Background="#FFF1F1F1">
-                        <ComboBoxItem Content="Rojo"/>
-                        <ComboBoxItem Content="Azul"/>
-                        <ComboBoxItem Content="Verde"/>
-                        <ComboBoxItem Content="Amarillo"/>
-                        <ComboBoxItem Content="Negro"/>
-                    </ComboBox>
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="ID" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_equipo_Id_pk"/>
                 </StackPanel>
 
-                <StackPanel Background="#FF7B797A" Grid.Column="1" Margin="10">
-                    <TextBlock Text="Logo del equipo" FontSize="20" Margin="0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-                    <Border BorderThickness="1" BorderBrush="#FF171517" Height="120" Margin="2" Background="White">
-                        <Image x:Name="img_Logo" Stretch="Uniform" />
-                    </Border>
-                    <Button Content="Subir Imagen" Margin="2" Width="150" Background="#FF282627" Foreground="White" FontWeight="Bold">
-                        <Button.Resources>
-                            <Style TargetType="Border">
-                                <Setter Property="CornerRadius" Value="4"/>
-                            </Style>
-                        </Button.Resources>
-                    </Button>
-
-                    <TextBlock Text="Integrantes (Jugadores)" FontSize="20" Margin="10,15,0,5" Foreground="Orange" FontFamily="Arial Rounded MT Bold"/>
-                    <ListBox x:Name="lstJugadores" Height="100" Margin="2" Background="#FFF1F1F1"/>
-
-                    <Button Content="Agregar Jugadores" Margin="2" Background="#FF282627" Foreground="White" FontWeight="Bold" Width="150">
-                        <Button.Resources>
-                            <Style TargetType="Border">
-                                <Setter Property="CornerRadius" Value="4"/>
-                            </Style>
-                        </Button.Resources>
-                    </Button>
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="Nombre" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_equipo_nombre"/>
                 </StackPanel>
-            </Grid>
 
-            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
-                <Button Content="Guardar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="4"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                <Button Content="Actualizar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="4"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                <Button Content="Eliminar" Width="100" Margin="5" FontFamily="Arial Rounded MT Bold" Background="#FF282627" Foreground="White">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="4"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="cant integrantes" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_cant_integrantes"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="Telefono" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_telefono_equipo"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="Correo" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_correo_equipo"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="ID deporte" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_id_deporte"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="ID entrenador" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_id_entrenador"/>
+                </StackPanel>
+
             </StackPanel>
 
-            <DataGrid x:Name="dataGridEquipos" Grid.Row="3" Margin="10" AutoGenerateColumns="False" Background="#FFF1F1F1"
-                  HeadersVisibility="Column" FontFamily="Arial" FontSize="14" AlternatingRowBackground="#FFE8E8E8">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Equipo" Binding="{Binding Nombre}" Width="*">
-                        <DataGridTextColumn.Foreground>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="Black"/>
-                                <GradientStop Color="White" Offset="1"/>
-                            </LinearGradientBrush>
-                        </DataGridTextColumn.Foreground>
-                    </DataGridTextColumn>
-                    <DataGridTextColumn Header="Deporte" Binding="{Binding Deporte}" Width="*" />
-                    <DataGridTextColumn Header="Entrenador" Binding="{Binding Entrenador}" Width="*" />
-                    <DataGridTextColumn Header="Color" Binding="{Binding Color}" Width="*" />
-                </DataGrid.Columns>
-            </DataGrid>
-        </Grid>
+            <!-- Botones -->
+            <StackPanel Orientation="Horizontal"
+            Margin="0,0,0,10"
+            HorizontalAlignment="Left">
+                <Button x:Name="boton_newdep_equipo" 
+                FontSize="15"
+                Background="Orange"
+                Foreground="#FF282627"
+                FontFamily="Arial Rounded MT Bold"
+                Content="Nuevo"
+                Click="btn_newdep_equipo"
+                Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="boton_guardar_equipo"
+            FontSize="15"
+            Background="#FF282627"
+            Foreground="White"
+            FontFamily="Arial Rounded MT Bold"
+            Content="Guardar"
+            Click="btn_guardar_equipo"
+            Margin="5"/>
+                <Button x:Name="boton_actualizar_equipo" 
+            FontSize="15"
+            Background="#FF282627"
+            Foreground="White"
+            FontFamily="Arial Rounded MT Bold"
+            Content="Actualizar"
+            Click="btn_actualizar_equipo"
+            Margin="5"/>
+                <Button x:Name="boton_eliminar_equipo"
+            FontSize="15"
+            Background="#FF282627"
+            Foreground="White"
+            FontFamily="Arial Rounded MT Bold"
+            Content="Eliminar"
+            Click="btn_eliminar_equipo"
+            Margin="5"/>
+            </StackPanel>
+
+            <!-- DataGrid para mostrar los deportes -->
+            <DataGrid x:Name="DGV_equipo" AutoGenerateColumns="True" Height="420" 
+              SelectionChanged="DGV_equipo_SelectionChanged"
+              HorizontalAlignment="Stretch"/>
+        </StackPanel>
 
     </Grid>
 </UserControl>
