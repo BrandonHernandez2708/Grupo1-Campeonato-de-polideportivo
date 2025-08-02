@@ -59,8 +59,7 @@
               "ViewState": "AgIAAFQAAAAAAAAAAAAYwEsAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-02T00:46:34.058Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "PoliDeportivo\\Model\\Atrb_estadopartido.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T01:14:18.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-02T01:14:18.456Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "PoliDeportivo\\DataAccess\\D_EstadoPartido.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAHUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T01:13:52.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-02T01:13:52.431Z"
             },
             {
               "$type": "Document",
@@ -112,7 +109,7 @@
               "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml.cs",
               "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAuwGsAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAuwGUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-02T00:00:32.533Z",
               "EditorCaption": ""
@@ -127,8 +124,7 @@
               "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml.cs",
               "ViewState": "AgIAAJYAAAAAAAAAAAAIwBsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T01:10:57.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-02T01:10:57.962Z"
             },
             {
               "$type": "Document",
@@ -139,8 +135,7 @@
               "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml",
               "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-02T01:10:56.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-02T01:10:56.156Z"
             },
             {
               "$type": "Document",
@@ -151,8 +146,7 @@
               "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml",
               "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-01T23:33:29.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T23:33:29.646Z"
             },
             {
               "$type": "Document",
@@ -164,8 +158,7 @@
               "RelativeToolTip": "PoliDeportivo\\DataAccess\\D_cancha.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwGQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T01:18:34.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-02T01:18:34.997Z"
             },
             {
               "$type": "Document",
@@ -177,8 +170,7 @@
               "RelativeToolTip": "PoliDeportivo\\Model\\Atrb_cancha.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T01:19:24.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-02T01:19:24.525Z"
             }
           ]
         },

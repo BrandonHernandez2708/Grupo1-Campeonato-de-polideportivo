@@ -98,14 +98,8 @@ namespace PoliDeportivo.Views.Administracion
 
         private void btn_actualizar_estado(object sender, RoutedEventArgs e)
         {
-            iestadoguardado = 2; 
-            boton_guardar.IsEnabled = true; 
-            boton_actualizar.IsEnabled = false;
-            boton_eliminar.IsEnabled = false;
-            boton_new_can.IsEnabled = false;
+            iestadoguardado = 2;
 
-            
-            txt_EstadoPartidoDescripcion.Focus();
         }
 
         private void btn_eliminar_estado(object sender, RoutedEventArgs e)
