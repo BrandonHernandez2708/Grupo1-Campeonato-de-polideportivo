@@ -1,50 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\",
+  "WorkspaceRootPath": "C:\\Users\\pedro\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\user\\documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\views\\administracion\\estadopartidousercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\views\\administracion\\estadopartidousercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\pedro\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\views\\administracion\\telefonoempusercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\views\\administracion\\telefonoempusercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\user\\documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\views\\administracion\\gestionusrusercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\views\\administracion\\gestionusrusercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\pedro\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\dataaccess\\d_tel_empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\dataaccess\\d_tel_empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\user\\documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\views\\administracion\\gestionusrusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\views\\administracion\\gestionusrusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\pedro\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\views\\menuprincipaladmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\views\\menuprincipaladmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\user\\documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\views\\administracion\\canchausercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\views\\administracion\\canchausercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\pedro\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\views\\administracion\\telefonoempusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\views\\administracion\\telefonoempusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\user\\documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\views\\administracion\\estadopartidousercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\views\\administracion\\estadopartidousercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\user\\documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\dataaccess\\d_estadopartido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\dataaccess\\d_estadopartido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\user\\documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\model\\atrb_estadopartido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\model\\atrb_estadopartido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\user\\documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\views\\administracion\\canchausercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\views\\administracion\\canchausercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\user\\documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\dataaccess\\d_cancha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\dataaccess\\d_cancha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\user\\documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\model\\atrb_cancha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\model\\atrb_cancha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\user\\documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\dataaccess\\d_empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\dataaccess\\d_empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\pedro\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\model\\atrb_tel_emp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\model\\atrb_tel_emp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,170 +30,70 @@
       "DocumentGroups": [
         {
           "DockedHeight": 72,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "D_Empleados.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_Empleados.cs",
-              "RelativeDocumentMoniker": "PoliDeportivo\\DataAccess\\D_Empleados.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_Empleados.cs",
-              "RelativeToolTip": "PoliDeportivo\\DataAccess\\D_Empleados.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAYwEsAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T00:46:34.058Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GestionUsrUserControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\GestionUsrUserControl.xaml.cs",
-              "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\GestionUsrUserControl.xaml.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\GestionUsrUserControl.xaml.cs",
-              "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\GestionUsrUserControl.xaml.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAswGEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T02:00:26.858Z",
+              "DocumentIndex": 2,
+              "Title": "MenuPrincipalAdmin.xaml",
+              "DocumentMoniker": "C:\\Users\\pedro\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\MenuPrincipalAdmin.xaml",
+              "RelativeDocumentMoniker": "PoliDeportivo\\Views\\MenuPrincipalAdmin.xaml",
+              "ToolTip": "C:\\Users\\pedro\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\MenuPrincipalAdmin.xaml",
+              "RelativeToolTip": "PoliDeportivo\\Views\\MenuPrincipalAdmin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-02T04:41:49.652Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EstadoPartidoUserControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml.cs",
-              "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml.cs",
-              "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Title": "TelefonoEmpUserControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\TelefonoEmpUserControl.xaml.cs",
+              "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\TelefonoEmpUserControl.xaml.cs",
+              "ToolTip": "C:\\Users\\pedro\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\TelefonoEmpUserControl.xaml.cs",
+              "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\TelefonoEmpUserControl.xaml.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAlwJ0AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T00:00:32.533Z",
+              "WhenOpened": "2025-08-02T04:23:48.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GestionUsrUserControl.xaml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\GestionUsrUserControl.xaml",
-              "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\GestionUsrUserControl.xaml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\GestionUsrUserControl.xaml",
-              "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\GestionUsrUserControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-02T02:00:20.174Z",
+              "DocumentIndex": 1,
+              "Title": "D_Tel_Empleado.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_Tel_Empleado.cs",
+              "RelativeDocumentMoniker": "PoliDeportivo\\DataAccess\\D_Tel_Empleado.cs",
+              "ToolTip": "C:\\Users\\pedro\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_Tel_Empleado.cs",
+              "RelativeToolTip": "PoliDeportivo\\DataAccess\\D_Tel_Empleado.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T04:10:46.963Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Atrb_estadopartido.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Model\\Atrb_estadopartido.cs",
-              "RelativeDocumentMoniker": "PoliDeportivo\\Model\\Atrb_estadopartido.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Model\\Atrb_estadopartido.cs",
-              "RelativeToolTip": "PoliDeportivo\\Model\\Atrb_estadopartido.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T01:14:18.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "D_EstadoPartido.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_EstadoPartido.cs",
-              "RelativeDocumentMoniker": "PoliDeportivo\\DataAccess\\D_EstadoPartido.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_EstadoPartido.cs",
-              "RelativeToolTip": "PoliDeportivo\\DataAccess\\D_EstadoPartido.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAHUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T01:13:52.431Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CanchaUserControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml.cs",
-              "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml.cs",
-              "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml.cs",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAIwBsAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T01:10:57.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CanchaUserControl.xaml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml",
-              "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml",
-              "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\CanchaUserControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-02T01:10:56.156Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "EstadoPartidoUserControl.xaml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml",
-              "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml",
-              "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml",
+              "Title": "Atrb_Tel_Emp.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Model\\Atrb_Tel_Emp.cs",
+              "RelativeDocumentMoniker": "PoliDeportivo\\Model\\Atrb_Tel_Emp.cs",
+              "ToolTip": "C:\\Users\\pedro\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Model\\Atrb_Tel_Emp.cs",
+              "RelativeToolTip": "PoliDeportivo\\Model\\Atrb_Tel_Emp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T04:09:29.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TelefonoEmpUserControl.xaml",
+              "DocumentMoniker": "C:\\Users\\pedro\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\TelefonoEmpUserControl.xaml",
+              "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\TelefonoEmpUserControl.xaml",
+              "ToolTip": "C:\\Users\\pedro\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\TelefonoEmpUserControl.xaml",
+              "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\TelefonoEmpUserControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-01T23:33:29.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "D_cancha.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_cancha.cs",
-              "RelativeDocumentMoniker": "PoliDeportivo\\DataAccess\\D_cancha.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_cancha.cs",
-              "RelativeToolTip": "PoliDeportivo\\DataAccess\\D_cancha.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwGQAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T01:18:34.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Atrb_cancha.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Model\\Atrb_cancha.cs",
-              "RelativeDocumentMoniker": "PoliDeportivo\\Model\\Atrb_cancha.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Model\\Atrb_cancha.cs",
-              "RelativeToolTip": "PoliDeportivo\\Model\\Atrb_cancha.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T01:19:24.525Z"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 6,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2025-08-02T04:04:54.26Z",
+              "EditorCaption": ""
             }
           ]
         }

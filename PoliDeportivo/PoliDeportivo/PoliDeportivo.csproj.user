@@ -8,6 +8,9 @@
     <Compile Update="Views\Administracion\CanchaUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Administracion\ContratacionUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Administracion\EmpleadosUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -23,6 +26,9 @@
     <Compile Update="Views\Administracion\PuestosUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Administracion\TelefonoEmpUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\MenuPrincipalAdmin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,10 +40,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\Administracion\ContratacionUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Administracion\EmpleadosUserControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Administracion\PuestosUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Administracion\TelefonoEmpUserControl.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -21,7 +21,7 @@
 
 
 
-            <!-- Campos de texto para datos de deporte -->
+            <!-- Campos de texto para datos de Empleado -->
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left" Background="#FF7B797A">
 
                 <StackPanel Margin="5" Width="100">
@@ -41,6 +41,7 @@
 
             </StackPanel>
 
+            
             <!-- Botones -->
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left">
                 <Button x:Name="boton_new_emp" Content="Nuevo" Click="btn_new_emp" Margin="5"/>

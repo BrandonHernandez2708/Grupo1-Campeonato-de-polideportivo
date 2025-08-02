@@ -89,6 +89,14 @@ namespace PoliDeportivo
             contenedor.Content = new EstadoPartidoUserControl();
         }
 
+        private void btn_contratacion(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new ContratacionUserControl();
+        }
 
+        private void btn_tel_empleados(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new TelefonoEmpUserControl();
+        }
     }
 }
