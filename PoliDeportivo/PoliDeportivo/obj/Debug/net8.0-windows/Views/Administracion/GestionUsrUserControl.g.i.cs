@@ -148,7 +148,8 @@ namespace PoliDeportivo.Views.Administracion {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PoliDeportivo;component/views/administracion/gestionusrusercontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PoliDeportivo;V1.0.0.0;component/views/administracion/gestionusrusercontrol.xaml" +
+                    "", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Administracion\GestionUsrUserControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

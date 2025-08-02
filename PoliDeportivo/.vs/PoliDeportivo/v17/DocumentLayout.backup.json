@@ -1,17 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\U 2022\\8 semestre\\Analisis II\\PD\\PoliDeportivo\\",
+  "WorkspaceRootPath": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|d:\\u 2022\\8 semestre\\analisis ii\\pd\\polideportivo\\polideportivo\\views\\administracion\\campeonatosusercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\pablo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\dataaccess\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\dataaccess\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\pablo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\dataaccess\\d_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\dataaccess\\d_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\pablo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\dataaccess\\d_roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\dataaccess\\d_roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\pablo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\dataaccess\\d_privilegios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\dataaccess\\d_privilegios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\pablo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\views\\administracion\\campeonatosusercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\views\\administracion\\campeonatosusercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|d:\\u 2022\\8 semestre\\analisis ii\\pd\\polideportivo\\polideportivo\\dataaccess\\d_campeonatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\pablo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\dataaccess\\d_campeonatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\dataaccess\\d_campeonatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|d:\\u 2022\\8 semestre\\analisis ii\\pd\\polideportivo\\polideportivo\\model\\atrb_campeonatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|c:\\users\\pablo\\grupo1-campeonato-de-polideportivo\\polideportivo\\polideportivo\\model\\atrb_campeonatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C8DFE7F-E737-4A6F-B545-0992D1293810}|PoliDeportivo\\PoliDeportivo.csproj|solutionrelative:polideportivo\\model\\atrb_campeonatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,56 +38,79 @@
       "DocumentGroups": [
         {
           "DockedHeight": 72,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "D_usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_usuarios.cs",
+              "RelativeDocumentMoniker": "PoliDeportivo\\DataAccess\\D_usuarios.cs",
+              "ToolTip": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_usuarios.cs",
+              "RelativeToolTip": "PoliDeportivo\\DataAccess\\D_usuarios.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T23:20:33.56Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Atrb_campeonatos.cs",
-              "DocumentMoniker": "D:\\U 2022\\8 semestre\\Analisis II\\PD\\PoliDeportivo\\PoliDeportivo\\Model\\Atrb_campeonatos.cs",
-              "RelativeDocumentMoniker": "PoliDeportivo\\Model\\Atrb_campeonatos.cs",
-              "ToolTip": "D:\\U 2022\\8 semestre\\Analisis II\\PD\\PoliDeportivo\\PoliDeportivo\\Model\\Atrb_campeonatos.cs",
-              "RelativeToolTip": "PoliDeportivo\\Model\\Atrb_campeonatos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Title": "D_roles.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_roles.cs",
+              "RelativeDocumentMoniker": "PoliDeportivo\\DataAccess\\D_roles.cs",
+              "ToolTip": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_roles.cs",
+              "RelativeToolTip": "PoliDeportivo\\DataAccess\\D_roles.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T17:35:19.411Z",
+              "WhenOpened": "2025-08-02T23:20:27.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "D_privilegios.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_privilegios.cs",
+              "RelativeDocumentMoniker": "PoliDeportivo\\DataAccess\\D_privilegios.cs",
+              "ToolTip": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_privilegios.cs",
+              "RelativeToolTip": "PoliDeportivo\\DataAccess\\D_privilegios.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T23:20:19.929Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "conexionmysql.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\conexionmysql.cs",
+              "RelativeDocumentMoniker": "PoliDeportivo\\DataAccess\\conexionmysql.cs",
+              "ToolTip": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\conexionmysql.cs*",
+              "RelativeToolTip": "PoliDeportivo\\DataAccess\\conexionmysql.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T23:19:54.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Atrb_campeonatos.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Model\\Atrb_campeonatos.cs",
+              "RelativeDocumentMoniker": "PoliDeportivo\\Model\\Atrb_campeonatos.cs",
+              "ToolTip": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Model\\Atrb_campeonatos.cs",
+              "RelativeToolTip": "PoliDeportivo\\Model\\Atrb_campeonatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T17:35:19.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CampeonatosUserControl.xaml.cs",
-              "DocumentMoniker": "D:\\U 2022\\8 semestre\\Analisis II\\PD\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\CampeonatosUserControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\CampeonatosUserControl.xaml.cs",
               "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\CampeonatosUserControl.xaml.cs",
-              "ToolTip": "D:\\U 2022\\8 semestre\\Analisis II\\PD\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\CampeonatosUserControl.xaml.cs",
+              "ToolTip": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\CampeonatosUserControl.xaml.cs",
               "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\CampeonatosUserControl.xaml.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAkwAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -80,26 +119,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "D_Campeonatos.cs",
-              "DocumentMoniker": "D:\\U 2022\\8 semestre\\Analisis II\\PD\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_Campeonatos.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_Campeonatos.cs",
               "RelativeDocumentMoniker": "PoliDeportivo\\DataAccess\\D_Campeonatos.cs",
-              "ToolTip": "D:\\U 2022\\8 semestre\\Analisis II\\PD\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_Campeonatos.cs",
+              "ToolTip": "C:\\Users\\pablo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\DataAccess\\D_Campeonatos.cs",
               "RelativeToolTip": "PoliDeportivo\\DataAccess\\D_Campeonatos.cs",
               "ViewState": "AgIAAKkAAAAAAAAAAAAkwAkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T17:27:31.924Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedHeight": 6,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2025-08-02T17:27:31.924Z"
             }
           ]
         }

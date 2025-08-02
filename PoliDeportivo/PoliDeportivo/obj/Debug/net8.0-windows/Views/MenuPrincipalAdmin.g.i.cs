@@ -252,7 +252,7 @@ namespace PoliDeportivo {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PoliDeportivo;component/views/menuprincipaladmin.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PoliDeportivo;V1.0.0.0;component/views/menuprincipaladmin.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\MenuPrincipalAdmin.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
