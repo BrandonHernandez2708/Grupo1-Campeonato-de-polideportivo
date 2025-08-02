@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 72,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -68,6 +68,10 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-02T00:46:34.058Z",
               "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
@@ -88,9 +92,9 @@
               "Title": "EstadoPartidoUserControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml.cs",
               "RelativeDocumentMoniker": "PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml.cs*",
-              "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml.cs*",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAuwGUAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\USER\\Documents\\umg\\8vo_semestre\\analisis\\polideportivo\\codigo\\Grupo1-Campeonato-de-polideportivo\\PoliDeportivo\\PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml.cs",
+              "RelativeToolTip": "PoliDeportivo\\Views\\Administracion\\EstadoPartidoUserControl.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-02T00:00:32.533Z",
               "EditorCaption": ""
