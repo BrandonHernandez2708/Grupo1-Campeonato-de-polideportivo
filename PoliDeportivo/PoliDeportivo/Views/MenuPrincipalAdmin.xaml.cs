@@ -84,5 +84,11 @@ namespace PoliDeportivo
         {
             contenedor.Content = new CanchaUserControl();
         }
+       private void btn_estado_partido(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new EstadoPartidoUserControl();
+        }
+
+
     }
 }

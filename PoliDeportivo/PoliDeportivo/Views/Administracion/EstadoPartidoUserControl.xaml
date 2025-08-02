@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="PoliDeportivo.Views.Administracion.EstadoPartidoUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PoliDeportivo.Views.Administracion"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="1100">
+    <Grid Background="#FFA7A5A6">
+        <StackPanel Margin="10" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+
+
+
+            <!-- Título principal -->
+            <TextBlock
+        FontFamily="Arial Rounded MT Bold"
+        FontSize="40"
+        FontWeight="Bold"
+        Foreground="Black"
+        HorizontalAlignment="Center"
+        Margin="0,10"><Run Text="Estado "/><Run Language="es-gt" Text="De Partidos"/></TextBlock>
+
+
+
+
+            <!-- Campos de texto para datos de deporte -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left" Background="#FF7B797A" Width="415">
+
+                <StackPanel Margin="5" Width="110">
+                    <TextBlock FontWeight="Bold" Foreground="Orange"><Run Text="ID"/><Run Text=" "/><Run Text="Estado"/><Run Language="es-gt" Text=" "/><Run Text="P"/><Run Text="artido"/></TextBlock>
+                    <TextBox x:Name="txt_estadopartidoID" TextChanged="txt_estadopartidoID_TextChanged"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="150">
+                    <TextBlock FontWeight="Bold" Foreground="Orange"><Run Language="es-gt" Text="Estado"/></TextBlock>
+                    <TextBox x:Name="txt_EstadoPartidoDescripcion"/>
+                </StackPanel>
+
+
+
+            </StackPanel>
+
+            <!-- Botones -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left">
+                <Button x:Name="boton_new_can" Content="Nuevo" Click="btn_new_est" Margin="5"/>
+                <Button x:Name="boton_guardar" Content="Guardar" Click="btn_guardar_estado" Margin="5"/>
+                <Button x:Name="boton_actualizar" Content="Actualizar" Click="btn_actualizar_estado" Margin="5"/>
+                <Button x:Name="boton_eliminar" Content="Eliminar" Click="btn_eliminar_estado" Margin="5"/>
+            </StackPanel>
+
+            <!-- DataGrid para mostrar los deportes -->
+            <DataGrid x:Name="DGV_estadopartido" AutoGenerateColumns="True" Height="250" 
+                   SelectionChanged="DGV_estadopartido_SelectionChanged"
+                   HorizontalAlignment="Stretch"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

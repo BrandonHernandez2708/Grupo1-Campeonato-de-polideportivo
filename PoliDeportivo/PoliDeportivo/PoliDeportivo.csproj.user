@@ -14,6 +14,9 @@
     <Compile Update="Views\Administracion\EquiposUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Administracion\EstadoPartidoUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Administracion\GestionUsrUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
