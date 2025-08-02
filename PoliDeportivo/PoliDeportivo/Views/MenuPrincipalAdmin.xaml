@@ -50,7 +50,9 @@
                     <Button x:Name="Btn_Jornadas" Content="Jornadas/Partidos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                     <Button x:Name="Btn_Reglas" Content="Reglas de Juego" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                     <Button x:Name="Btn_Empleados" Content="Empleados" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_empleados"/>
+                    <Button x:Name="Btn_Tel_Empleados" Content="Telefono de Empleados" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_tel_empleados"/>
                     <Button x:Name="Btn_Puesto" Content="Puestos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_puesto"/>
+                    <Button x:Name="Btn_Contratacion" Content="Contratación/Cambio De Puesto" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_contratacion"/>
                     <Button x:Name="Btn_Estadisticas" Content="Estadísticas/Reportes" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                     <Button x:Name="Btn_EstadoPartido" Content="Estado Partidos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_estado_partido"/>
                     <Button x:Name="Btn_Canchas" Content="Canchas" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_cancha"/>

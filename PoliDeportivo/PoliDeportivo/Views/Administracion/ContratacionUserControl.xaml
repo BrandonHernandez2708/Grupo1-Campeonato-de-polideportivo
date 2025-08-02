@@ -1,0 +1,104 @@
+﻿<UserControl x:Class="PoliDeportivo.Views.Administracion.ContratacionUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PoliDeportivo.Views.Administracion"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="1100
+             ">
+    <Grid Background="#FFA7A5A6" Margin="10">
+        <StackPanel Margin="10" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+
+
+            <!-- Título principal -->
+            <TextBlock Text="Gestión de Contrataciones/Cambios de Puesto"
+                   FontFamily="Arial Rounded MT Bold"
+                   FontSize="40"
+                   FontWeight="Bold"
+                   Foreground="Black"
+                   HorizontalAlignment="Center"
+                   Margin="0,10"/>
+
+
+
+
+            <!-- Campos de texto para datos de deporte -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left" Background="#FF7B797A">
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="ID Puesto" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_con_Puesto_Id_pk_fk"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="ID Empleado" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_con_empleado_Id_pk_fk"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="210">
+                    <TextBlock Text="Fecha De Contratacion o CamPuesto" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_con_fecha"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="150">
+                    <TextBlock Text="Operación Realizada" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_con_operacion"/>
+                </StackPanel>
+
+
+            </StackPanel>
+
+            <!-- Botones -->
+            <StackPanel Orientation="Horizontal"
+        Margin="0,0,0,10"
+        HorizontalAlignment="Left">
+                <Button x:Name="boton_new_Con" 
+            FontSize="15"
+            Background="Orange"
+            Foreground="#FF282627"
+            FontFamily="Arial Rounded MT Bold"
+            Content="Nuevo"
+            Click="btn_new_con"
+            Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="boton_guardar_Con"
+        FontSize="15"
+        Background="#FF282627"
+        Foreground="White"
+        FontFamily="Arial Rounded MT Bold"
+        Content="Guardar"
+        Click="btn_guardar_con"
+        Margin="5"/>
+                <Button x:Name="boton_actualizar_Con" 
+        FontSize="15"
+        Background="#FF282627"
+        Foreground="White"
+        FontFamily="Arial Rounded MT Bold"
+        Content="Actualizar"
+        Click="btn_actualizar_con"
+        Margin="5"/>
+                <Button x:Name="boton_eliminar_Con"
+        FontSize="15"
+        Background="#FF282627"
+        Foreground="White"
+        FontFamily="Arial Rounded MT Bold"
+        Content="Eliminar"
+        Click="btn_eliminar_Con"
+        Margin="5"/>
+            </StackPanel>
+
+            <!-- DataGrid para mostrar los deportes -->
+            <DataGrid x:Name="DGV_Contratacion" AutoGenerateColumns="True" Height="420" 
+          SelectionChanged="DGV_Contratacion_SelectionChanged"
+          HorizontalAlignment="Stretch"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>
