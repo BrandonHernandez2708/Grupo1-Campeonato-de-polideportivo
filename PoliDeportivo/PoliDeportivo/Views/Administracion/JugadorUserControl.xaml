@@ -1,0 +1,123 @@
+﻿<UserControl x:Class="PoliDeportivo.Views.Administracion.JugadorUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:PoliDeportivo.Views.Administracion"
+             mc:Ignorable="d"
+             d:DesignHeight="650" d:DesignWidth="1100">
+    <Grid Background="#FFA7A5A6" Margin="10">
+        <StackPanel Margin="10" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+
+            <!-- Título principal -->
+            <TextBlock
+                FontFamily="Arial Rounded MT Bold"
+                FontSize="40"
+                FontWeight="Bold"
+                Foreground="Black"
+                HorizontalAlignment="Center"
+                Margin="0,10">
+                <Run Text="Gestión de "/>
+                <Run Language="es-gt" Text="Jugadores"/>
+            </TextBlock>
+
+            <!-- Campos de texto para datos de deporte -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left" Background="#FF7B797A" Width="640">
+
+                <StackPanel Margin="5" Width="50">
+                    <TextBlock Text="ID" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txt_jugador_id"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="150">
+                    <TextBlock Text="Nombre" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txt_jugador_nombre" RenderTransformOrigin="0.5,0.5" Width="150" TextChanged="txtb_equipo_nombre_TextChanged">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleY="0.281"/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="0.245"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="150">
+                    <TextBlock FontWeight="Bold" Foreground="Orange">
+                        <Run Language="es-gt" Text="Apellido"/>
+                    </TextBlock>
+                    <TextBox x:Name="txt_jugador_apellido"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="150">
+                    <TextBlock FontWeight="Bold" Foreground="Orange">
+                        <Run Language="es-gt" Text="Posicion"/>
+                    </TextBlock>
+                    <TextBox x:Name="txt_jugador_posicion"/>
+                </StackPanel>
+
+                <StackPanel Margin="5" Width="80">
+                    <TextBlock FontWeight="Bold" Foreground="Orange">
+                        <Run Language="es-gt" Text="ID Equipo"/>
+                    </TextBlock>
+                    <TextBox x:Name="txt_fkequipo_id"/>
+                </StackPanel>
+
+            </StackPanel>
+
+            <!-- Botones -->
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,0,0,10"
+                        HorizontalAlignment="Left">
+                <Button x:Name="boton_newjug"
+                        FontSize="15"
+                        Background="Orange"
+                        Foreground="#FF282627"
+                        FontFamily="Arial Rounded MT Bold"
+                        Content="Nuevo"
+                        Click="btn_newjug"
+                        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="boton_guardar_jug"
+                        FontSize="15"
+                        Background="#FF282627"
+                        Foreground="White"
+                        FontFamily="Arial Rounded MT Bold"
+                        Content="Guardar"
+                        Click="btn_guardar_jugador"
+                        Margin="5"/>
+                <Button x:Name="boton_actualizar_jug"
+                        FontSize="15"
+                        Background="#FF282627"
+                        Foreground="White"
+                        FontFamily="Arial Rounded MT Bold"
+                        Content="Actualizar"
+                        Click="btn_actualizar_jugador"
+                        Margin="5"/>
+                <Button x:Name="boton_eliminar_jug"
+                        FontSize="15"
+                        Background="#FF282627"
+                        Foreground="White"
+                        FontFamily="Arial Rounded MT Bold"
+                        Content="Eliminar"
+                        Click="btn_eliminar_jugador"
+                        Margin="5"/>
+            </StackPanel>
+
+            <!-- DataGrid para mostrar los deportes -->
+            <DataGrid x:Name="DGV_jugador" AutoGenerateColumns="True" Height="420"
+                      SelectionChanged="DGV_jugador_SelectionChanged"
+                      HorizontalAlignment="Stretch"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
+
+
+

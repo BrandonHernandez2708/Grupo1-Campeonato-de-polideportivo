@@ -46,6 +46,7 @@
 
                     <Button x:Name="Btn_Campeonatos" Content="Campeonatos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_campeonatos"/>
                     <Button x:Name="Btn_Equipos" Content="Equipos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_equipos"/>
+                    <Button x:Name="Btn_Jugadores" Content="Jugadores" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_jugadores"/>
                     <Button x:Name="Btn_Entrenadores" Content="Entrenadores" Width="200" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_entrenador"/>
                     <Button x:Name="Btn_Jornadas" Content="Jornadas/Partidos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                     <Button x:Name="Btn_Reglas" Content="Reglas de Juego" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>

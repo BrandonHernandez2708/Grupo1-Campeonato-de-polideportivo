@@ -60,6 +60,10 @@ namespace PoliDeportivo
         {
             contenedor.Content = new EquiposUserControl();
         }
+        private void btn_jugadores(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new JugadorUserControl();
+        }
 
         private void btn_empleados(object sender, RoutedEventArgs e)
         {
