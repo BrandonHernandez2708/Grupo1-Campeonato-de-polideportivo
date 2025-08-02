@@ -16,13 +16,13 @@ namespace PoliDeportivo.DataAccess
                 {
                     string sql = @"
                             SELECT 
-                                e.pk_campeonato_id AS 'id_campeonato',
-                                e.cam_nombre AS 'nombre',
-                                e.cam_modalidad AS 'modalidad',
-                                e.cam_cant_equipos AS 'cantidad_equipos',
-                                e.cam_fecha_inicio AS 'fecha_inicio',
-                                e.cam_fecha_final AS 'fecha_final',
-                                c.jor_cant_partidos AS 'cantidad_partidos'
+                                e.pk_campeonato_id AS 'Id campeonato',
+                                e.cam_nombre AS 'Nombre',
+                                e.cam_modalidad AS 'Modalidad',
+                                e.cam_cant_equipos AS 'Cantidad equipos',
+                                e.cam_fecha_inicio AS 'Fecha inicio',
+                                e.cam_fecha_final AS 'Fecha final',
+                                c.jor_cant_partidos AS 'Cantidad partidos'
                             FROM tbl_campeonato e
                             LEFT JOIN tbl_jornada c ON e.pk_campeonato_id = c.fk_campeonato_id";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);

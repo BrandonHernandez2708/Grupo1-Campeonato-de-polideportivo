@@ -84,6 +84,13 @@ namespace PoliDeportivo
         {
             contenedor.Content = new EntrenadoresUserControl();
         }
+
+        //Agregar nuevo boton de jornadas/partidos
+        private void btn_jornadas(object sender, RoutedEventArgs e)
+        {
+            JornadasUserControl vistaJornadas = new JornadasUserControl();
+            contenedor.Content = vistaJornadas;
+        }
         private void btn_cancha(object sender, RoutedEventArgs e)
         {
             contenedor.Content = new CanchaUserControl();

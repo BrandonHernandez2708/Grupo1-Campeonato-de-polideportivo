@@ -16,7 +16,7 @@ namespace PoliDeportivo.Views.Administracion
             InitializeComponent();
             CargarCampeonatos();
             ConfigurarBotonesEstadoInicial();
-            DTGV_campeonato.AutoGeneratingColumn += DTGV_campeonato_AutoGeneratingColumn;
+
         }
         private void ConfigurarBotonesEstadoInicial()
         {
@@ -44,34 +44,6 @@ namespace PoliDeportivo.Views.Administracion
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar campeonatos: " + ex.Message);
-            }
-        }
-
-        //Agregado para formatear las fechas
-        private void DTGV_campeonato_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
-        {
-            // Formato para 'fecha_inicio'
-            if (e.PropertyName == "fecha_inicio" && e.PropertyType == typeof(DateTime))
-            {
-                if (e.Column is DataGridTextColumn column)
-                {
-                    column.Binding = new Binding(e.PropertyName)
-                    {
-                        StringFormat = "dd-MM-yyyy"
-                    };
-                }
-            }
-
-            // Formato para 'fecha_final'
-            if (e.PropertyName == "fecha_final" && e.PropertyType == typeof(DateTime))
-            {
-                if (e.Column is DataGridTextColumn column)
-                {
-                    column.Binding = new Binding(e.PropertyName)
-                    {
-                        StringFormat = "dd-MM-yyyy"
-                    };
-                }
             }
         }
 
@@ -173,20 +145,20 @@ namespace PoliDeportivo.Views.Administracion
             txt_Campeonato_cantidad_equipos.Clear();
             txt_Campeonato_fecha_inicio.Clear();
             txt_Campeonato_fecha_final.Clear();
-            txt_Campeonatojor_cant_partidos.Text.Trim();
+            txt_Campeonatojor_cant_partidos.Clear();
         }
 
         private void DTGV_campeonato_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DTGV_campeonato.SelectedItem is DataRowView row)
             {
-                txt_Campeonato_Id_pk.Text = row["id_campeonato"].ToString();
-                txt_Campeonato_nombre.Text = row["nombre"].ToString();
-                txt_Campeonato_modalidad.Text= row["modalidad"].ToString();
-                txt_Campeonato_cantidad_equipos.Text = row["cantidad_Equipos"].ToString();
-                txt_Campeonato_fecha_inicio.Text = row["fecha_inicio"].ToString();
-                txt_Campeonato_fecha_final.Text = row["fecha_final"].ToString();
-                txt_Campeonatojor_cant_partidos.Text = row["cantidad_partidos"].ToString();
+                txt_Campeonato_Id_pk.Text = row["Id campeonato"].ToString();
+                txt_Campeonato_nombre.Text = row["Nombre"].ToString();
+                txt_Campeonato_modalidad.Text= row["Modalidad"].ToString();
+                txt_Campeonato_cantidad_equipos.Text = row["Cantidad equipos"].ToString();
+                txt_Campeonato_fecha_inicio.Text = row["Fecha inicio"].ToString();
+                txt_Campeonato_fecha_final.Text = row["Fecha final"].ToString();
+                txt_Campeonatojor_cant_partidos.Text = row["Cantidad partidos"].ToString();
 
                 ConfigurarBotonesDespuesDeSeleccion();
                 estadoGuardado = 2;
