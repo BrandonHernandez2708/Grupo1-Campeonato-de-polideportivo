@@ -20,7 +20,7 @@ namespace PoliDeportivo.DataAccess
                 {
                     string sql = "SELECT \r\n" +
                      "tel.pk_tel_empleado_id AS \"ID Teléfono\",\r\n" +
-                     "tel.tel_numero AS \"Número\",\r\n" +
+                     "tel.tel_empleado AS \"Número\",\r\n" +
                      "tel.fk_empleado_id AS \"ID Empleado\",\r\n" +
                      "emp.emp_nombre AS \"Nombre Dueño\",\r\n" +
                      "emp.emp_apellido AS \"Apellido Dueño\"\r\n" +
@@ -57,7 +57,7 @@ namespace PoliDeportivo.DataAccess
                     {
                             sql = @"INSERT INTO tbl_telefono_empleado (
                                     pk_tel_empleado_id,
-                                    tel_numero,
+                                    tel_empleado,
                                     fk_empleado_id
                                 ) VALUES (
                                     @id,
@@ -67,20 +67,20 @@ namespace PoliDeportivo.DataAccess
 
                         cmd.CommandText = sql;
                         cmd.Parameters.AddWithValue("@id", obj.pk_tel_empleado_id);
-                        cmd.Parameters.AddWithValue("@numero", obj.tel_numero);
+                        cmd.Parameters.AddWithValue("@numero", obj.tel_empleado);
                         cmd.Parameters.AddWithValue("@empleadoId", obj.fk_empleado_id);
 
                     }
                     else // Actualizar
                     {
                         sql = @"UPDATE tbl_telefono_empleado SET
-                                    tel_numero = @numero,
+                                    tel_empleado = @numero,
                                     fk_empleado_id = @empleadoId
                                 WHERE pk_tel_empleado_id = @id;";
 
                         cmd.CommandText = sql;
                         cmd.Parameters.AddWithValue("@id", obj.pk_tel_empleado_id);
-                        cmd.Parameters.AddWithValue("@numero", obj.tel_numero);
+                        cmd.Parameters.AddWithValue("@numero", obj.tel_empleado);
                         cmd.Parameters.AddWithValue("@empleadoId", obj.fk_empleado_id);
                     }
 
