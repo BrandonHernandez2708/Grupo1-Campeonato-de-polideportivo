@@ -16,15 +16,15 @@ namespace PoliDeportivo.DataAccess
                 {
                     string sql = @"
                         SELECT 
-                            e.pk_entrenador_id AS 'id_entrenador',
-                            e.ent_nombre AS 'nombre',
-                            e.ent_apellido AS 'apellido',
-                            t.tel_numero AS 'telefono',
-                            c.correo AS 'correo'
+                            e.pk_entrenador_id AS id_entrenador,
+                            e.ent_nombre AS nombre,
+                            e.ent_apellido AS apellido,
+                            t.tel_entrenador AS telefono,
+                            c.correo_entrenador AS correo
                         FROM tbl_entrenador e
                         LEFT JOIN tbl_telefono_entrenador t ON e.pk_entrenador_id = t.fk_entrenador_id
-                        LEFT JOIN tbl_correo_entrenador c ON e.pk_entrenador_id = c.fk_entrenador_id";
-
+                        LEFT JOIN tbl_correo_entrenador c ON e.pk_entrenador_id = c.fk_entrenador_id;
+                    ";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
                     conn.Open();
                     using (MySqlDataReader reader = cmd.ExecuteReader())
@@ -66,15 +66,15 @@ namespace PoliDeportivo.DataAccess
                                 cmd.Parameters.AddWithValue("@apellido", obj.ent_apellido);
                                 cmd.ExecuteNonQuery();
 
-                                cmd.CommandText = @"INSERT INTO tbl_telefono_entrenador (pk_tel_entrenador_id, tel_numero, fk_entrenador_id) 
+                                cmd.CommandText = @"INSERT INTO tbl_telefono_entrenador (pk_tel_entrenador_id, tel_entrenador, fk_entrenador_id) 
                                                     VALUES (@telId, @telefono, @id_fk)";
                                 cmd.Parameters.Clear();
                                 cmd.Parameters.AddWithValue("@telId", GenerarNuevoIDTelefono(conn, trans));
-                                cmd.Parameters.AddWithValue("@telefono", obj.tel_numero);
+                                cmd.Parameters.AddWithValue("@telefono", obj.tel_entrenador);
                                 cmd.Parameters.AddWithValue("@id_fk", obj.pk_entrenador_id);
                                 cmd.ExecuteNonQuery();
 
-                                cmd.CommandText = @"INSERT INTO tbl_correo_entrenador (pk_cor_entrenador_id, correo, fk_entrenador_id) 
+                                cmd.CommandText = @"INSERT INTO tbl_correo_entrenador (pk_cor_entrenador_id, correo_entrenador, fk_entrenador_id) 
                                                     VALUES (@corId, @correo, @id_fk)";
                                 cmd.Parameters.Clear();
                                 cmd.Parameters.AddWithValue("@corId", GenerarNuevoIDCorreo(conn, trans));
@@ -99,19 +99,19 @@ namespace PoliDeportivo.DataAccess
 
                                 if (countTel > 0)
                                 {
-                                    cmd.CommandText = @"UPDATE tbl_telefono_entrenador SET tel_numero = @telefono WHERE fk_entrenador_id = @id";
+                                    cmd.CommandText = @"UPDATE tbl_telefono_entrenador SET tel_entrenador = @telefono WHERE fk_entrenador_id = @id";
                                     cmd.Parameters.Clear();
-                                    cmd.Parameters.AddWithValue("@telefono", obj.tel_numero);
+                                    cmd.Parameters.AddWithValue("@telefono", obj.tel_entrenador);
                                     cmd.Parameters.AddWithValue("@id", obj.pk_entrenador_id);
                                     cmd.ExecuteNonQuery();
                                 }
                                 else
                                 {
-                                    cmd.CommandText = @"INSERT INTO tbl_telefono_entrenador (pk_tel_entrenador_id, tel_numero, fk_entrenador_id) 
+                                    cmd.CommandText = @"INSERT INTO tbl_telefono_entrenador (pk_tel_entrenador_id, tel_entrenador, fk_entrenador_id) 
                                                        VALUES (@telId, @telefono, @id)";
                                     cmd.Parameters.Clear();
                                     cmd.Parameters.AddWithValue("@telId", GenerarNuevoIDTelefono(conn, trans));
-                                    cmd.Parameters.AddWithValue("@telefono", obj.tel_numero);
+                                    cmd.Parameters.AddWithValue("@telefono", obj.tel_entrenador);
                                     cmd.Parameters.AddWithValue("@id", obj.pk_entrenador_id);
                                     cmd.ExecuteNonQuery();
                                 }
@@ -123,7 +123,7 @@ namespace PoliDeportivo.DataAccess
 
                                 if (countCor > 0)
                                 {
-                                    cmd.CommandText = @"UPDATE tbl_correo_entrenador SET correo = @correo WHERE fk_entrenador_id = @id";
+                                    cmd.CommandText = @"UPDATE tbl_correo_entrenador SET correo_entrenador = @correo WHERE fk_entrenador_id = @id";
                                     cmd.Parameters.Clear();
                                     cmd.Parameters.AddWithValue("@correo", obj.correo);
                                     cmd.Parameters.AddWithValue("@id", obj.pk_entrenador_id);
@@ -131,7 +131,7 @@ namespace PoliDeportivo.DataAccess
                                 }
                                 else
                                 {
-                                    cmd.CommandText = @"INSERT INTO tbl_correo_entrenador (pk_cor_entrenador_id, correo, fk_entrenador_id) 
+                                    cmd.CommandText = @"INSERT INTO tbl_correo_entrenador (pk_cor_entrenador_id, correo_entrenador, fk_entrenador_id) 
                                                        VALUES (@corId, @correo, @id)";
                                     cmd.Parameters.Clear();
                                     cmd.Parameters.AddWithValue("@corId", GenerarNuevoIDCorreo(conn, trans));

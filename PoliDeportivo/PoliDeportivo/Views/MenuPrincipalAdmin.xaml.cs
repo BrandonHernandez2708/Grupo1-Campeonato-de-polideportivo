@@ -64,7 +64,10 @@ namespace PoliDeportivo
         {
             contenedor.Content = new JugadorUserControl();
         }
-
+        private void btn_partidos(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new PartidoUserControl();
+        }
         private void btn_empleados(object sender, RoutedEventArgs e)
         {
             contenedor.Content = new EmpleadosUserControl();
