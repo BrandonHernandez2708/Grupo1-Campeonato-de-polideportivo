@@ -73,7 +73,7 @@ namespace PoliDeportivo.Views.Administracion
                     pk_entrenador_id = id,
                     ent_nombre = txt_Entredador_nombre.Text.Trim(),
                     ent_apellido = txt_Entredador_apellido.Text.Trim(),
-                    tel_numero = txt_Entredador_telefono.Text.Trim(),
+                    tel_entrenador = txt_Entredador_telefono.Text.Trim(),
                     correo = txt_Entredador_correo.Text.Trim(),
                 };
 

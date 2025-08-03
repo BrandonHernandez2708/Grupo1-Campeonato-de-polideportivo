@@ -49,6 +49,8 @@
                     <Button x:Name="Btn_Jugadores" Content="Jugadores" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_jugadores"/>
                     <Button x:Name="Btn_Entrenadores" Content="Entrenadores" Width="200" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_entrenador"/>
                     <Button x:Name="Btn_Jornadas" Content="Jornadas/Partidos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_jornadas"/>
+                    <Button x:Name="Btn_Partidos" Content="Partidos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_partidos"/>
+
                     <Button x:Name="Btn_Reglas" Content="Reglas de Juego" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                     <Button x:Name="Btn_Empleados" Content="Empleados" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_empleados"/>
                     <Button x:Name="Btn_Tel_Empleados" Content="Telefono de Empleados" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_tel_empleados"/>

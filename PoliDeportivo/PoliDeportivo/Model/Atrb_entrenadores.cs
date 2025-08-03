@@ -11,7 +11,7 @@ namespace PoliDeportivo.Model
         public int pk_entrenador_id { get; set; }
         public string ent_nombre { get; set; }
         public string ent_apellido { get; set; }
-        public string tel_numero { get; set; }
+        public string tel_entrenador { get; set; }
         public string correo { get; set; }
     }
 }

@@ -1,0 +1,134 @@
+﻿<UserControl x:Class="PoliDeportivo.Views.PartidoUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PoliDeportivo.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="1100">
+    <Grid Background="#FFA7A5A6" Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Título -->
+            <RowDefinition Height="Auto"/>
+            <!-- Campos -->
+            <RowDefinition Height="Auto"/>
+            <!-- Botones -->
+            <RowDefinition Height="*"/>
+            <!-- DataGrid -->
+        </Grid.RowDefinitions>
+
+        <!-- Título principal -->
+        <TextBlock Text="Gestión de Partidos"
+                   FontFamily="Arial Rounded MT Bold"
+                   FontSize="40"
+                   FontWeight="Bold"
+                   Foreground="Black"
+                   HorizontalAlignment="Center"
+                   Margin="0,10"
+                   Grid.Row="0"/>
+
+        <!-- Campos del formulario -->
+        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" >
+            
+            <WrapPanel Margin="5">
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="ID" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txt_partidoid"/>
+                </StackPanel>
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="ID Jornada" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txt_jornada"/>
+                </StackPanel>
+                <StackPanel Margin="5" Width="120">
+                    <TextBlock Text="ID Equipo Local" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txt_idequipo1"/>
+                </StackPanel>
+              
+                <StackPanel Margin="5" Width="120">
+                    <TextBlock Text="ID Equipo Visitante" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txt_idequipo2"/>
+                </StackPanel>
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="ID Cancha" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txt_idcancha"/>
+                </StackPanel>
+                <StackPanel Margin="5" Width="150">
+                    <TextBlock Text="Fecha y Hora" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txt_fechahora"/>
+                </StackPanel>
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="ID Estado" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txtb_idestado"/>
+                </StackPanel>
+                <StackPanel Margin="5" Width="100">
+                    <TextBlock Text="ID Árbitro" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txt_arbritoid"/>
+                </StackPanel>
+                <StackPanel Margin="5" Width="135">
+                    <TextBlock Text="Puntaje Local" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txt_puntaje1"/>
+                </StackPanel>
+                <StackPanel Margin="5" Width="160">
+                    <TextBlock Text="Puntaje Visitante" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txt_puntaje2"/>
+                </StackPanel>
+                <StackPanel Margin="5" Width="120">
+                    <TextBlock Text="Tiempo Extra" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txt_tiempoextra"/>
+                </StackPanel>
+                <StackPanel Margin="5" Width="150">
+                    <TextBlock Text="ID Equipo Ganador" FontWeight="Bold" Foreground="Orange"/>
+                    <TextBox x:Name="txt_equipoganadorid"/>
+                </StackPanel>
+            </WrapPanel>
+        </ScrollViewer>
+
+        <!-- Botones -->
+        <StackPanel Orientation="Horizontal"
+                    Margin="10"
+                    Grid.Row="2"
+                    HorizontalAlignment="Left">
+            <Button x:Name="boton_newpar" 
+                    FontSize="15"
+                    Background="Orange"
+                    Foreground="#FF282627"
+                    FontFamily="Arial Rounded MT Bold"
+                    Content="Nuevo"
+                    Click="btn_newpar"
+                    Margin="5"/>
+            <Button x:Name="boton_guardar_partido"
+                    FontSize="15"
+                    Background="#FF282627"
+                    Foreground="White"
+                    FontFamily="Arial Rounded MT Bold"
+                    Content="Guardar"
+                    Click="btn_guardar_partido"
+                    Margin="5"/>
+            <Button x:Name="boton_actualizar_partido" 
+                    FontSize="15"
+                    Background="#FF282627"
+                    Foreground="White"
+                    FontFamily="Arial Rounded MT Bold"
+                    Content="Actualizar"
+                    Click="btn_actualizar_partido"
+                    Margin="5"/>
+            <Button x:Name="boton_eliminar_partido"
+                    FontSize="15"
+                    Background="#FF282627"
+                    Foreground="White"
+                    FontFamily="Arial Rounded MT Bold"
+                    Content="Eliminar"
+                    Click="btn_eliminar_partido"
+                    Margin="5"/>
+        </StackPanel>
+
+        <!-- DataGrid -->
+        <DataGrid x:Name="DGV_partido"
+                  Grid.Row="3"
+                  AutoGenerateColumns="True"
+                  Margin="10"
+                  SelectionChanged="DGV_partido_SelectionChanged"
+                  HorizontalAlignment="Stretch"/>
+    </Grid>
+</UserControl>
