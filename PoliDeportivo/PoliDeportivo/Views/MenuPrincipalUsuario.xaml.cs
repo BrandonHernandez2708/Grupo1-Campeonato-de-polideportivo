@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PoliDeportivo.Views.Administracion;
+using PoliDeportivo.Views.Usuario;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +26,11 @@ namespace PoliDeportivo
             InitializeComponent();
         }
 
+        private void btn_campeonatos(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new CampeonatosUserControl();
+        }
+
         private void btn_cerrarSesion(object sender, RoutedEventArgs e)
         {
             Login login = new Login();
@@ -35,6 +42,12 @@ namespace PoliDeportivo
 
         private void Btn_Reglasjuego_Click(object sender, RoutedEventArgs e)
         {
+
+        }
+
+        private void Btn_usrCampeonatos(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new UsrCampeonatosUserControl();
 
         }
     }

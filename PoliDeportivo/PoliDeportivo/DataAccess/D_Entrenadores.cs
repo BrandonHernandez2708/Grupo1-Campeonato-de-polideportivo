@@ -16,15 +16,15 @@ namespace PoliDeportivo.DataAccess
                 {
                     string sql = @"
                         SELECT 
-                            e.pk_entrenador_id AS id_entrenador,
-                            e.ent_nombre AS nombre,
-                            e.ent_apellido AS apellido,
-                            t.tel_entrenador AS telefono,
-                            c.correo_entrenador AS correo
+                        e.pk_entrenador_id AS id_entrenador,
+                        e.ent_nombre AS nombre,
+                        e.ent_apellido AS apellido,
+                        t.tel_entrenador AS telefono,
+                        c.correo_entrenador AS correo
                         FROM tbl_entrenador e
                         LEFT JOIN tbl_telefono_entrenador t ON e.pk_entrenador_id = t.fk_entrenador_id
-                        LEFT JOIN tbl_correo_entrenador c ON e.pk_entrenador_id = c.fk_entrenador_id;
-                    ";
+                        LEFT JOIN tbl_correo_entrenador c ON e.pk_entrenador_id = c.fk_entrenador_id;";
+
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
                     conn.Open();
                     using (MySqlDataReader reader = cmd.ExecuteReader())
@@ -191,11 +191,7 @@ namespace PoliDeportivo.DataAccess
                             cmd.Parameters.AddWithValue("@id", pk_entrenador_id);
                             int filas = cmd.ExecuteNonQuery();
 
-                            if (filas >= 1)
-                                respuesta = "OK";
-                            else
-                                respuesta = "No se pudo eliminar";
-
+                            respuesta = filas >= 1 ? "OK" : "No se pudo eliminar";
                             trans.Commit();
                         }
                         catch (Exception exTrans)
@@ -216,15 +212,13 @@ namespace PoliDeportivo.DataAccess
         private int GenerarNuevoIDTelefono(MySqlConnection conn, MySqlTransaction trans)
         {
             MySqlCommand cmd = new MySqlCommand("SELECT IFNULL(MAX(pk_tel_entrenador_id), 0) + 1 FROM tbl_telefono_entrenador", conn, trans);
-            int nuevoId = Convert.ToInt32(cmd.ExecuteScalar());
-            return nuevoId;
+            return Convert.ToInt32(cmd.ExecuteScalar());
         }
 
         private int GenerarNuevoIDCorreo(MySqlConnection conn, MySqlTransaction trans)
         {
             MySqlCommand cmd = new MySqlCommand("SELECT IFNULL(MAX(pk_cor_entrenador_id), 0) + 1 FROM tbl_correo_entrenador", conn, trans);
-            int nuevoId = Convert.ToInt32(cmd.ExecuteScalar());
-            return nuevoId;
+            return Convert.ToInt32(cmd.ExecuteScalar());
         }
     }
 }

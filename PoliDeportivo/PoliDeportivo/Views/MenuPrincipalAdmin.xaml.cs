@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using PoliDeportivo.Views;
 using PoliDeportivo.Views.Administracion;
+using PoliDeportivo.Views.Usuario;
 
 namespace PoliDeportivo
 {
@@ -48,6 +49,12 @@ namespace PoliDeportivo
             login.Show();
             this.Close();
 
+        }
+
+        // Botones de Usuario
+        private void btn_usr_campeonatos(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new UsrCampeonatosUserControl();
         }
 
 
