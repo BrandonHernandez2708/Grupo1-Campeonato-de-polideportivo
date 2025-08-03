@@ -119,5 +119,10 @@ namespace PoliDeportivo
         {
             contenedor.Content = new TelefonoEmpUserControl();
         }
+
+        private void btn_bitacora(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new BitacoraUserControl();
+        }
     }
 }
