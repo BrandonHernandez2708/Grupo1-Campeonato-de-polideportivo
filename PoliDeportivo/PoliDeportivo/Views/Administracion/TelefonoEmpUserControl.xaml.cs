@@ -84,7 +84,7 @@ namespace PoliDeportivo.Views.Administracion
                 Atrb_Tel_Emp Telefono = new Atrb_Tel_Emp()
                 {
                     pk_tel_empleado_id= int.Parse(txtb_Tel_Id_pk.Text),
-                    tel_numero = int.Parse(txtb_tel_numero.Text),
+                    tel_empleado = int.Parse(txtb_tel_numero.Text),
                     fk_empleado_id = txtb_fk_empleado_id.Text
 
                 };
