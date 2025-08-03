@@ -2,6 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Views\Administracion\BitacoraUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Administracion\CampeonatosUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -43,6 +46,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\Administracion\BitacoraUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Administracion\ContratacionUserControl.xaml">
       <SubType>Designer</SubType>
     </Page>
