@@ -542,3 +542,5 @@ C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\ob
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Usuario\UsrCampeonatosUserControl.baml
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\BitacoraUserControl.g.cs
 C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\BitacoraUserControl.baml
+C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\UsuariosUserControl.g.cs
+C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\UsuariosUserControl.baml
