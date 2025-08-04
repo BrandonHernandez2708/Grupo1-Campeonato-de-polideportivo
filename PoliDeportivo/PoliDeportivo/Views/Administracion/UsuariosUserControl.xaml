@@ -1,0 +1,112 @@
+﻿<UserControl x:Class="PoliDeportivo.Views.Administracion.UsuariosUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PoliDeportivo.Views.Administracion"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="900">
+    <Grid Background="#FFA7A5A6">
+
+        <StackPanel Margin="10"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Stretch">
+
+            <TextBlock Text="Gestión de Usuarios"
+                    FontFamily="Arial Rounded MT Bold"
+                    FontSize="40"
+                    FontWeight="Bold"
+                    Foreground="Black"
+                    HorizontalAlignment="Center"
+                    Margin="0,10"/>
+
+            <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" >
+                <StackPanel Background="#FF7B797A" Orientation="Horizontal"
+                     Margin="0,0,0,10"
+                     HorizontalAlignment="Left">
+
+                    <StackPanel Margin="5">
+                        <TextBlock Text="ID_usuario" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                        <TextBox x:Name="txt_usuario_Id_pk" Width="100"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="5">
+                        <TextBlock Text="Usuario " Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                        <TextBox x:Name="txt_usuario_nombre" Width="150"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="5">
+                        <TextBlock Text="Email" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                        <TextBox x:Name="txt_usuario_email" Width="130"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="5">
+                        <TextBlock Text="contraseña" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                        <TextBox x:Name="txt_usuario_contrasena" Width="130"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="5">
+                        <TextBlock Text="Id Privilegio" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                        <TextBox x:Name="txt_usuario_privilegio_id_fk" Width="150"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="5">
+                        <TextBlock Text="Id Roles" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                        <TextBox x:Name="txt_usuario_rol_id_fk" Width="150"/>
+                    </StackPanel>
+                    
+                </StackPanel>
+            </ScrollViewer>
+            <StackPanel Orientation="Horizontal"
+                     Margin="0,0,0,10"
+                     HorizontalAlignment="Left">
+                <Button x:Name="boton_usu_new" 
+                     FontSize="15"
+                     Background="Orange"
+                     Foreground="#FF282627"
+                     FontFamily="Arial Rounded MT Bold"
+                     Content="Nuevo"
+                     Click="btn_usu_new"
+                     Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="boton_usu_guardar"
+                     FontSize="15"
+                     Background="#FF282627"
+                     Foreground="White"
+                     FontFamily="Arial Rounded MT Bold"
+                     Content="Guardar"
+                     Click="btn_usu_guardar"
+                     Margin="5"/>
+                <Button x:Name="boton_usu_actualizar" 
+                     FontSize="15"
+                     Background="#FF282627"
+                     Foreground="White"
+                     FontFamily="Arial Rounded MT Bold"
+                     Content="Actualizar"
+                     Click="btn_usu_actualizar"
+                     Margin="5"/>
+                <Button x:Name="boton_usu_eliminar"
+                     FontSize="15"
+                     Background="#FF282627"
+                     Foreground="White"
+                     FontFamily="Arial Rounded MT Bold"
+                     Content="Eliminar"
+                     Click="btn_usu_eliminar"
+                     Margin="5"/>
+            </StackPanel>
+
+            <DataGrid Background="#FFF1F1F1"  x:Name="DGV_usuario"
+                   AutoGenerateColumns="True"
+                   Height="407"
+                   SelectionChanged="DGV_Usuario_SelectionChanged"/>
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>
