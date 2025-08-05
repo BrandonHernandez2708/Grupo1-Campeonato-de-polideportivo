@@ -14,11 +14,11 @@ namespace PoliDeportivo
 
         private conexionmysql()
         {
-            this.BD = "bdpolideportivo";   // Cambia al nombre de tu BD
-            this.servidor = "localhost"; // IP del servidor MySQL
+            this.BD = "bdPolideportivo";   // Cambia al nombre de tu BD
+            this.servidor = "172.20.10.5"; // IP del servidor MySQL
             this.puerto = "3306";
-            this.usuario = "root";       // Tu usuario MySQL
-            this.clave = "Barcelona03@";         // Tu contraseña MySQL
+            this.usuario = "Grupo1";       // Tu usuario MySQL
+            this.clave = "Grupo1";         // Tu contraseña MySQL
         }
 
         public MySqlConnection CrearConexion()

@@ -63,6 +63,7 @@
                         <Button x:Name="Btn_gestionUsr" Content="Gestion de Deportes" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_gestionUsr"/>
                         <Button x:Name="Btn_Usuario" Content="Gestion de Usuarios" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_usuario"/>
                         <Button x:Name="Btn_bitacora" Content="Consulta de Bitacoras" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_bitacora"/>
+                        <Button x:Name="Btn_falta" Content="Consulta de Faltas" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_falta"/>
                     </StackPanel>
 
                     <!-- BOTÓN CERRAR SESIÓN -->

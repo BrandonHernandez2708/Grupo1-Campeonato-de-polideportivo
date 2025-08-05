@@ -137,5 +137,10 @@ namespace PoliDeportivo
         {
             contenedor.Content = new SancionUserControl();
         }
+
+        private void btn_falta(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new FaltaUserControl();
+        }
     }
 }

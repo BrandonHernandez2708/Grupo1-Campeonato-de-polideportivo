@@ -26,6 +26,9 @@
     <Compile Update="Views\Administracion\EstadoPartidoUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Administracion\FaltaUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Administracion\GestionUsrUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
