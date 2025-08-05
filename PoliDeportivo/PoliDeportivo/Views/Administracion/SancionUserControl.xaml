@@ -1,0 +1,106 @@
+﻿<UserControl x:Class="PoliDeportivo.Views.Administracion.SancionUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PoliDeportivo.Views.Administracion"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FFA7A5A6">
+
+        <StackPanel Margin="10"
+        VerticalAlignment="Top"
+        HorizontalAlignment="Stretch">
+
+            <TextBlock Text="Gestión De Sanciones"
+           FontFamily="Arial Rounded MT Bold"
+           FontSize="40"
+           FontWeight="Bold"
+           Foreground="Black"
+           HorizontalAlignment="Center"
+           Margin="0,10"/>
+
+            <StackPanel Background="#FF7B797A" Orientation="Horizontal"
+            Margin="0,0,0,10"
+            HorizontalAlignment="Left">
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="ID Sancion" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                    <TextBox x:Name="txt_sancion_Id_pk" Width="100"/>
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="Descripcion Sancion" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                    <TextBox x:Name="txt_sancion_san_descripcion" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="Minuto Sancion" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                    <TextBox x:Name="txt_sancion_san_minuto" Width="130"/>
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="ID_Partido" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                    <TextBox x:Name="txt_sancion_partido_Id_fk" Width="130"/>
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="ID_jugador" Foreground="Orange" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+                    <TextBox x:Name="txt_sancion_jugador_Id_fk" Width="130"/>
+                </StackPanel>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+            Margin="0,0,0,10"
+            HorizontalAlignment="Left">
+                <Button x:Name="boton_newsancion" 
+            FontSize="15"
+            Background="Orange"
+            Foreground="#FF282627"
+            FontFamily="Arial Rounded MT Bold"
+            Content="Nuevo"
+            Click="btn_newsancion"
+            Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="boton_sancion_guardar"
+            FontSize="15"
+            Background="#FF282627"
+            Foreground="White"
+            FontFamily="Arial Rounded MT Bold"
+            Content="Guardar"
+            Click="btn_sancion_guardar"
+            Margin="5"/>
+                <Button x:Name="boton_sancion_actualizar" 
+            FontSize="15"
+            Background="#FF282627"
+            Foreground="White"
+            FontFamily="Arial Rounded MT Bold"
+            Content="Actualizar"
+            Click="btn_sancion_actualizar"
+            Margin="5"/>
+                <Button x:Name="boton_sancion_eliminar"
+            FontSize="15"
+            Background="#FF282627"
+            Foreground="White"
+            FontFamily="Arial Rounded MT Bold"
+            Content="Eliminar"
+            Click="btn_sancion_eliminar"
+            Margin="5"/>
+            </StackPanel>
+
+            <DataGrid Background="#FFF1F1F1"  x:Name="DGV_sancion"
+          AutoGenerateColumns="True"
+          Height="407"
+          SelectionChanged="DGV_sancion_SelectionChanged"/>
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>

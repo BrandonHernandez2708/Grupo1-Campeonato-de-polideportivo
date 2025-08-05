@@ -129,5 +129,13 @@ namespace PoliDeportivo
         {
             contenedor.Content = new BitacoraUserControl();
         }
+        private void btn_asistencia(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new AsistenciaUserControl();
+        }
+        private void btn_sancion(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new SancionUserControl();
+        }
     }
 }
