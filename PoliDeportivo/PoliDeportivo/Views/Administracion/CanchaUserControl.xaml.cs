@@ -153,7 +153,7 @@ namespace PoliDeportivo.Views.Administracion
             if (DGV_cancha.SelectedItem is DataRowView row)
             {
 
-                txtb_canchaId_pk.Text = row["id_falta"].ToString();
+                txtb_canchaId_pk.Text = row["Código Cancha"].ToString();
                 txtb_can_capacidad.Text = row["Capacidad"].ToString();
                 txtb_Can_direccion.Text = row["Dirección"].ToString();
             

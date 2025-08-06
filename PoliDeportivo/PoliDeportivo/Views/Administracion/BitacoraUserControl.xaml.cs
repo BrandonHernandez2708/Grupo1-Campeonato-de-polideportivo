@@ -48,14 +48,18 @@ namespace PoliDeportivo.Views.Administracion
         {
             string filtro = txtBuscar.Text.Trim().ToLower();
 
-            if (BitacoraOriginal == null || filtro == "buscar usuario...")
+            if (BitacoraOriginal == null || filtro == "buscar usuario o tabla...")
                 return;
 
             DataView vistaFiltrada = BitacoraOriginal.DefaultView;
-            vistaFiltrada.RowFilter = $"Usuario LIKE '%{filtro}%'";
-            DGV_Bitacora.ItemsSource = vistaFiltrada;
 
+            filtro = filtro.Replace("'", "''");
+
+            vistaFiltrada.RowFilter = $"Usuario LIKE '%{filtro}%' OR Entidad LIKE '%{filtro}%'";
+
+            DGV_Bitacora.ItemsSource = vistaFiltrada;
         }
+
 
         private void txtBuscar_GotFocus(object sender, RoutedEventArgs e)
         {
@@ -73,6 +77,11 @@ namespace PoliDeportivo.Views.Administracion
                 txtBuscar.Text = "Buscar Bitacora...";
                 txtBuscar.Foreground = Brushes.Gray;
             }
+        }
+
+        private void txtBuscar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

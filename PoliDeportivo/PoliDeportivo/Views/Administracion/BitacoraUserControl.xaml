@@ -25,7 +25,7 @@
                      Text="Buscar Usuario..."
                      Foreground="Gray"
                      GotFocus="txtBuscar_GotFocus"
-                     LostFocus="txtBuscar_LostFocus"/>
+                     LostFocus="txtBuscar_LostFocus" TextChanged="txtBuscar_TextChanged"/>
                 <Button Content="Buscar"
                     Width="100"
                     Height="30"

@@ -14,12 +14,12 @@ namespace PoliDeportivo.DataAccess
             {
                 using (MySqlConnection conn = conexionmysql.getInstancia().CrearConexion())
                 {
-                    string sql = "SELECT \r\n" +
-                     "pk_cancha_id AS \"Código Cancha\",\r\n" +
-                     "can_capacidad AS \"Capacidad\",\r\n" +
-                     "can_direccion AS \"Dirección\"\r\n" +
-                     "FROM tbl_cancha;\r\n";
-
+                    string sql = @"
+                        SELECT 
+                            pk_cancha_id AS 'Código Cancha',
+                            can_capacidad AS 'Capacidad',
+                            can_direccion AS 'Dirección'
+                        FROM tbl_cancha;";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
                     conn.Open();
                     using (MySqlDataReader reader = cmd.ExecuteReader())
@@ -30,7 +30,7 @@ namespace PoliDeportivo.DataAccess
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al obtener deportes: " + ex.Message, ex);
+                throw new Exception("Error al obtener canchas: " + ex.Message, ex);
             }
             return Tabla;
         }
@@ -39,47 +39,76 @@ namespace PoliDeportivo.DataAccess
         {
             string Rpta = "";
             string sql = "";
+            string accion = "";
             try
             {
                 using (MySqlConnection conn = conexionmysql.getInstancia().CrearConexion())
                 {
+                    conn.Open();
                     MySqlCommand cmd = new MySqlCommand();
                     cmd.Connection = conn;
 
                     if (nOpcion == 1) // Insertar
                     {
-                         sql = @"INSERT INTO tbl_cancha (
-                                pk_cancha_id,
-                                can_capacidad,
-                                can_direccion
-                            ) VALUES (
-                                @id,
-                                @capacidad,
-                                @direccion
-                            );";
-
-                        cmd.CommandText = sql;
-                        cmd.Parameters.AddWithValue("@id", obj.pk_cancha_id);
-                        cmd.Parameters.AddWithValue("@capacidad", obj.can_capacidad);
-                        cmd.Parameters.AddWithValue("@direccion", obj.can_direccion);
-
+                        accion = "I";
+                        sql = @"INSERT INTO tbl_cancha (
+                                    pk_cancha_id,
+                                    can_capacidad,
+                                    can_direccion
+                                ) VALUES (
+                                    @id,
+                                    @capacidad,
+                                    @direccion
+                                );";
                     }
                     else // Actualizar
                     {
+                        accion = "U";
                         sql = @"UPDATE tbl_cancha SET
-                                can_capacidad = @capacidad,
-                                can_direccion = @direccion
-                            WHERE pk_cancha_id = @id;";
-
-                        cmd.CommandText = sql;
-                        cmd.Parameters.AddWithValue("@id", obj.pk_cancha_id);
-                        cmd.Parameters.AddWithValue("@capacidad", obj.can_capacidad);
-                        cmd.Parameters.AddWithValue("@direccion", obj.can_direccion);
+                                    can_capacidad = @capacidad,
+                                    can_direccion = @direccion
+                                WHERE pk_cancha_id = @id;";
                     }
 
-                    conn.Open();
+                    cmd.CommandText = sql;
+                    cmd.Parameters.AddWithValue("@id", obj.pk_cancha_id);
+                    cmd.Parameters.AddWithValue("@capacidad", obj.can_capacidad);
+                    cmd.Parameters.AddWithValue("@direccion", obj.can_direccion);
+
                     int rows = cmd.ExecuteNonQuery();
-                    Rpta = rows >= 1 ? "OK" : "No se pudo guardar";
+
+                    if (rows >= 1)
+                    {
+                        // Bitácora
+                        MySqlCommand cmdBitacora = new MySqlCommand();
+                        cmdBitacora.Connection = conn;
+                        cmdBitacora.CommandText = @"INSERT INTO tbl_bitacora (
+                                                        fk_entidad_id,
+                                                        bit_operacion,
+                                                        bit_fecha_hora,
+                                                        fk_usuario_id,
+                                                        bit_ip
+                                                    ) VALUES (
+                                                        @entidad,
+                                                        @operacion,
+                                                        NOW(),
+                                                        @usuarioId,
+                                                        @ip
+                                                    );";
+
+                        cmdBitacora.Parameters.AddWithValue("@entidad", 8); 
+                        cmdBitacora.Parameters.AddWithValue("@operacion", accion);
+                        cmdBitacora.Parameters.AddWithValue("@usuarioId", Sesion.UsuarioId);
+                        cmdBitacora.Parameters.AddWithValue("@ip", ObtenerIPLocal());
+
+                        cmdBitacora.ExecuteNonQuery();
+
+                        Rpta = "OK";
+                    }
+                    else
+                    {
+                        Rpta = "No se pudo guardar";
+                    }
                 }
             }
             catch (Exception ex)
@@ -101,7 +130,38 @@ namespace PoliDeportivo.DataAccess
                     cmd.Parameters.AddWithValue("@id", pk_cancha_id);
                     conn.Open();
                     int rows = cmd.ExecuteNonQuery();
-                    Rpta = rows >= 1 ? "OK" : "No se pudo eliminar";
+
+                    if (rows >= 1)
+                    {
+                        // Bitácora
+                        MySqlCommand cmdBitacora = new MySqlCommand();
+                        cmdBitacora.Connection = conn;
+                        cmdBitacora.CommandText = @"INSERT INTO tbl_bitacora (
+                                                        fk_entidad_id,
+                                                        bit_operacion,
+                                                        bit_fecha_hora,
+                                                        fk_usuario_id,
+                                                        bit_ip
+                                                    ) VALUES (
+                                                        @entidad,
+                                                        @operacion,
+                                                        NOW(),
+                                                        @usuarioId,
+                                                        @ip
+                                                    );";
+
+                        cmdBitacora.Parameters.AddWithValue("@entidad", 8);
+                        cmdBitacora.Parameters.AddWithValue("@operacion", "D");
+                        cmdBitacora.Parameters.AddWithValue("@usuarioId", Sesion.UsuarioId);
+                        cmdBitacora.Parameters.AddWithValue("@ip", ObtenerIPLocal());
+
+                        cmdBitacora.ExecuteNonQuery();
+                        Rpta = "OK";
+                    }
+                    else
+                    {
+                        Rpta = "No se pudo eliminar";
+                    }
                 }
             }
             catch (Exception ex)
@@ -109,6 +169,28 @@ namespace PoliDeportivo.DataAccess
                 Rpta = ex.Message;
             }
             return Rpta;
+        }
+
+        private string ObtenerIPLocal()
+        {
+            string ip = "";
+            try
+            {
+                var host = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName());
+                foreach (var ipAddr in host.AddressList)
+                {
+                    if (ipAddr.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                    {
+                        ip = ipAddr.ToString();
+                        break;
+                    }
+                }
+            }
+            catch
+            {
+                ip = "No disponible";
+            }
+            return ip;
         }
     }
 }
