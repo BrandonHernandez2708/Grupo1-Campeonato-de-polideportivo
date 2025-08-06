@@ -16,6 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using PoliDeportivo.Utils;
 using PoliDeportivo.DataAccess;
+using PoliDeportivo.Model;
 
 namespace PoliDeportivo
 {
@@ -86,6 +87,9 @@ namespace PoliDeportivo
                     string nombreUsuario = resultado.Rows[0]["usu_nombre"].ToString();
                     string rol = resultado.Rows[0]["rol_privilegio"].ToString();
                     string privilegio = resultado.Rows[0]["priv_descripcion"].ToString();
+
+                    Sesion.UsuarioId = Convert.ToInt32(resultado.Rows[0]["pk_usuario_id"]);
+                    Sesion.Usuario = resultado.Rows[0]["usu_nombre"].ToString();
 
                     MessageBox.Show($"Bienvenido {nombreUsuario}\nRol: {rol}\nPrivilegio: {privilegio}", "Validación de datos correcta", MessageBoxButton.OK, MessageBoxImage.Information);
 

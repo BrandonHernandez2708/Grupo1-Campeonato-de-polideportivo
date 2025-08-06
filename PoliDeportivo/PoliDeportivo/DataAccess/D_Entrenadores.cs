@@ -43,6 +43,7 @@ namespace PoliDeportivo.DataAccess
         public string Guardar_Entrenador(int nOpcion, Atrb_entrenadores obj)
         {
             string respuesta = "";
+            string accion = "";
             try
             {
                 using (MySqlConnection conn = conexionmysql.getInstancia().CrearConexion())
@@ -58,6 +59,7 @@ namespace PoliDeportivo.DataAccess
                         {
                             if (nOpcion == 1) // Nuevo
                             {
+                                accion = "I";
                                 cmd.CommandText = @"INSERT INTO tbl_entrenador (pk_entrenador_id, ent_nombre, ent_apellido) 
                                                     VALUES (@id, @nombre, @apellido)";
                                 cmd.Parameters.Clear();
@@ -81,9 +83,34 @@ namespace PoliDeportivo.DataAccess
                                 cmd.Parameters.AddWithValue("@correo", obj.correo);
                                 cmd.Parameters.AddWithValue("@id_fk", obj.pk_entrenador_id);
                                 cmd.ExecuteNonQuery();
+
+                                // Insertar en bitácora
+                                MySqlCommand cmdBitacora = new MySqlCommand();
+                                cmdBitacora.Connection = conn;
+                                cmdBitacora.Transaction = trans;
+                                cmdBitacora.CommandText = @"INSERT INTO tbl_bitacora (
+                                fk_entidad_id,
+                                bit_operacion,
+                                bit_fecha_hora,
+                                fk_usuario_id,
+                                bit_ip
+                            ) VALUES (
+                                @entidad,
+                                @operacion,
+                                NOW(),
+                                @usuarioId,
+                                @ip
+                            );";
+
+                                cmdBitacora.Parameters.AddWithValue("@entidad", 5);
+                                cmdBitacora.Parameters.AddWithValue("@operacion", (accion));
+                                cmdBitacora.Parameters.AddWithValue("@usuarioId", Sesion.UsuarioId);
+                                cmdBitacora.Parameters.AddWithValue("@ip", ObtenerIPLocal());
+                                cmdBitacora.ExecuteNonQuery();
                             }
                             else if (nOpcion == 2) // Actualizar
                             {
+                                accion = "U";
                                 cmd.CommandText = @"UPDATE tbl_entrenador SET ent_nombre = @nombre, ent_apellido = @apellido 
                                                     WHERE pk_entrenador_id = @id";
                                 cmd.Parameters.Clear();
@@ -96,6 +123,8 @@ namespace PoliDeportivo.DataAccess
                                 cmd.Parameters.Clear();
                                 cmd.Parameters.AddWithValue("@id", obj.pk_entrenador_id);
                                 int countTel = Convert.ToInt32(cmd.ExecuteScalar());
+
+
 
                                 if (countTel > 0)
                                 {
@@ -139,10 +168,15 @@ namespace PoliDeportivo.DataAccess
                                     cmd.Parameters.AddWithValue("@id", obj.pk_entrenador_id);
                                     cmd.ExecuteNonQuery();
                                 }
+
+
+
                             }
 
                             trans.Commit();
                             respuesta = "OK";
+
+
                         }
                         catch (Exception exTrans)
                         {
@@ -219,6 +253,28 @@ namespace PoliDeportivo.DataAccess
         {
             MySqlCommand cmd = new MySqlCommand("SELECT IFNULL(MAX(pk_cor_entrenador_id), 0) + 1 FROM tbl_correo_entrenador", conn, trans);
             return Convert.ToInt32(cmd.ExecuteScalar());
+        }
+
+        private string ObtenerIPLocal()
+        {
+            string ip = "";
+            try
+            {
+                var host = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName());
+                foreach (var ipAddr in host.AddressList)
+                {
+                    if (ipAddr.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                    {
+                        ip = ipAddr.ToString();
+                        break;
+                    }
+                }
+            }
+            catch
+            {
+                ip = "No disponible";
+            }
+            return ip;
         }
     }
 }

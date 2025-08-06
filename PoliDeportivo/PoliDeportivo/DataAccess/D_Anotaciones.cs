@@ -43,7 +43,7 @@ namespace PoliDeportivo.DataAccess
         {
             string Rpta = "";
             string sql;
-
+            string accion = "";
             try
             {
                 using (MySqlConnection conn = conexionmysql.getInstancia().CrearConexion())
@@ -53,6 +53,7 @@ namespace PoliDeportivo.DataAccess
 
                     if (nOpcion == 1) // INSERT
                     {
+                        accion = "I";
                         sql = @"INSERT INTO tbl_anotacion 
                                 (pk_anotacion_id, ano_minuto, ano_descripcion, fk_partido_id, fk_jugador_id) 
                                 VALUES 
@@ -60,6 +61,7 @@ namespace PoliDeportivo.DataAccess
                     }
                     else // UPDATE
                     {
+                        accion = "U";
                         sql = @"UPDATE tbl_anotacion SET 
                                 ano_minuto = @minuto,
                                 ano_descripcion = @descrip,
@@ -77,14 +79,43 @@ namespace PoliDeportivo.DataAccess
 
                     conn.Open();
                     int rows = cmd.ExecuteNonQuery();
-                    Rpta = rows >= 1 ? "OK" : "No se pudo guardar";
+                    if (rows >= 1)
+                    {
+                        // Insertar en bitácora
+                        MySqlCommand cmdBitacora = new MySqlCommand();
+                        cmdBitacora.Connection = conn;
+                        cmdBitacora.CommandText = @"INSERT INTO tbl_bitacora (
+                                                fk_entidad_id,
+                                                bit_operacion,
+                                                bit_fecha_hora,
+                                                fk_usuario_id,
+                                                bit_ip
+                                            ) VALUES (
+                                                @entidad,
+                                                @operacion,
+                                                NOW(),
+                                                @usuarioId,
+                                                @ip
+                                            );";
+
+                        cmdBitacora.Parameters.AddWithValue("@entidad", 23);
+                        cmdBitacora.Parameters.AddWithValue("@operacion", accion);
+                        cmdBitacora.Parameters.AddWithValue("@usuarioId", Sesion.UsuarioId);
+                        cmdBitacora.Parameters.AddWithValue("@ip", ObtenerIPLocal());
+
+                        cmdBitacora.ExecuteNonQuery();
+                        Rpta = "OK";
+                    }
+                    else
+                    {
+                        Rpta = "No se pudo guardar";
+                    }
                 }
             }
             catch (Exception ex)
             {
                 Rpta = ex.Message;
             }
-
             return Rpta;
         }
 
@@ -100,7 +131,38 @@ namespace PoliDeportivo.DataAccess
                     cmd.Parameters.AddWithValue("@id", pk_anotacion_id);
                     conn.Open();
                     int rows = cmd.ExecuteNonQuery();
-                    Rpta = rows >= 1 ? "OK" : "No se pudo eliminar";
+
+                    if (rows >= 1)
+                    {
+                        // Insertar en bitácora
+                        MySqlCommand cmdBitacora = new MySqlCommand();
+                        cmdBitacora.Connection = conn;
+                        cmdBitacora.CommandText = @"INSERT INTO tbl_bitacora (
+                                                fk_entidad_id,
+                                                bit_operacion,
+                                                bit_fecha_hora,
+                                                fk_usuario_id,
+                                                bit_ip
+                                            ) VALUES (
+                                                @entidad,
+                                                @operacion,
+                                                NOW(),
+                                                @usuarioId,
+                                                @ip
+                                            );";
+
+                        cmdBitacora.Parameters.AddWithValue("@entidad", 23);
+                        cmdBitacora.Parameters.AddWithValue("@operacion", "D");
+                        cmdBitacora.Parameters.AddWithValue("@usuarioId", Sesion.UsuarioId);
+                        cmdBitacora.Parameters.AddWithValue("@ip", ObtenerIPLocal());
+
+                        cmdBitacora.ExecuteNonQuery();
+                        Rpta = "OK";
+                    }
+                    else
+                    {
+                        Rpta = "No se pudo eliminar";
+                    }
                 }
             }
             catch (Exception ex)
@@ -108,6 +170,28 @@ namespace PoliDeportivo.DataAccess
                 Rpta = ex.Message;
             }
             return Rpta;
+        }
+
+        private string ObtenerIPLocal()
+        {
+            string ip = "";
+            try
+            {
+                var host = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName());
+                foreach (var ipAddr in host.AddressList)
+                {
+                    if (ipAddr.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                    {
+                        ip = ipAddr.ToString();
+                        break;
+                    }
+                }
+            }
+            catch
+            {
+                ip = "No disponible";
+            }
+            return ip;
         }
     }
 }

@@ -2,6 +2,7 @@
 using PoliDeportivo;
 using PoliDeportivo.Model;
 using PoliDeportivo.Utils;
+using System;
 using System.Data;
 using System.Reflection.PortableExecutable;
 
@@ -88,7 +89,8 @@ public class D_usuarios
         {
             string Rpta = "";
             string sql = "";
-            try
+        string accion = "";
+        try
             {
                 using (MySqlConnection conn = conexionmysql.getInstancia().CrearConexion())
                 {
@@ -97,6 +99,7 @@ public class D_usuarios
 
                     if (nOpcion == 1) // Insertar
                     {
+                    accion = "I";
                         sql = @"INSERT INTO tbl_usuario (
                                         pk_usuario_id,
                                         usu_nombre,
@@ -125,6 +128,7 @@ public class D_usuarios
                     }
                     else // Actualizar
                     {
+                    accion = "U";
                         sql = @"UPDATE tbl_usuario SET       
                                     usu_nombre = @nombre,
                                     usu_email = @correo,
@@ -144,17 +148,50 @@ public class D_usuarios
 
                     conn.Open();
                     int rows = cmd.ExecuteNonQuery();
-                    Rpta = rows >= 1 ? "OK" : "No se pudo guardar";
+       
+
+                if (rows >= 1)
+                {
+                    // Bitácora
+                    MySqlCommand cmdBitacora = new MySqlCommand();
+                    cmdBitacora.Connection = conn;
+                    cmdBitacora.CommandText = @"INSERT INTO tbl_bitacora (
+                                                        fk_entidad_id,
+                                                        bit_operacion,
+                                                        bit_fecha_hora,
+                                                        fk_usuario_id,
+                                                        bit_ip
+                                                    ) VALUES (
+                                                        @entidad,
+                                                        @operacion,
+                                                        NOW(),
+                                                        @usuarioId,
+                                                        @ip
+                                                    );";
+
+                    cmdBitacora.Parameters.AddWithValue("@entidad", 1);
+                    cmdBitacora.Parameters.AddWithValue("@operacion", accion);
+                    cmdBitacora.Parameters.AddWithValue("@usuarioId", Sesion.UsuarioId);
+                    cmdBitacora.Parameters.AddWithValue("@ip", ObtenerIPLocal());
+
+                    cmdBitacora.ExecuteNonQuery();
+
+                    Rpta = "OK";
+                }
+                else
+                {
+                    Rpta = "No se pudo guardar";
                 }
             }
-            catch (Exception ex)
-            {
-                Rpta = ex.Message;
-            }
-            return Rpta;
         }
+        catch (Exception ex)
+        {
+            Rpta = ex.Message;
+        }
+        return Rpta;
+    }
 
-        public string Eliminar_Usuario(int pk_usuario_id)
+    public string Eliminar_Usuario(int pk_usuario_id)
         {
             string Rpta = "";
             try
@@ -167,16 +204,66 @@ public class D_usuarios
                     cmd.Parameters.AddWithValue("@codigo", pk_usuario_id);
                     conn.Open();
                     int rows = cmd.ExecuteNonQuery();
-                    Rpta = rows >= 1 ? "OK" : "No se pudo eliminar";
+                if (rows >= 1)
+                {
+                    // Bitácora
+                    MySqlCommand cmdBitacora = new MySqlCommand();
+                    cmdBitacora.Connection = conn;
+                    cmdBitacora.CommandText = @"INSERT INTO tbl_bitacora (
+                                                        fk_entidad_id,
+                                                        bit_operacion,
+                                                        bit_fecha_hora,
+                                                        fk_usuario_id,
+                                                        bit_ip
+                                                    ) VALUES (
+                                                        @entidad,
+                                                        @operacion,
+                                                        NOW(),
+                                                        @usuarioId,
+                                                        @ip
+                                                    );";
+
+                    cmdBitacora.Parameters.AddWithValue("@entidad", 1);
+                    cmdBitacora.Parameters.AddWithValue("@operacion", "D");
+                    cmdBitacora.Parameters.AddWithValue("@usuarioId", Sesion.UsuarioId);
+                    cmdBitacora.Parameters.AddWithValue("@ip", ObtenerIPLocal());
+
+                    cmdBitacora.ExecuteNonQuery();
+                    Rpta = "OK";
+                }
+                else
+                {
+                    Rpta = "No se pudo eliminar";
                 }
             }
-            catch (Exception ex)
-            {
-                Rpta = ex.Message;
-            }
-            return Rpta;
         }
-
-
+        catch (Exception ex)
+        {
+            Rpta = ex.Message;
+        }
+        return Rpta;
     }
+    private string ObtenerIPLocal()
+    {
+        string ip = "";
+        try
+        {
+            var host = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName());
+            foreach (var ipAddr in host.AddressList)
+            {
+                if (ipAddr.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                {
+                    ip = ipAddr.ToString();
+                    break;
+                }
+            }
+        }
+        catch
+        {
+            ip = "No disponible";
+        }
+        return ip;
+    }
+
+}
 
