@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using PoliDeportivo.Utils;
 using PoliDeportivo.DataAccess;
 
 namespace PoliDeportivo
@@ -74,7 +75,11 @@ namespace PoliDeportivo
             try
             {
                 D_usuarios usuarioDao = new D_usuarios();
-                DataTable resultado = usuarioDao.Login(txt_usuario.Text.Trim(), txt_password.Password.Trim());
+
+                string usuario = txt_usuario.Text.Trim();
+                string contrasenaHasheada = Proteccion.HashPassword(txt_password.Password.Trim());
+
+                DataTable resultado = usuarioDao.Login(usuario, contrasenaHasheada);
                
                 if (resultado.Rows.Count > 0)
                 {

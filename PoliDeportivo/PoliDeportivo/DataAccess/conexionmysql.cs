@@ -18,7 +18,7 @@ namespace PoliDeportivo
             this.servidor = "localhost"; // IP del servidor MySQL
             this.puerto = "3306";
             this.usuario = "root";       // Tu usuario MySQL
-            this.clave = "samayoa";         // Tu contraseña MySQL
+            this.clave = "Barcelona03@";         // Tu contraseña MySQL
         }
 
         public MySqlConnection CrearConexion()

@@ -665,3 +665,9 @@ D:\U 2022\8 semestre\Analisis II\PoliDeportivoNuevo\PoliDeportivo\PoliDeportivo\
 D:\U 2022\8 semestre\Analisis II\PoliDeportivoNuevo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\PoliDepo.842EE3E3.Up2Date
 D:\U 2022\8 semestre\Analisis II\PoliDeportivoNuevo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\PoliDeportivo.genruntimeconfig.cache
 D:\U 2022\8 semestre\Analisis II\PoliDeportivoNuevo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\ref\PoliDeportivo.dll
+C:\Users\pablo\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\AnotacionesUserControl.g.cs
+C:\Users\pablo\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\FaltaUserControl.g.cs
+C:\Users\pablo\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\LoginUserControl.g.cs
+C:\Users\pablo\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\AnotacionesUserControl.baml
+C:\Users\pablo\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\FaltaUserControl.baml
+C:\Users\pablo\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Administracion\LoginUserControl.baml

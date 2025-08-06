@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using PoliDeportivo;
 using PoliDeportivo.Model;
+using PoliDeportivo.Utils;
 using System.Data;
 using System.Reflection.PortableExecutable;
 
@@ -116,7 +117,8 @@ public class D_usuarios
                         cmd.Parameters.AddWithValue("@codigo", obj.pk_usuario_id);
                         cmd.Parameters.AddWithValue("@nombre", obj.usu_nombre);
                         cmd.Parameters.AddWithValue("@correo", obj.usu_email);
-                        cmd.Parameters.AddWithValue("@contrasena", obj.usu_contrasena);
+                        string contrasenaHasheada = Proteccion.HashPassword(obj.usu_contrasena);
+                        cmd.Parameters.AddWithValue("@contrasena", contrasenaHasheada);
                         cmd.Parameters.AddWithValue("@privilegioId", obj.fk_privilegio_id);
                         cmd.Parameters.AddWithValue("@rolId", obj.fk_rol_id);
              
@@ -131,10 +133,11 @@ public class D_usuarios
                                     fk_rol_id = @rolId
                                 WHERE pk_usuario_id = @codigo;";
                         cmd.CommandText = sql;
-                        cmd.Parameters.AddWithValue("@codigo", obj.pk_usuario_id);//*
+                        cmd.Parameters.AddWithValue("@codigo", obj.pk_usuario_id);
                         cmd.Parameters.AddWithValue("@nombre", obj.usu_nombre);
                         cmd.Parameters.AddWithValue("@correo", obj.usu_email);
-                        cmd.Parameters.AddWithValue("@contrasena", obj.usu_contrasena);
+                        string contrasenaHasheada = Proteccion.HashPassword(obj.usu_contrasena);
+                        cmd.Parameters.AddWithValue("@contrasena", contrasenaHasheada);
                         cmd.Parameters.AddWithValue("@privilegioId", obj.fk_privilegio_id);
                         cmd.Parameters.AddWithValue("@rolId", obj.fk_rol_id);
                     }
