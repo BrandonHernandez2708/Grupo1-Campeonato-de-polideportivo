@@ -50,6 +50,7 @@
                         <Button x:Name="Btn_Entrenadores" Content="Entrenadores" Width="200" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_entrenador"/>
                         <Button x:Name="Btn_Jornadas" Content="Jornadas/Partidos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_jornadas"/>
                         <Button x:Name="Btn_Partidos" Content="Partidos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_partidos"/>
+                        <Button x:Name="Btn_Anotaciones" Content="Anotaciones" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_anotaciones"/>
                         <Button x:Name="Btn_Asistencia" Content="Asistencias" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_asistencia"/>
                         <Button x:Name="Btn_Reglas" Content="Reglas de Juego" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                         <Button x:Name="Btn_Sancion" Content="Sanciones" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_sancion"/>

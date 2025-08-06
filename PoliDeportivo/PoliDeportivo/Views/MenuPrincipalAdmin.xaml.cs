@@ -75,6 +75,12 @@ namespace PoliDeportivo
         {
             contenedor.Content = new PartidoUserControl();
         }
+
+        private void btn_anotaciones(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new AnotacionesUserControl();
+        }
+
         private void btn_empleados(object sender, RoutedEventArgs e)
         {
             contenedor.Content = new EmpleadosUserControl();
