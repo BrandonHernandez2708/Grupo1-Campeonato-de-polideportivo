@@ -61,6 +61,11 @@ namespace PoliDeportivo
             contenedor.Content = new UserEquiposUserControl();
         }
 
+        private void btn_usr_partidos(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new UserPartidoUserControl1();
+        }
+
         private void btn_campeonatos(object sender, RoutedEventArgs e)
         {
             contenedor.Content = new CampeonatosUserControl();
@@ -104,7 +109,6 @@ namespace PoliDeportivo
             contenedor.Content = new EntrenadoresUserControl();
         }
 
-        //Agregar nuevo boton de jornadas/partidos
         private void btn_jornadas(object sender, RoutedEventArgs e)
         {
             JornadasUserControl vistaJornadas = new JornadasUserControl();
