@@ -30,8 +30,8 @@
 
         <!-- Campos del formulario -->
         <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" >
-            
-            <WrapPanel Margin="5">
+
+            <WrapPanel Margin="5" Background="#FF7B797A">
                 <StackPanel Margin="5" Width="100">
                     <TextBlock Text="ID" FontWeight="Bold" Foreground="Orange"/>
                     <TextBox x:Name="txt_partidoid"/>

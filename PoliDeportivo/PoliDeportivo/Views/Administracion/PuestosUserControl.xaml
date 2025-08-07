@@ -44,10 +44,62 @@
 
             <!-- Botones -->
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left">
-                <Button x:Name="boton_new_puesto" Content="Nuevo" Click="btn_new_puesto" Margin="5"/>
-                <Button x:Name="boton_guardar_puesto" Content="Guardar" Click="btn_guardar_puesto" Margin="5"/>
-                <Button x:Name="boton_actualizar_puesto" Content="Actualizar" Click="btn_actualizar_puesto" Margin="5"/>
-                <Button x:Name="boton_eliminar_puesto" Content="Eliminar" Click="btn_eliminar_puesto" Margin="5"/>
+                <Button x:Name="boton_new_puesto"
+                        Content="Nuevo"
+                        Click="btn_new_puesto"
+                        Margin="5"
+                        FontSize="15"
+                        Background="Orange"
+                        Foreground="#FF282627"
+                        FontFamily="Arial Rounded MT Bold">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="boton_guardar_puesto"
+                        Content="Guardar"
+                        Click="btn_guardar_puesto"
+                        Margin="5"
+                        FontSize="15"
+                        Background="#FF282627"
+                        Foreground="White"
+                        FontFamily="Arial Rounded MT Bold">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="boton_actualizar_puesto"
+                        Content="Actualizar"
+                        Click="btn_actualizar_puesto"
+                        Margin="5"
+                        FontSize="15"
+                        Background="#FF282627"
+                        Foreground="White"
+                        FontFamily="Arial Rounded MT Bold">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="boton_eliminar_puesto"
+                        Content="Eliminar"
+                        Click="btn_eliminar_puesto"
+                        Margin="5"
+                        FontSize="15"
+                        Background="#FF282627"
+                        Foreground="White"
+                        FontFamily="Arial Rounded MT Bold">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
             </StackPanel>
 
             <!-- DataGrid para mostrar los deportes -->

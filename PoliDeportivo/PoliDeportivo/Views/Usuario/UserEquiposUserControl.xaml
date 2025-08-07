@@ -42,7 +42,17 @@
             <Button Content="Buscar"
                     Width="100"
                     Height="30"
-                    Click="btn_Buscar"/>
+                    Click="btn_Buscar"
+                     FontSize="15"
+                     Background="Orange"
+                     Foreground="#FF282627"
+                     FontFamily="Arial Rounded MT Bold">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="4"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </StackPanel>
 
         <!-- DataGrid con Scroll -->
