@@ -1,0 +1,12 @@
+﻿<Window x:Class="PoliDeportivo.Views.Administracion.BTN_ayuda_forms.ayuda_asistencias"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ayuda - Gestión de Asistencias" Height="400" Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <StackPanel>
+            <TextBlock Text="Instrucciones de Uso"
+                       FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+        <TextBlock TextWrapping="Wrap" FontSize="16" Width="592" Height="306"><Run Text="• ID Asistencia: Ingrese un identificador único para el registro de asistencia.                         • ID Anotación: Debe corresponder al ID de una anotación ya registrada.                         • ID Jugador: Corresponde al jugador que participó en la anotación."/><LineBreak/><Run Text="                           "/><LineBreak/><Run Text="Botones:                                                                                                                                                 • Nuevo: Limpia los campos para ingresar una nueva asistencia.                                                 • Guardar: Guarda el nuevo registro o la actualización de uno existente.                         • Actualizar: Habilita la edición del registro seleccionado.                                                 • Eliminar: Borra el registro seleccionado de la base de datos.                                                 • Tabla: Al seleccionar un registro de la tabla, los campos se llenan para que puedas editarlo o eliminarlo.                                                                                                                          Verifica que los IDs existan en la base de datos antes de guardar o actualizar."/></TextBlock>
+    </StackPanel>
+</Window>

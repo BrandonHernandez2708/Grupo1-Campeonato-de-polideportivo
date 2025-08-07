@@ -1,0 +1,88 @@
+﻿<Window x:Class="PoliDeportivo.Views.Administracion.BTN_ayuda_forms.ayuda_equipos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PoliDeportivo.Views.Administracion.BTN_ayuda_forms"
+        mc:Ignorable="d"
+        Title="ayuda_equipos" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Instrucciones de Uso" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock TextWrapping="Wrap" FontSize="16" Width="780"
+                       Text="• ID: Ingrese el identificador único para el equipo.
+                       
+                       
+                       
+                       
+
+• Nombre: Escriba el nombre del equipo.
+                       
+                       
+                       
+                       
+                       
+• Cant. Integrantes: Ingrese la cantidad total de integrantes.
+                       
+                       
+                       
+                       
+
+• Teléfono: Ingrese el número telefónico de contacto del equipo.
+                       
+                       
+                       
+
+• Correo: Ingrese el correo electrónico del equipo.
+                       
+                       
+
+                       
+                       
+• ID Deporte: Ingrese el código del deporte al que pertenece el equipo.
+                       
+                       
+                       
+
+• ID Entrenador: Ingrese el código del entrenador asignado al equipo.
+                       
+                       
+                       
+                       
+
+Botones disponibles:
+
+                       
+                       
+                       
+                       
+                       
+                       
+• Nuevo: Limpia todos los campos para ingresar un nuevo equipo.
+                       
+                       
+                       
+
+• Guardar: Guarda un nuevo registro o actualiza uno existente.
+                       
+                       
+                       
+                       
+
+• Actualizar: Permite editar los datos de un equipo seleccionado.
+                       
+                       
+                       
+
+• Eliminar: Borra el equipo seleccionado del sistema.
+                       
+                       
+                       
+                       
+
+• Selección en la tabla: Al seleccionar una fila, los datos del equipo se rellenan automáticamente para su edición o eliminación.
+
+Recuerde verificar todos los datos antes de guardar o actualizar."/>
+        </StackPanel>
+    </Grid>
+</Window>

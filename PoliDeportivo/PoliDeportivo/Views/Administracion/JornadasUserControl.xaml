@@ -66,7 +66,13 @@
                         FontFamily="Arial Rounded MT Bold"
                         Content="Guardar"
                         Click="btn_jornada_guardar"
-                        Margin="5"/>
+                        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
                 <Button x:Name="boton_jornada_actualizar" 
                         FontSize="15"
                         Background="#FF282627"
@@ -74,7 +80,9 @@
                         FontFamily="Arial Rounded MT Bold"
                         Content="Actualizar"
                         Click="btn_jornada_actualizar"
-                        Margin="5"/>
+                        Margin="5">
+                    
+                </Button>
                 <Button x:Name="boton_jornada_eliminar"
                         FontSize="15"
                         Background="#FF282627"
@@ -82,7 +90,29 @@
                         FontFamily="Arial Rounded MT Bold"
                         Content="Eliminar"
                         Click="btn_jornada_eliminar"
-                        Margin="5"/>
+                        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="boton_ayuda_jornada"
+        Content="Ayuda"
+        Click="btn_ayuda_jornada"
+        Margin="5"
+        FontSize="15"
+        Background="#FF607D8B"
+        Foreground="White"
+        FontFamily="Arial Rounded MT Bold">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
             </StackPanel>
 
             <DataGrid Background="#FFF1F1F1"  x:Name="DTGV_jornada"

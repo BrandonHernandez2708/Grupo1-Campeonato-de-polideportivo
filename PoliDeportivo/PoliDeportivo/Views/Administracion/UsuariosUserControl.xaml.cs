@@ -1,6 +1,7 @@
 ﻿using MySqlX.XDevAPI.Relational;
 using PoliDeportivo.DataAccess;
 using PoliDeportivo.Model;
+using PoliDeportivo.Views.Administracion.BTN_ayuda_forms;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -166,6 +167,13 @@ namespace PoliDeportivo.Views.Administracion
                 txt_usuario_rol_id_fk.Text = row["Código Rol"].ToString();
             }
             ConfigurarBotonesDespuesDeSeleccion();
+        }
+
+        private void btn_usuario(object sender, RoutedEventArgs e)
+        {
+            ayuda_usuarios ventanaAyuda = new ayuda_usuarios();
+            ventanaAyuda.ShowDialog();
+
         }
     }
 }

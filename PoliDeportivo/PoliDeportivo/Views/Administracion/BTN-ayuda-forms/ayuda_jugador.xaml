@@ -1,0 +1,74 @@
+﻿<Window x:Class="PoliDeportivo.Views.Administracion.BTN_ayuda_forms.ayuda_jugador"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Ayuda Jugadores" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Instrucciones de Uso" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock TextWrapping="Wrap" FontSize="16" Width="758"
+                       Text="
+• ID: Ingrese el identificador único del jugador. Debe ser un número válido y no repetido.
+                       
+                       
+                       
+
+• Nombre: Nombre(s) del jugador.
+                       
+                       
+                       
+                       
+                       
+
+• Apellido: Apellido(s) del jugador.
+                       
+                       
+                       
+                       
+                       
+
+• Posición: Posición en la que juega el jugador (ejemplo: Delantero, Defensa, Portero).
+                       
+                       
+                       
+
+• ID Equipo: Identificador del equipo al que pertenece el jugador.
+                       
+                       
+                       
+
+Botones disponibles:
+                       
+                       
+                       
+                       
+                       
+                       
+
+• Nuevo: Limpia los campos para ingresar un nuevo jugador y habilita los botones de acción.
+                       
+                       
+
+• Guardar: Guarda o actualiza el registro según corresponda.
+                       
+                       
+                       
+                       
+
+• Actualizar: Permite modificar un jugador previamente seleccionado.
+                       
+                       
+                       
+
+• Eliminar: Elimina el jugador seleccionado tras confirmación.
+                       
+                       
+                       
+                       
+
+• Selección en la tabla: Al seleccionar una fila, los datos se cargan automáticamente en los campos."/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,98 @@
+﻿<Window x:Class="PoliDeportivo.Views.Administracion.BTN_ayuda_forms.ayuda_sanciones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ayuda Sanciones" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Instrucciones de Uso" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock TextWrapping="Wrap" FontSize="16" Width="780"
+                       Text="
+• ID Sanción: Ingrese un identificador único para la sanción. Debe ser un número no repetido.
+                       
+                       
+                       
+                       
+
+• Descripción Sanción: Ingrese una descripción clara de la sanción (ejemplo: tarjeta roja, falta grave, etc.).
+                       
+                       
+                       
+                       
+                       
+                       
+
+• Minuto Sanción: Especifique el minuto del partido en el que ocurrió la sanción.
+                       
+                       
+                       
+                       
+                       
+                       
+
+• ID Partido: Ingrese el identificador del partido en el que se cometió la falta.
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+
+• ID Jugador: Ingrese el identificador del jugador que recibió la sanción.
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+
+Botones disponibles:
+                       
+                       
+                       
+                       
+                       
+                       
+
+• Nuevo: Limpia todos los campos para permitir el ingreso de una nueva sanción.
+                       
+                       
+                       
+                       
+
+• Guardar: Guarda la información de una nueva sanción o actualiza una existente si ya ha sido seleccionada.
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+
+• Actualizar: Permite modificar los datos de una sanción seleccionada.
+                       
+                       
+                       
+                       
+                       
+                       
+
+• Eliminar: Elimina de forma permanente la sanción seleccionada (requiere confirmación).
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+
+• Selección en la tabla: Al hacer clic sobre una fila de la tabla, los datos se cargan automáticamente en los campos correspondientes.
+
+"/>
+        </StackPanel>
+    </Grid>
+</Window>

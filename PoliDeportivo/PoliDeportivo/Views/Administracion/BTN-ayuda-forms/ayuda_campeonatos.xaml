@@ -1,0 +1,42 @@
+﻿<Window x:Class="PoliDeportivo.Views.Administracion.BTN_ayuda_forms.ayuda_campeonatos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ayuda - Gestión de Campeonatos"
+        Height="400" Width="600"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <TextBlock Text="Instrucciones de Uso"
+                       FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+        <TextBlock TextWrapping="Wrap" FontSize="16" Text="
+• ID: Identificador único del campeonato (entero obligatorio).
+                       
+• Nombre: Nombre del campeonato (Ejemplo: Copa Apertura).
+                       
+• Modalidad: Indica si es individual, por equipos, etc.
+                       
+                       
+• Cantidad de equipos: Número total de equipos inscritos.
+                       
+                       
+• Fecha de inicio y finalización: Formato aceptado: dd/mm/yyyy.
+                       
+• Cantidad de partidos: Total estimado de partidos del campeonato.                   
+
+Botones:
+                       
+                       
+                       
+                       
+                       
+• Nuevo: Habilita los campos para ingresar un nuevo campeonato.
+                       
+• Guardar: Guarda el nuevo campeonato o actualiza uno existente.
+                       
+• Actualizar: Marca el estado para modificar los campos seleccionados.
+                       
+• Eliminar: Elimina el campeonato seleccionado.
+• Al seleccionar un registro de la tabla, los campos se llenan automáticamente para editar o eliminar.
+" Height="280" Width="549"/>
+    </StackPanel>
+</Window>

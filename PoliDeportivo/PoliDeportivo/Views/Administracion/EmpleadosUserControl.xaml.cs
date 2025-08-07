@@ -1,5 +1,6 @@
 ﻿using PoliDeportivo.DataAccess;
 using PoliDeportivo.Model;
+using PoliDeportivo.Views.Administracion.BTN_ayuda_forms;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -154,6 +155,13 @@ namespace PoliDeportivo.Views.Administracion
                 txtb_emp_apellido.Text = row["Apellido"].ToString();
             }
             ConfigurarBotonesDespuesDeSeleccion();
+        }
+
+        private void btn_ayuda_empleado(object sender, RoutedEventArgs e)
+        {
+            ayuda_empleados ventanaAyuda = new ayuda_empleados();
+            ventanaAyuda.ShowDialog();
+
         }
     }
 }

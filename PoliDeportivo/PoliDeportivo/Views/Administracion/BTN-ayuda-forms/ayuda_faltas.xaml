@@ -1,0 +1,85 @@
+﻿<Window x:Class="PoliDeportivo.Views.Administracion.BTN_ayuda_forms.ayuda_faltas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PoliDeportivo.Views.Administracion.BTN_ayuda_forms"
+        mc:Ignorable="d"
+        Title="Ayuda - Gestión de Faltas" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Instrucciones de Uso" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock TextWrapping="Wrap" FontSize="16" Width="767"
+                       Text="• ID_Falta: Identificador único para cada falta. Debe ser numérico y no repetido.
+                       
+                       
+
+• Descripción: Detalle de la falta cometida.
+                       
+                       
+                       
+                       
+                       
+
+• Minuto: Momento del partido en que ocurrió la falta.
+                       
+                       
+                       
+
+                       
+• ID_Partido: Código del partido donde se registró la falta.
+                       
+                       
+                       
+                       
+
+• ID_Jugador: Código del jugador que cometió la falta.
+                       
+                       
+                       
+                       
+
+Botones disponibles:
+
+                       
+                       
+                       
+                       
+                       
+                       
+• Nuevo: Limpia los campos para ingresar una nueva falta y habilita los botones de acción.
+                       
+                       
+
+• Guardar: Registra una nueva falta o actualiza una existente.
+                       
+                       
+                       
+                       
+
+• Actualizar: Activa la edición de una falta seleccionada.
+                       
+                       
+                       
+                       
+
+• Eliminar: Borra la falta seleccionada tras confirmación.
+                       
+                       
+                       
+                       
+
+• Selección en la tabla: Al seleccionar un registro en el DataGrid, sus datos se cargan en los campos para editar o eliminar.
+                       
+                       
+                       
+                       
+                       
+                       
+
+
+• Confirme antes de eliminar, esta acción no se puede deshacer.
+"/>
+        </StackPanel>
+    </Grid>
+</Window>

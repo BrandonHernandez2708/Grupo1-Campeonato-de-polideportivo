@@ -1,0 +1,68 @@
+﻿<Window x:Class="PoliDeportivo.Views.Administracion.BTN_ayuda_forms.ayuda_empleados"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PoliDeportivo.Views.Administracion.BTN_ayuda_forms"
+        mc:Ignorable="d"
+        Title="ayuda_empleados" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Instrucciones de Uso" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock TextWrapping="Wrap" FontSize="16" Width="759"
+                       Text="
+• ID Empleado: Ingrese el identificador único del empleado.
+                       
+                       
+                       
+                       
+
+• Nombre: Ingrese el nombre del empleado.
+                       
+                       
+                       
+                       
+                       
+
+• Apellido: Ingrese el apellido del empleado.
+                       
+                       
+                       
+                       
+
+Botones disponibles:
+                       
+                       
+                       
+                       
+                       
+                       
+
+• Nuevo: Limpia los campos para ingresar un nuevo empleado.
+                       
+                       
+                       
+                       
+
+• Guardar: Guarda un nuevo empleado o actualiza uno existente.
+                       
+                       
+                       
+
+• Actualizar: Permite modificar los datos de un empleado seleccionado.
+                       
+                       
+                       
+
+• Eliminar: Elimina el registro del empleado seleccionado.
+                       
+                       
+                       
+                       
+
+• Selección en la tabla: Al seleccionar una fila, los campos se rellenan automáticamente para editar o eliminar.
+
+Recuerde verificar que los datos sean correctos antes de guardar."/>
+        </StackPanel>
+    </Grid>
+</Window>

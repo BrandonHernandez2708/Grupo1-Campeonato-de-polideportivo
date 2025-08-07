@@ -76,7 +76,13 @@
                         FontFamily="Arial Rounded MT Bold"
                         Content="Guardar"
                         Click="btn_guardar"
-                        Margin="5"/>
+                        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
                 <Button x:Name="boton_actualizar" 
                         FontSize="15"
                         Background="#FF282627"
@@ -84,7 +90,13 @@
                         FontFamily="Arial Rounded MT Bold"
                         Content="Actualizar"
                         Click="btn_actualizar"
-                        Margin="5"/>
+                        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
                 <Button x:Name="boton_eliminar"
                         FontSize="15"
                         Background="#FF282627"
@@ -92,13 +104,37 @@
                         FontFamily="Arial Rounded MT Bold"
                         Content="Eliminar"
                         Click="btn_eliminar"
-                        Margin="5"/>
+                        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="btn_ayuda_emp"
+                        FontSize="15"
+                        Background="#FF607D8B"
+                        Foreground="White"
+                        FontFamily="Arial Rounded MT Bold"
+                        Content="Ayuda"
+                        Click="btn_ayuda_entrenador"
+                        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
             </StackPanel>
 
             <DataGrid Background="#FFF1F1F1"  x:Name="DTGV_entrenador"
                       AutoGenerateColumns="True"
                       Height="407"
                       SelectionChanged="DTGV_entrenador_SelectionChanged"/>
+            
+            
+            
 
         </StackPanel>
 

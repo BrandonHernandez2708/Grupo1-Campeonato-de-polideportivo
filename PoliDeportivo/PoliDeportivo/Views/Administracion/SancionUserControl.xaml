@@ -76,7 +76,13 @@
             FontFamily="Arial Rounded MT Bold"
             Content="Guardar"
             Click="btn_sancion_guardar"
-            Margin="5"/>
+            Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
                 <Button x:Name="boton_sancion_actualizar" 
             FontSize="15"
             Background="#FF282627"
@@ -84,7 +90,13 @@
             FontFamily="Arial Rounded MT Bold"
             Content="Actualizar"
             Click="btn_sancion_actualizar"
-            Margin="5"/>
+            Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
                 <Button x:Name="boton_sancion_eliminar"
             FontSize="15"
             Background="#FF282627"
@@ -92,7 +104,29 @@
             FontFamily="Arial Rounded MT Bold"
             Content="Eliminar"
             Click="btn_sancion_eliminar"
-            Margin="5"/>
+            Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="boton_ayuda_sancion"
+        FontSize="15"
+        Background="#FF607D8B"
+        Foreground="White"
+        FontFamily="Arial Rounded MT Bold"
+        Content="Ayuda"
+        Click="btn_ayuda_sancion"
+        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
             </StackPanel>
 
             <DataGrid Background="#FFF1F1F1"  x:Name="DGV_sancion"

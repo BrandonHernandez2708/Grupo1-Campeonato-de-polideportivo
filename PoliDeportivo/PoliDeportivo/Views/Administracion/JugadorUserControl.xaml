@@ -92,7 +92,13 @@
                         FontFamily="Arial Rounded MT Bold"
                         Content="Guardar"
                         Click="btn_guardar_jugador"
-                        Margin="5"/>
+                        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
                 <Button x:Name="boton_actualizar_jug"
                         FontSize="15"
                         Background="#FF282627"
@@ -100,7 +106,13 @@
                         FontFamily="Arial Rounded MT Bold"
                         Content="Actualizar"
                         Click="btn_actualizar_jugador"
-                        Margin="5"/>
+                        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
                 <Button x:Name="boton_eliminar_jug"
                         FontSize="15"
                         Background="#FF282627"
@@ -108,7 +120,29 @@
                         FontFamily="Arial Rounded MT Bold"
                         Content="Eliminar"
                         Click="btn_eliminar_jugador"
-                        Margin="5"/>
+                        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="boton_ayuda_jugador"
+        Content="Ayuda"
+        Click="btn_ayuda_jugador"
+        Margin="5"
+        FontSize="15"
+        Background="#FF607D8B"
+        Foreground="White"
+        FontFamily="Arial Rounded MT Bold">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
             </StackPanel>
 
             <!-- DataGrid para mostrar los deportes -->

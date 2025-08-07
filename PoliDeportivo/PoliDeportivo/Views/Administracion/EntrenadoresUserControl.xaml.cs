@@ -1,5 +1,6 @@
 ﻿using PoliDeportivo.DataAccess;
 using PoliDeportivo.Model;
+using PoliDeportivo.Views.Administracion.BTN_ayuda_forms;
 using System;
 using System.Data;
 using System.Windows;
@@ -159,6 +160,13 @@ namespace PoliDeportivo.Views.Administracion
                 ConfigurarBotonesDespuesDeSeleccion(); 
                 estadoGuardado = 2; 
             }
+        }
+
+        private void btn_ayuda_entrenador(object sender, RoutedEventArgs e)
+        {
+            ayuda_entrenadores ventanaAyuda = new ayuda_entrenadores();
+            ventanaAyuda.ShowDialog();
+
         }
     }
 }

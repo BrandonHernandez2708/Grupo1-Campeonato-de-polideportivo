@@ -1,5 +1,6 @@
 ﻿using PoliDeportivo.DataAccess;
 using PoliDeportivo.Model;
+using PoliDeportivo.Views.Administracion.BTN_ayuda_forms;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -177,6 +178,11 @@ namespace PoliDeportivo.Views.Administracion
             }
         }
 
+        private void btn_ayuda_equipos(object sender, RoutedEventArgs e)
+        {
+            ayuda_equipos ayuda = new ayuda_equipos();
+            ayuda.ShowDialog();
 
+        }
     }
 }

@@ -1,0 +1,93 @@
+﻿<Window x:Class="PoliDeportivo.Views.Administracion.BTN_ayuda_forms.ayuda_gestion_deportes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PoliDeportivo.Views.Administracion.BTN_ayuda_forms"
+        mc:Ignorable="d"
+        Title="Ayuda - Gestión de Deportes" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Instrucciones de Uso" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock TextWrapping="Wrap" FontSize="16" Width="744"
+                       Text="
+• ID: Identificador único para cada deporte. Debe ser numérico y no repetido.
+                       
+                       
+                       
+
+                       
+                       
+• Nombre: Nombre del deporte (ejemplo: Fútbol, Baloncesto).
+                       
+                       
+                       
+                       
+
+• Jugadores totales: Número total de jugadores en un equipo.
+                       
+                       
+                       
+                       
+
+• Jugadores campo: Número de jugadores en el campo durante el juego.
+                       
+                       
+                       
+
+• Tiempos: Cantidad de periodos o tiempos que dura el partido.
+                       
+                       
+                       
+                       
+
+• Duración tiempo: Duración en minutos de cada tiempo.
+                       
+                       
+                       
+                       
+
+• Duración total: Duración total del partido en minutos.
+                       
+                       
+                       
+                       
+                       
+
+Botones disponibles:
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+
+• Nuevo: Limpia los campos para ingresar un nuevo deporte y habilita las acciones.
+                       
+                       
+                       
+
+• Guardar: Registra un nuevo deporte o actualiza uno existente.
+                       
+                       
+                       
+                       
+
+• Actualizar: Activa la edición de un deporte seleccionado.
+                       
+                       
+                       
+                       
+
+• Eliminar: Borra el deporte seleccionado luego de confirmación.
+                       
+                       
+                       
+
+• Selección en la tabla: Al hacer clic en una fila del DataGrid, los datos se cargan en los campos para editar o eliminar.
+
+"/>
+        </StackPanel>
+    </Grid>
+</Window>

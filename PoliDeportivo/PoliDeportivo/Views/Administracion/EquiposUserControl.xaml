@@ -88,7 +88,13 @@
             FontFamily="Arial Rounded MT Bold"
             Content="Guardar"
             Click="btn_guardar_equipo"
-            Margin="5"/>
+            Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
                 <Button x:Name="boton_actualizar_equipo" 
             FontSize="15"
             Background="#FF282627"
@@ -96,7 +102,13 @@
             FontFamily="Arial Rounded MT Bold"
             Content="Actualizar"
             Click="btn_actualizar_equipo"
-            Margin="5"/>
+            Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
                 <Button x:Name="boton_eliminar_equipo"
             FontSize="15"
             Background="#FF282627"
@@ -104,7 +116,29 @@
             FontFamily="Arial Rounded MT Bold"
             Content="Eliminar"
             Click="btn_eliminar_equipo"
-            Margin="5"/>
+            Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="boton_ayuda_equipos"
+        FontSize="15"
+        Background="#FF607D8B"
+        Foreground="White"
+        FontFamily="Arial Rounded MT Bold"
+        Content="Ayuda"
+        Click="btn_ayuda_equipos"
+        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
             </StackPanel>
 
             <!-- DataGrid para mostrar los deportes -->

@@ -102,6 +102,22 @@
                         </Style>
                     </Button.Resources>
                 </Button>
+
+                <Button x:Name="boton_ayuda_tel_emp"
+        Content="Ayuda"
+        Click="btn_ayuda_tel_emp"
+        Margin="5"
+        FontSize="15"
+        Background="#FF607D8B"
+        Foreground="White"
+        FontFamily="Arial Rounded MT Bold">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
             </StackPanel>
 
             <!-- DataGrid para mostrar los deportes -->

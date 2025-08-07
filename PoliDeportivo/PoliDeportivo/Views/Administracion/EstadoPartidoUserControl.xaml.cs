@@ -1,5 +1,6 @@
 ﻿using PoliDeportivo.DataAccess;
 using PoliDeportivo.Model;
+using PoliDeportivo.Views.Administracion.BTN_ayuda_forms;
 using System;
 using System.Data;
 using System.Windows;
@@ -157,6 +158,13 @@ namespace PoliDeportivo.Views.Administracion
         private void txt_estadopartidoID_TextChanged(object sender, TextChangedEventArgs e)
         {
             
+        }
+
+        private void btn_ayuda_estado(object sender, RoutedEventArgs e)
+        {
+            ayuda_estado_partido ayudaVentana = new ayuda_estado_partido(); 
+            ayudaVentana.ShowDialog();
+
         }
     }
 }

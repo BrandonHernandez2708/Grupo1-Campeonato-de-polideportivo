@@ -1,0 +1,80 @@
+﻿<Window x:Class="PoliDeportivo.Views.Administracion.BTN_ayuda_forms.ayuda_telefono_empleado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ayuda Teléfonos de Empleados" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Instrucciones de Uso" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock TextWrapping="Wrap" FontSize="16" Width="780"
+                       Text="
+• ID Teléfono: Ingrese un número único para identificar el teléfono del empleado.
+                       
+                       
+                       
+                       
+
+• Número de Teléfono: Ingrese el número telefónico en formato numérico.
+                       
+                       
+                       
+                       
+                       
+
+• Código del Dueño: Es el ID del empleado al que pertenece el teléfono. Asegúrese de que exista en el sistema.
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+
+Botones disponibles:
+                       
+                       
+                       
+                       
+
+                       
+                       
+                       
+• Nuevo: Limpia todos los campos para permitir el ingreso de un nuevo teléfono.
+                       
+                       
+                       
+                       
+                       
+
+• Guardar: Guarda un nuevo registro o actualiza uno existente, dependiendo del contexto.
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+
+• Actualizar: Habilita la edición de los datos del teléfono seleccionado.
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+
+• Eliminar: Elimina de forma permanente el teléfono seleccionado tras confirmación.
+                       
+                       
+                       
+                       
+                       
+
+• Selección en la tabla: Al hacer clic sobre una fila de la tabla, los datos se cargan automáticamente en los campos de texto.
+"/>
+        </StackPanel>
+    </Grid>
+</Window>

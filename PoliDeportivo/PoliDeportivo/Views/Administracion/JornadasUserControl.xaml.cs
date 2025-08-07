@@ -150,5 +150,12 @@ namespace PoliDeportivo.Views.Administracion
                 estadoGuardado = 2;
             }
         }
+
+        private void btn_ayuda_jornada(object sender, RoutedEventArgs e)
+        {
+            var ventanaAyuda = new BTN_ayuda_forms.ayuda_jornadas();
+            ventanaAyuda.ShowDialog();
+
+        }
     }
 }

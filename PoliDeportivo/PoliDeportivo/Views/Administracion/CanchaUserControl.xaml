@@ -103,6 +103,24 @@
                     </Button.Resources>
 
                 </Button>
+
+                <Button x:Name="btn_ayuda"
+        FontSize="15"
+        Background="#FF607D8B"
+        Foreground="White"
+        FontFamily="Arial Rounded MT Bold"
+        Content="Ayuda"
+        Click="btn_ayuda_canchas"
+        Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+
+
             </StackPanel>
 
             <!-- DataGrid para mostrar los deportes -->

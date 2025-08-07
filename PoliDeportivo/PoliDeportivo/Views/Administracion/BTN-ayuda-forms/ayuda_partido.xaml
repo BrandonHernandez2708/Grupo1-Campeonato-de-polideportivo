@@ -1,0 +1,131 @@
+﻿<Window x:Class="PoliDeportivo.Views.Administracion.BTN_ayuda_forms.ayuda_partido"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Ayuda Partidos" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <ScrollViewer Padding="20">
+            <StackPanel Margin="10">
+            <TextBlock Text="Instrucciones de Uso" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock TextWrapping="Wrap" FontSize="16" Width="780"
+                       Text="
+• ID: Identificador único del partido.
+                       
+                       
+                       
+                       
+                       
+
+• ID Jornada: Identificador de la jornada o fecha del torneo.
+                       
+                       
+                       
+                       
+
+• ID Equipo Local: Identificador del equipo local.
+                       
+                       
+                       
+                       
+
+                       
+• ID Equipo Visitante: Identificador del equipo visitante.
+                       
+                       
+                       
+                       
+
+• ID Cancha: Identificador de la cancha donde se jugará.
+                       
+                       
+                       
+                       
+
+• Fecha y Hora: Fecha y hora programada para el partido (formato válido).
+                       
+                       
+                       
+                       
+                       
+
+• ID Estado: Estado actual del partido (ejemplo: programado, jugado, cancelado).
+                       
+                       
+                       
+
+• ID Árbitro: Identificador del árbitro asignado.
+                       
+                       
+                       
+                       
+                       
+
+• Puntaje Local: Puntuación del equipo local.
+                       
+                       
+                       
+                       
+                       
+
+• Puntaje Visitante: Puntuación del equipo visitante.
+                       
+                       
+                       
+                       
+
+• Tiempo Extra: Indica si hubo tiempo extra.
+                       
+                       
+                       
+                       
+                       
+
+• ID Equipo Ganador: Identificador del equipo ganador.
+                       
+                       
+                       
+                       
+
+Botones disponibles:
+
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+• Nuevo: Limpia los campos para ingresar un nuevo partido y habilita los botones de acción.
+                       
+                       
+                       
+                       
+
+• Guardar: Guarda o actualiza el registro según corresponda.
+                       
+                       
+                       
+                       
+
+• Actualizar: Permite modificar un partido previamente seleccionado.
+                       
+                       
+                       
+
+• Eliminar: Elimina el partido seleccionado tras confirmación.
+                       
+                       
+                       
+                       
+                       
+                       
+
+• Selección en la tabla: Al seleccionar una fila, los datos se cargan automáticamente en los campos.
+
+"/>
+        </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

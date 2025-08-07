@@ -1,5 +1,6 @@
 ﻿using PoliDeportivo.DataAccess;
 using PoliDeportivo.Model;
+using PoliDeportivo.Views.Administracion.BTN_ayuda_forms;
 using System;
 using System.Data;
 using System.Windows;
@@ -162,6 +163,13 @@ namespace PoliDeportivo.Views.Administracion
         private void txtb_equipo_nombre_TextChanged(object sender, TextChangedEventArgs e)
         {
             // Si no usas este evento, puedes eliminarlo
+        }
+
+        private void btn_ayuda_jugador(object sender, RoutedEventArgs e)
+        {
+            ayuda_jugador ventanaAyuda = new ayuda_jugador();
+            ventanaAyuda.ShowDialog();
+
         }
     }
 }

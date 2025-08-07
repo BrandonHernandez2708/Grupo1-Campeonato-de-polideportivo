@@ -161,5 +161,12 @@ namespace PoliDeportivo.Views.Administracion
             }
             ConfigurarBotonesDespuesDeSeleccion();
         }
+
+        private void btn_ayuda_canchas(object sender, RoutedEventArgs e)
+        {
+            var ventanaAyuda = new BTN_ayuda_forms.ayuda_canchas();
+            ventanaAyuda.ShowDialog();
+
+        }
     }
 }

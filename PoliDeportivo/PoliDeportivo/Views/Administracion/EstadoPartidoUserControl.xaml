@@ -24,7 +24,7 @@
 
 
             <!-- Campos de texto para datos de deporte -->
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left" Background="#FF7B797A" Width="415">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Left" Background="#FF7B797A" Width="286">
 
                 <StackPanel Margin="5" Width="110">
                     <TextBlock FontWeight="Bold" Foreground="Orange"><Run Text="ID"/><Run Text=" "/><Run Text="Estado"/><Run Language="es-gt" Text=" "/><Run Text="P"/><Run Text="artido"/></TextBlock>
@@ -101,6 +101,22 @@
                     </Button.Resources>
 
                 </Button>
+
+                <Button x:Name="boton_ayuda_estado"
+        Content="Ayuda"
+        Click="btn_ayuda_estado"
+        Margin="5"
+        FontSize="15"
+        Background="#FF607D8B"
+        Foreground="White"
+        FontFamily="Arial Rounded MT Bold">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
             </StackPanel>
 
             <!-- DataGrid para mostrar los deportes -->

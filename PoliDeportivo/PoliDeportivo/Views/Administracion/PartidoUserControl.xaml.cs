@@ -1,5 +1,6 @@
 ﻿using PoliDeportivo.DataAccess;
 using PoliDeportivo.Model;
+using PoliDeportivo.Views.Administracion.BTN_ayuda_forms;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -203,6 +204,14 @@ namespace PoliDeportivo.Views
 
                 ConfigurarBotonesDespuesDeSeleccion();
             }
+
+
+        }
+
+        private void btn_ayuda_partido(object sender, RoutedEventArgs e)
+        {
+            ayuda_partido ventana = new ayuda_partido();
+            ventana.ShowDialog();
         }
     }
 }
