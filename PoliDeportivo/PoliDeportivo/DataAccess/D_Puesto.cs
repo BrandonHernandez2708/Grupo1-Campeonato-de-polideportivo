@@ -101,7 +101,7 @@ namespace PoliDeportivo.DataAccess
                                                         @ip
                                                     );";
 
-                        cmdBitacora.Parameters.AddWithValue("@entidad", 29);
+                        cmdBitacora.Parameters.AddWithValue("@entidad", 6);
                         cmdBitacora.Parameters.AddWithValue("@operacion", accion);
                         cmdBitacora.Parameters.AddWithValue("@usuarioId", Sesion.UsuarioId);
                         cmdBitacora.Parameters.AddWithValue("@ip", ObtenerIPLocal());
@@ -154,7 +154,7 @@ namespace PoliDeportivo.DataAccess
                                                         @ip
                                                     );";
 
-                        cmdBitacora.Parameters.AddWithValue("@entidad", 29);
+                        cmdBitacora.Parameters.AddWithValue("@entidad", 6);
                         cmdBitacora.Parameters.AddWithValue("@operacion", "D");
                         cmdBitacora.Parameters.AddWithValue("@usuarioId", Sesion.UsuarioId);
                         cmdBitacora.Parameters.AddWithValue("@ip", ObtenerIPLocal());
