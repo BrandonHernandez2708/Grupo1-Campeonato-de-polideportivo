@@ -58,12 +58,10 @@ namespace PoliDeportivo.Views.Usuario
             {
                 if (int.TryParse(filtroTexto, out int codigo))
                 {
-                    
                     filtroTextoFinal = $"[Código Partido] = {codigo}";
                 }
                 else
                 {
-                 
                     filtroTextoFinal =
                         $"[Estado del Partido] LIKE '%{filtroTexto}%'" +
                         $" OR [Equipo 1] LIKE '%{filtroTexto}%'" +
@@ -75,17 +73,17 @@ namespace PoliDeportivo.Views.Usuario
             string filtroFecha = string.Empty;
             if (fechaSeleccionada.HasValue)
             {
-             
-                string fechaStr = $"#{fechaSeleccionada.Value:MM/dd/yyyy}#";
-                filtroFecha = $"[Fecha y Hora] >= {fechaStr}";
+                // Rango desde el inicio hasta el final del día seleccionado
+                string fechaInicio = $"#{fechaSeleccionada.Value:MM/dd/yyyy} 00:00:00#";
+                string fechaFin = $"#{fechaSeleccionada.Value:MM/dd/yyyy} 23:59:59#";
+                filtroFecha = $"[Fecha y Hora] >= {fechaInicio} AND [Fecha y Hora] <= {fechaFin}";
             }
-
 
             string filtroFinal = filtroTextoFinal;
             if (!string.IsNullOrEmpty(filtroFecha))
             {
                 if (!string.IsNullOrEmpty(filtroFinal))
-                    filtroFinal += " AND ";
+                    filtroFinal = $"({filtroFinal}) AND ";
                 filtroFinal += filtroFecha;
             }
 
