@@ -55,5 +55,11 @@ namespace PoliDeportivo
         {
             contenedor.Content = new UserEquiposUserControl();
         }
+
+        private void Btn_usrPartidos(object sender, RoutedEventArgs e)
+        {
+
+            contenedor.Content = new UserPartidoUserControl1();
+        }
     }
 }

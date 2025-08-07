@@ -30,6 +30,7 @@
                         <Button x:Name="Btn_tablaPosicion" Content="Tabla de Posiciones" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                         <Button x:Name="Btn_estadistica" Content="Estadisticas" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                         <Button x:Name="Btn_campeonatos" Content="Campeonatos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_usr_campeonatos"/>
+                        <Button x:Name="Btn_partidos" Content="Partidos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_usr_partidos"/>
                         <Button x:Name="Btn_equipos" Content="Equipos" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627" Click="btn_usr_equipos"/>
                         <Button x:Name="Btn_Reglasjuego" Content="Reglas de juego" Height="44" Background="#FF282627" Foreground="White" BorderBrush="#FF282627"/>
                     </StackPanel>

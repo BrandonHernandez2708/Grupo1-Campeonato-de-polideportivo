@@ -253,3 +253,5 @@ C:\Users\lopez\OneDrive\Escritorio\UMG\Ing Sistemas\8vo. Ciclo\Analisis de Siste
 C:\Users\lopez\OneDrive\Escritorio\UMG\Ing Sistemas\8vo. Ciclo\Analisis de Sistemas ll\Proyecto\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\PoliDeportivo.pdb
 C:\Users\lopez\OneDrive\Escritorio\UMG\Ing Sistemas\8vo. Ciclo\Analisis de Sistemas ll\Proyecto\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\PoliDeportivo.genruntimeconfig.cache
 C:\Users\lopez\OneDrive\Escritorio\UMG\Ing Sistemas\8vo. Ciclo\Analisis de Sistemas ll\Proyecto\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\ref\PoliDeportivo.dll
+C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Usuario\UserPartidoUserControl1.g.cs
+C:\Users\pedro\Grupo1-Campeonato-de-polideportivo\PoliDeportivo\PoliDeportivo\obj\Debug\net8.0-windows\Views\Usuario\UserPartidoUserControl1.baml

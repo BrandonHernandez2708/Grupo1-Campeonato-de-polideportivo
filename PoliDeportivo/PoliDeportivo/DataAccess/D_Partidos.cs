@@ -50,12 +50,7 @@ namespace PoliDeportivo.DataAccess
                             INNER JOIN tbl_cancha c ON p.fk_cancha_id = c.pk_cancha_id
                             INNER JOIN tbl_empleado emp ON p.fk_empleado_arbitro_id = emp.pk_empleado_id
                             LEFT JOIN tbl_equipo eqg ON p.fk_equipo_ganador_id = eqg.pk_equipo_id
-                            LEFT JOIN tbl_estado_partido est ON p.fk_estado_id = est.pk_estado_partido_id;
-
-
-
-          
-            ";
+                            LEFT JOIN tbl_estado_partido est ON p.fk_estado_id = est.pk_estado_partido_id; ";
 
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
                     conn.Open();
