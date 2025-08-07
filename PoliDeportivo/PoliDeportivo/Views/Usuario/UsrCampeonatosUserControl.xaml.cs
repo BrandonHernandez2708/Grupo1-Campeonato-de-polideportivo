@@ -1,28 +1,16 @@
 ﻿using PoliDeportivo.DataAccess;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace PoliDeportivo.Views.Usuario
 {
-    /// <summary>
-    /// Lógica de interacción para UsrCampeonatosUserControl.xaml
-    /// </summary>
     public partial class UsrCampeonatosUserControl : UserControl
     {
         private DataTable campeonatosOriginal;
+
         public UsrCampeonatosUserControl()
         {
             InitializeComponent();
@@ -45,15 +33,46 @@ namespace PoliDeportivo.Views.Usuario
 
         private void btn_buscar(object sender, RoutedEventArgs e)
         {
-            string filtro = txtBuscar.Text.Trim().ToLower();
-
-            if (campeonatosOriginal == null || filtro == "buscar campeonato...")
+            if (campeonatosOriginal == null)
                 return;
 
-            DataView vistaFiltrada = campeonatosOriginal.DefaultView;
-            vistaFiltrada.RowFilter = $"nombre LIKE '%{filtro}%'";
-            dgCampeonatos.ItemsSource = vistaFiltrada;
+            string filtroTexto = txtBuscar.Text.Trim();
+            DateTime? fechaSeleccionada = dpFecha.SelectedDate;
 
+            // Filtro texto busca en Nombre y Modalidad
+            string filtroNombre = string.Empty;
+            if (!string.IsNullOrWhiteSpace(filtroTexto) && filtroTexto != "Buscar campeonato...")
+            {
+                filtroNombre = $"([Nombre] LIKE '%{filtroTexto}%' OR [Modalidad] LIKE '%{filtroTexto}%')";
+            }
+
+            // Filtro por fecha ([Fecha inicio])
+            string filtroFecha = string.Empty;
+            if (fechaSeleccionada.HasValue)
+            {
+                string fechaStr = $"#{fechaSeleccionada.Value:yyyy-MM-dd}#";
+                filtroFecha = $"[Fecha inicio] = {fechaStr}";
+            }
+
+            // Combinar filtros
+            string filtroFinal = filtroNombre;
+            if (!string.IsNullOrEmpty(filtroFecha))
+            {
+                if (!string.IsNullOrEmpty(filtroFinal))
+                    filtroFinal += " AND ";
+                filtroFinal += filtroFecha;
+            }
+
+            try
+            {
+                DataView vistaFiltrada = campeonatosOriginal.DefaultView;
+                vistaFiltrada.RowFilter = filtroFinal;
+                dgCampeonatos.ItemsSource = vistaFiltrada;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en filtro: " + ex.Message);
+            }
         }
 
         private void txtBuscar_GotFocus(object sender, RoutedEventArgs e)

@@ -27,6 +27,16 @@
                          Foreground="Gray"
                          GotFocus="txtBuscar_GotFocus"
                          LostFocus="txtBuscar_LostFocus"/>
+
+                <TextBlock Text="Fecha:"
+                           VerticalAlignment="Center"
+                           Margin="10,0,5,0"/>
+
+                <DatePicker x:Name="dpFecha"
+                            Width="150"
+                            Height="30"
+                            Margin="0,0,10,0"/>
+
                 <Button Content="Buscar"
                         Width="100"
                         Height="30"
