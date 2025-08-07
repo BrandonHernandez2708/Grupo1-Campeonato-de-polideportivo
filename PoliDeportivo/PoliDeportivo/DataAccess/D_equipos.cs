@@ -22,10 +22,10 @@ namespace PoliDeportivo.DataAccess
                                     equ_telefono AS 'Teléfono del Equipo',
                                     equ_correo AS 'Correo del Equipo',
                                     d.pk_deporte_id AS 'Código Deporte',
-                                    d.dep_nombre AS 'nombre_deporte',
+                                    d.dep_nombre AS 'Deporte',
                                     t.pk_entrenador_id AS 'Código Entrenador',
-                                    t.ent_nombre AS 'nombre_entrenador',
-                                    t.ent_apellido AS 'apellido_entrenador'
+                                    t.ent_nombre AS 'Nombre Entrenador',
+                                    t.ent_apellido AS 'Apellido Entrenador'
                                 FROM tbl_equipo e
                                 INNER JOIN tbl_deporte d ON e.fk_deporte_id = d.pk_deporte_id
                                 INNER JOIN tbl_entrenador t ON e.fk_entrenador_id = t.pk_entrenador_id;";

@@ -50,5 +50,10 @@ namespace PoliDeportivo
             contenedor.Content = new UsrCampeonatosUserControl();
 
         }
+
+        private void Btn_usrEquipos(object sender, RoutedEventArgs e)
+        {
+            contenedor.Content = new UserEquiposUserControl();
+        }
     }
 }
